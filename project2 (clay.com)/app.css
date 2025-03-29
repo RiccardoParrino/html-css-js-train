@@ -1,73 +1,89 @@
 :root{    
+    /* Black */
     --color--black: #000;
-    --color--white: white;
-    --color--oat-600: #9f9b93;
+
+    /* Grey */
+    --color--grey-950: #16181f;
+    --color--grey-900: #282c35;
+    --color--grey-800: #3c414d;
+    --color--grey-700: #525a69;
     --color--grey-600: #717989;
-    --color--oat-800: #55534e;
+    --color--grey-500: #979da9;
+    --color--grey-400: #bfc4cd;
     --color--grey-200: #e6e8ec;
+    --color--grey-100: #eff1f3;
     --color--grey-50: #f7f8f9;
+
+    /* Blueberry */
+    --color--blueberry-900: #002f67;
+    --color--blueberry-800: #01418d;
+    --color--blueberry-700: #0053b5;
+    --color--blueberry-600: #0667d9;
+    --color--blueberry-500: #0382f7;
+    --color--blueberry-400: #4ca8fd;
     --color--blueberry-300: #83c4ff;
     --color--blueberry-200: #bee0ff;
-    --color--blueberry-700: #0053b5;
-    --color--blueberry-900: #002f67;
+    --color--blueberry-100: #d7ebfe;
+    --color--blueberry-50: #ecf6ff;
+
+    /* Ube */
+    --color--ube-800: #43089f;
+    --color--ube-700: #5c15cc;
+    --color--ube-600: #7934f0;
+    --color--ube-500: #8b5cf6;
+    --color--ube-400: #a789fe;
     --color--ube-300: #c1b0ff;
     --color--ube-200: #d8d0ff;
-    --color--ube-700: #5c15cc;
-    --color--grey-100: #eff1f3;
-    --color--blueberry-400: #4ca8fd;
-    --color--blueberry-600: #0667d9;
-    --color--blueberry-100: #d7ebfe;
-    --color--lemon-100: #fff8d2;
-    --color--matcha-300: #84e7a5;
-    --color--matcha-200: #bcf4ca;
-    --color--ube-400: #a789fe;
-    --color--lemon-300: #fadf7c;
+    --color--ube-100: #e9e4ff;
+    --color--ube-50: #f5f3ff;
+
+    /* Lemon */
     --color--lemon-900: #7f500a;
-    --color--oat-900: #363430;
+    --color--lemon-800: #9d6a09;
+    --color--lemon-700: #d08a11;
+    --color--lemon-600: #fdad15;
+    --color--lemon-500: #fbbd41;
+    --color--lemon-400: #f8cc65;
+    --color--lemon-300: #fadf7c;
+    --color--lemon-200: #fef0a4;
+    --color--lemon-100: #fff8d2;
+
+    /* Matcha */
     --color--matcha-700: #02693e;
     --color--matcha-600: #078a52;
-    --color--ube-100: #e9e4ff;
-    --color--lemon-700: #d08a11;
-    --color--tangarine-600: #fa6900;
-    --color--dragonfruit-500: #ff7ad5;
-    --color--matcha-400: #3ece82;
-    --color--lemon-500: #fbbd41;
-    --color--lemon-600: #fdad15;
-    --color--grey-700: #525a69;
-    --color--oat-200: #f3f2ed;
-    --color--oat-400: #dad4c8;
-    --color--ube-600: #7934f0;
-    --color--lemon-200: #fef0a4;
-    --color--ube-500: #8b5cf6;
-    --color--lemon-400: #f8cc65;
-    --layout--row-col-gap: 2rem;
-    --color--grey-500: #979da9;
-    --color--grey-800: #3c414d;
     --color--matcha-500: #0dac65;
+    --color--matcha-400: #3ece82;
+    --color--matcha-300: #84e7a5;
+    --color--matcha-200: #bcf4ca;
+
+    /* Dragonfruit */
     --color--dragonfruit-900: #8b045c;
-    --color--pomegranate-700: #b21a3f;
-    --color--dragonfruit-400: #ff99df;
-    --color--blueberry-500: #0382f7;
-    --color--oat-50: white;
-    --pricing-table--border-color: white;
-    --color--grey-400: #bfc4cd;
-    --color--blueberry-800: #01418d;
-    --color--grey-950: #16181f;
-    --color--dragonfruit-100: #ffe5f7;
-    --color--ube-800: #43089f;
-    --color--dragonfruit-200: #ffd1f1;
     --color--dragonfruit-700: #f90ba6;
-    --color--blueberry-950: #001e4b;
     --color--dragonfruit-600: #ff52c2;
-    --color--ube-50: #f5f3ff;
-    --color--oat-500: white;
-    --color--grey-900: #282c35;
-    --color--blueberry-50: #ecf6ff;
-    --color--lemon-800: #9d6a09;
+    --color--dragonfruit-500: #ff7ad5;
+    --color--dragonfruit-400: #ff99df;
+    --color--dragonfruit-200: #ffd1f1;
+    --color--dragonfruit-100: #ffe5f7;
+
+    /* Tangerine */
     --color--tangarine-700: #c34e1b;
-    --color--oat-700: #85817a;
+    --color--tangarine-600: #fa6900;
+
+    /* Oat */
     --color--oat-950: #1b1a18;
+    --color--oat-900: #363430;
+    --color--oat-800: #55534e;
+    --color--oat-700: #85817a;
+    --color--oat-600: #9f9b93;
+    --color--oat-500: white;
+    --color--oat-400: #dad4c8;
+    --color--oat-200: #f3f2ed;
+    --color--oat-50: white;
+
+    /* Pomegranate */
+    --color--pomegranate-700: #b21a3f;
     --color--pomegranate-500: #e94d68;
+
 
     /*----font-family----*/
     --fonts--primary-font-family: Roobert, sans-serif;
