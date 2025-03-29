@@ -182,3 +182,10 @@
     --spacing--1-75rem: 1.75rem;
     --spacing--11rem: 11rem;
 }
+
+.body {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
