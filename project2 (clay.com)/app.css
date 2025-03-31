@@ -343,6 +343,7 @@ a {
     margin: 0px var(--spacing--4-5rem);
     margin-top: 72px;
     border-radius: var(--radius--large);
+    z-index: 1;
 }
 
 .hero-container {
@@ -390,16 +391,24 @@ a {
     left: -356px;
 }
 
+.hero-background-img-container {
+    z-index: 999;
+}
+
 .hero-background-img-left {
     position: relative;
     width: 720px;
     top: -480px;
-    right: -1024px;
+    right: -512px;
 }
 
 .hero-background-img-left {
     position: relative;
     width: 640px;
+}
+
+.hero-wrapper {
+    overflow: hidden;
 }
 
 /*----MEDIA-QUERIES----*/
