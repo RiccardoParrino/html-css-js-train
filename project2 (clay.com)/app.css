@@ -111,26 +111,15 @@
     --heading-–-h4--font-weight: 0px;
     
     /*----typescale----*/
-    --heading-h0--font-size-lg: 0px;
-    --heading-h0--font-size-md: 0px;
-    --heading-h0--font-size-sm: 0px;
-    --heading-h0--font-size-xs: 0px;
-    --heading-–-h1--font-size-lg: 0px;
-    --heading-–-h1--font-size-md: 0px;
-    --heading-–-h1--font-size-sm: 0px;
-    --heading-–-h1--font-size-xs: 0px;
-    --heading-–-h2--font-size-lg: 0px;
-    --heading-–-h2--font-size-md: 0px;
-    --heading-–-h2--font-size-sm: 0px;
-    --heading-–-h2--font-size-xs: 0px;
-    --heading-–-h3--font-size-lg: 0px;
-    --heading-–-h3--font-size-md: 0px;
-    --heading-–-h3--font-size-sm: 0px;
-    --heading-–-h3--font-size-xs: 0px;
-    --heading-–-h4--font-size-lg: 0px;
-    --heading-–-h4--font-size-md: 0px;
-    --heading-–-h4--font-size-sm: 0px;
-    --heading-–-h4--font-size-xs: 0px;
+    --h1-font-size: 5.610rem;
+    --h2-font-size: 4.209rem;
+    --h3-font-size: 3.157rem;
+    --h4-font-size: 2.369rem;
+    --h5-font-size: 1.777rem;
+    --h6-font-size: 1.333rem;
+    --p-font-size:  1.000rem;
+    --ss-font-size: 0.750rem;
+    --xs-font-size: 0.563rem;
 
     /*----spacing-system----*/
     --spacing--0-25rem: .25rem;
@@ -156,11 +145,146 @@
     --radius--small: .5rem;
     --radius--medium: 1.5rem;
     --radius--large: 2.5rem;
+
+    /*----Specific-Case----*/
+    --body-background-color: #fff;
+    --section-background-color-grey: var(--color--oat-200);
+    --section-background-color-secondary: var(--color--dragonfruit-900);
+    --section-background-color-tertiary: var(--color--blueberry-600);
+    --section-background-color-forth: var(--color--matcha-700);
+    --section-background-color-fifth: var(--color--ube-800);
+    --section-background-color-sixth: var(--color--tangarine-700);
+    --section-background-color-seventh: var(--color--pomegranate-700);
+    --section-background-color-eight: var(--color--dragonfruit-900);
+
+    --border-color-primary: var(--color--grey-border);
+
+    /*DA METTERE 
+        - SHADOWS
+        - TRANSITION
+        - LOGO SIZE and IMAGE SIZE
+    */
+
+    --heading-color-primary: #000;
+    --paragraph-color-primary: #000;
+    --anchor-color-primary: #222;
+    --heading-color-secondary: #fff;
+    --paragraph-color-secondary: #fff;
 }
 
-.body {
+/*-------------GENERAL RULES-------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    background-color: var(--body-background-color);
+}
+
+h1, h2, h3 {}
+
+h4 {}
+
+h5 {}
+
+p {}
+
+a {}
+
+
+/*-------------COMPONENT-------------*/
+
+.logo {}
+
+.anchor {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--anchor-color-primary);
+    font-size: var(--p-font-size);
+    letter-spacing: -0.05em;
+}
+
+.button-primary {}
+
+.button-secondary {}
+
+.button-tertiary {}
+
+/*----NAVBAR----*/
+.navbar {
+    
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 48px;
+    border-bottom: var(--border-color-primary) 1px solid;
+}
+
+.navbar-img-container {
+}
+
+.navbar-img {
+    width: 100%;
+}
+
+.navbar-anchor {
+    
+}
+
+.navbar-anchor-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar-cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+/*----HERO----*/
+.hero {
+    margin: 0px var(--spacing--4-5rem);
+    background-color: white;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: var(--section-background-color-grey);
+    border-radius: var(--radius--large);
+}
+
+.hero-heading-container {
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: var(--h1-font-size);
+    color: var(--heading-color-primary);
+    line-height: var(--spacing--6rem);
+    letter-spacing:  calc( -1 * var(--spacing--0-5rem) );
+    word-spacing: -16px;
 }
