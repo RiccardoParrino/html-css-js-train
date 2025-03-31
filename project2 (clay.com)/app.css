@@ -236,7 +236,17 @@ a {
     letter-spacing: -0.05em;
 }
 
-.button-primary {}
+.button-primary {
+    padding: 16px;
+    border: #000 1px solid;
+    background-color: #000;
+    color: white;
+    border-radius: 12px;
+}
+
+.button-primary:hover {
+    opacity: 0.8;
+}
 
 .button-secondary {}
 
@@ -257,6 +267,7 @@ a {
 }
 
 .navbar-img-container {
+    width: 72px;
 }
 
 .navbar-img {
