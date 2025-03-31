@@ -353,24 +353,33 @@ a {
     margin: 0px auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .hero-heading-container {
     text-align: center;
+    padding-bottom: 16px;
 }
 
 .hero-heading {
-    font-size: var(--h1-font-size);
+    font-size: 7rem;
     color: var(--heading-color-primary);
-    line-height: var(--spacing--6rem);
+    line-height: var(--spacing--7rem);
     letter-spacing:  calc( -1 * var(--spacing--0-5rem) );
-    word-spacing: -16px;
+    word-spacing: -28px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero-paragraph-container {
+    max-width: 700px;
 }
 
 .hero-paragraph {
     text-align: center;
     font-size: var(--h6-font-size);
+    line-height: 24px;
+    word-spacing: calc( -1 * var(--spacing--0-5rem) );
 }
 
 /*----MEDIA-QUERIES----*/
