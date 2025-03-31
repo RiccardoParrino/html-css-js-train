@@ -264,6 +264,7 @@ a {
 }
 
 .navbar-container {
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -272,6 +273,10 @@ a {
     border-bottom: var(--color--oat-400) 1px solid;
     padding: 0px 48px;
     margin: 0px auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar-img-container {
@@ -286,12 +291,17 @@ a {
     font-size: var(--h6-font-size);
 }
 
-.navbar-anchor-container {
+.central-navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 32px;
+    min-height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar-cta-container {
