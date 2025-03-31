@@ -188,7 +188,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    background-color: var(--body-background-color);
+    background-color: var(--body-background-color);   
 }
 
 h1 {
@@ -381,6 +381,25 @@ a {
     font-size: var(--h6-font-size);
     line-height: 24px;
     word-spacing: calc( -1 * var(--spacing--0-5rem) );
+}
+
+.hero-background-img-right {
+    position: relative;
+    width: 720px;
+    top: -184px;
+    left: -356px;
+}
+
+.hero-background-img-left {
+    position: relative;
+    width: 720px;
+    top: -480px;
+    right: -1024px;
+}
+
+.hero-background-img-left {
+    position: relative;
+    width: 640px;
 }
 
 /*----MEDIA-QUERIES----*/
