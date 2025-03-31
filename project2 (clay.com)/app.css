@@ -233,15 +233,16 @@ a {
     font-weight: 400;
     color: var(--anchor-color-primary);
     font-size: var(--p-font-size);
-    letter-spacing: -0.05em;
+    letter-spacing: -0.075em;
+    word-spacing: -0.2em;
 }
 
 .button-primary {
-    padding: 12px;
+    padding: 10px 14px;
     border: #000 1px solid;
     background-color: #000;
     color: white;
-    border-radius: 12px;
+    border-radius: 10px;
     font-weight: 600;
 }
 
@@ -268,13 +269,13 @@ a {
     justify-content: space-between;
     align-items: center;
     min-height: 72px;
-    border-bottom: var(--color--oat-600) 1px solid;
+    border-bottom: var(--color--oat-400) 1px solid;
     padding: 0px 48px;
     margin: 0px auto;
 }
 
 .navbar-img-container {
-    width: 72px;
+    width: 80px;
 }
 
 .navbar-img {
