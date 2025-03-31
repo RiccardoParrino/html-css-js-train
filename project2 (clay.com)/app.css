@@ -339,8 +339,10 @@ a {
 
 /*----HERO----*/
 .hero {
+    background-color: var(--section-background-color-grey);
     margin: 0px var(--spacing--4-5rem);
-    background-color: white;
+    margin-top: 72px;
+    border-radius: var(--radius--large);
 }
 
 .hero-container {
@@ -349,10 +351,9 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0px auto;
-    background-color: var(--section-background-color-grey);
-    border-radius: var(--radius--large);
     padding-top: 100px;
     padding-bottom: 100px;
+    max-width: 1200px;
 }
 
 .hero-heading-container {
