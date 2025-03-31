@@ -277,7 +277,7 @@ a {
 }
 
 .navbar-anchor {
-    
+    font-size: var(--h6-font-size);
 }
 
 .navbar-anchor-container {
@@ -329,4 +329,12 @@ a {
 .hero-paragraph {
     text-align: center;
     font-size: var(--h6-font-size);
+}
+
+/*----MEDIA-QUERIES----*/
+
+@media (max-width: 1250px) {
+    .navbar-anchor-container {
+        display: none;
+    }
 }
