@@ -260,7 +260,6 @@ a {
 
 /*----NAVBAR----*/
 .navbar {
-    
 }
 
 .navbar-container {
@@ -343,7 +342,7 @@ a {
     margin: 0px var(--spacing--4-5rem);
     margin-top: 72px;
     border-radius: var(--radius--large);
-    z-index: 1;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -384,27 +383,18 @@ a {
     word-spacing: calc( -1 * var(--spacing--0-5rem) );
 }
 
-.hero-background-img-right {
-    position: relative;
+.hero-background-img-left {
+    position: absolute;
     width: 720px;
-    top: -184px;
+    top: 384px;
     left: -356px;
 }
 
-.hero-background-img-container {
-    z-index: 999;
-}
-
-.hero-background-img-left {
-    position: relative;
+.hero-background-img-right {
+    position: absolute;
     width: 720px;
-    top: -480px;
+    top: 80px;
     right: -512px;
-}
-
-.hero-background-img-left {
-    position: relative;
-    width: 640px;
 }
 
 .hero-wrapper {
