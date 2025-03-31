@@ -248,6 +248,10 @@ a {
     opacity: 0.8;
 }
 
+.navbar-icon {
+    width: 11px;
+}
+
 .button-secondary {}
 
 .button-tertiary {}
@@ -294,6 +298,14 @@ a {
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+.navbar-unfold-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 /*----HERO----*/
