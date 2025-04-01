@@ -117,3 +117,51 @@ footer {
     border: 2px solid #c4be0d;
     background-color: #f7f380;
 }
+
+/*----asl #2----*/
+.asl-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    min-height: 100vh;
+}
+
+.asl2-left-column {
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+}
+
+.alc-1 {
+    border: 2px solid #c4be0d;
+    background-color: #59581d;
+}
+
+.alc-2 {
+    border: 2px solid #c4be0d;
+    background-color: #fffc4f;
+}
+
+.alc-3 {
+    border: 2px solid #c4be0d;
+    background-color: #403f00;
+}
+
+.asl2-right-column {
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+}
+
+.arc-1 {
+    border: 2px solid #c4be0d;
+    background-color: #ff4646;
+}
+
+.arc-2 {
+    border: 2px solid #c4be0d;
+    background-color: #4a0c0c;
+}
+
+.arc-3 {
+    border: 2px solid #c4be0d;
+    background-color: #bb0000;
+}
