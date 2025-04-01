@@ -59,3 +59,20 @@ footer {
     border: 2px solid #020202;
     background-color: #aaa;
 }
+
+/*----split screen layout----*/
+.split-screen-layout-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100vh;
+}
+
+.split-left-column {
+    border: 2px solid #6f09e5;
+    background-color: #b880f7;
+}
+
+.split-right-column {
+    border: 2px solid #020202;
+    background-color: #aaa;
+}
