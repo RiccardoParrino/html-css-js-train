@@ -42,3 +42,20 @@ footer {
 }
 
 /*only absolute value for row-gap and column gap*/
+
+/*----two column layout----*/
+.two-column-layout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.left-column {
+    border: 2px solid #6f09e5;
+    background-color: #b880f7;
+}
+
+.right-column {
+    border: 2px solid #020202;
+    background-color: #aaa;
+}
