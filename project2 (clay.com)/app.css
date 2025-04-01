@@ -415,6 +415,17 @@ a {
     width: 512px;
 }
 
+/*----PARTNERS----*/
+.partners{
+}
+
+.partners-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 /*----MEDIA-QUERIES----*/
 
 @media (max-width: 1250px) {
