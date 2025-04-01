@@ -164,12 +164,19 @@
         - TRANSITION
         - LOGO SIZE and IMAGE SIZE
     */
+}
 
-    --heading-color-primary: #000;
-    --paragraph-color-primary: #000;
-    --anchor-color-primary: #222;
-    --heading-color-secondary: #fff;
-    --paragraph-color-secondary: #fff;
+$heading-color-primary: #000;
+$paragraph-color-primary: #000;
+$anchor-color-primary: #222;
+$heading-color-secondary: #fff;
+$paragraph-color-secondary: #fff;
+
+@mixin flexDisplay ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
 }
 
 /*-------------GENERAL RULES-------------*/
@@ -231,7 +238,7 @@ a {
 .anchor {
     text-decoration: none;
     font-weight: 400;
-    color: var(--anchor-color-primary);
+    color: $anchor-color-primary;
     font-size: var(--p-font-size);
     letter-spacing: -0.075em;
     word-spacing: -0.2em;
@@ -367,7 +374,7 @@ a {
 
 .hero-heading {
     font-size: 7rem;
-    color: var(--heading-color-primary);
+    color: $heading-color-primary;
     line-height: var(--spacing--7rem);
     letter-spacing:  calc( -1 * var(--spacing--0-5rem) );
     word-spacing: -28px;
@@ -420,10 +427,7 @@ a {
 }
 
 .partners-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flexDisplay(column);
 }
 
 /*----MEDIA-QUERIES----*/
