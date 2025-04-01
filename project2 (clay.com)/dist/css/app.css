@@ -420,6 +420,17 @@ a {
   width: 10px;
 }
 
+.logo-container-with-after::after {
+  content: "Case study";
+  color: var(--color--blueberry-600);
+  background-color: var(--color--blueberry-200);
+  padding: 5px;
+  font-weight: 900;
+  border-radius: 5.5rem;
+  word-spacing: 0px;
+  position: absolute;
+}
+
 .partners-logo {
   width: 100%;
 }
