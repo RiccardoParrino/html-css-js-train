@@ -342,7 +342,6 @@ a {
     margin: 0px var(--spacing--4-5rem);
     margin-top: 72px;
     border-radius: var(--radius--large);
-    overflow: hidden;
 }
 
 .hero-container {
@@ -383,22 +382,35 @@ a {
     word-spacing: calc( -1 * var(--spacing--0-5rem) );
 }
 
-.hero-background-img-left {
-    position: absolute;
-    width: 720px;
-    top: 384px;
-    left: -356px;
-}
-
-.hero-background-img-right {
-    position: absolute;
-    width: 720px;
-    top: 80px;
-    right: -512px;
-}
-
-.hero-wrapper {
+.background-left-img-container {
     overflow: hidden;
+    height: 256px;
+    width: 256px;
+    position: absolute;
+    top: 450px;
+    left: -50px;
+}
+
+.background-img-left {
+    position: absolute;
+    max-width: 256px;
+    left: -100px;
+}
+
+.background-right-img-container {
+    overflow: hidden;
+    height: 800px;
+    width: 350px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+
+.background-img-right {
+    position: absolute;
+    max-width: 800px;
+    top: 20px;
+    left: 100px;
 }
 
 /*----MEDIA-QUERIES----*/
