@@ -15,11 +15,14 @@ body {
     border: 2px solid #555;
     padding: 8px;
     min-height: 100vh;
+    row-gap: 16px;
+    column-gap: 4px;
 }
 
 header {
     border: 2px solid #dd0808;
     background-color: #ff6666;
+    grid-column-end: span 2;
 }
 
 aside {
@@ -35,4 +38,7 @@ main {
 footer {
     border: 2px solid #c4be0d;
     background-color: #f7f380;
+    grid-column-end: span 2;
 }
+
+/*only absolute value for row-gap and column gap*/
