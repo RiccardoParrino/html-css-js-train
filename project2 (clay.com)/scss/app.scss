@@ -425,6 +425,7 @@ a {
 
 /*----PARTNERS----*/
 .partners{
+    margin-bottom: 100px;
 }
 
 .partners-container {
@@ -449,6 +450,7 @@ a {
 .partners-logos-container {
     display: grid;
     max-width: 1200px;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(9, 1fr);
     column-gap: 16px;
     row-gap: 16px;
@@ -474,7 +476,11 @@ a {
     font-weight: 900;
     border-radius: 5.5rem;
     word-spacing: 0px;
-    position: absolute;
+}
+
+.logo-cover{
+    width: fit-content;
+    padding: auto;
 }
 
 .partners-logo {

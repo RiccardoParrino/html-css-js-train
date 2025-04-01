@@ -380,6 +380,10 @@ a {
 }
 
 /*----PARTNERS----*/
+.partners {
+  margin-bottom: 100px;
+}
+
 .partners-container {
   display: flex;
   justify-content: center;
@@ -408,6 +412,7 @@ a {
 .partners-logos-container {
   display: grid;
   max-width: 1200px;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(9, 1fr);
   -moz-column-gap: 16px;
        column-gap: 16px;
@@ -428,7 +433,12 @@ a {
   font-weight: 900;
   border-radius: 5.5rem;
   word-spacing: 0px;
-  position: absolute;
+}
+
+.logo-cover {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: auto;
 }
 
 .partners-logo {
