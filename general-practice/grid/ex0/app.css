@@ -224,39 +224,39 @@ footer {
     min-height: 100vh;
 }
 
-.navbar {
+.zl-navbar {
     background-color: #6f09e5;
 }
 
-.hero {
+.zl-hero {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100%;
 }
 
-.hero-content {
+.zl-hero-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
-.hero-content {
+.zl-hero-content {
     background-color: #ed000093;
 }
 
-.hero-buttons {
+.zl-hero-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.left-button {
+.zl-left-button {
     background-color: #670a0a93;
 }
 
-.right-button {
+.zl-right-button {
     background-color: #ff444493;
 }
 
-.hero-leftbar {
+.zl-hero-leftbar {
     background-color: #183800;
 }
 
