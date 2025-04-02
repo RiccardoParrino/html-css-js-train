@@ -260,4 +260,14 @@ footer {
     background-color: #183800;
 }
 
+/*----Block Layout----*/
+.block-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100vh;
+    gap: 10px;
+}
 
+.block-layout-element {
+    border: black 5px solid;
+}
