@@ -311,3 +311,22 @@ footer {
 .fil-right-paragraph {
     text-align: center;
 }
+
+/*----Masonry  Layout----*/
+.masonry-layout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: fit-content;
+    background-color: #183800;
+    column-gap: 4px;
+}
+
+.col {
+    height: 100%;
+}
+
+.ml-element {
+    border-radius: 48px;
+    border: black 10px solid;
+    margin-bottom: 4px;
+}
