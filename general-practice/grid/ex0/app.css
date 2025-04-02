@@ -271,3 +271,43 @@ footer {
 .block-layout-element {
     border: black 5px solid;
 }
+
+/*----Featured Image Layout----*/
+.fil-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0ba7c6;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.fil-left-grid {
+    background-color: #ff0000;
+    width: 100%;
+    height: 100%;
+}
+
+.fil-left-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fil-right-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fil-right-header {
+    text-align: center;
+}
+
+.fil-right-paragraph {
+    text-align: center;
+}
