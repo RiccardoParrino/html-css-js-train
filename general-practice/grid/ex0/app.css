@@ -216,3 +216,48 @@ footer {
     border: 2px solid #c4be0d;
     background-color: #ff12b4;
 }
+
+/*----Z-Shape Layout----*/
+.z-layout-section {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #6f09e5;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hero-content {
+    background-color: #ed000093;
+}
+
+.hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-button {
+    background-color: #670a0a93;
+}
+
+.right-button {
+    background-color: #ff444493;
+}
+
+.hero-leftbar {
+    background-color: #183800;
+}
+
+
