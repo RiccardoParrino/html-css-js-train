@@ -184,6 +184,7 @@ $paragraph-color-secondary: #fff;
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -511,7 +512,9 @@ a {
 }
 
 /*----CTA----*/
-.cta {}
+.cta {
+    padding-bottom: 100px;
+}
 
 .cta-container {
     display: flex;
@@ -519,6 +522,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 1200px;
+    padding: 0px 32px;
     margin: 0 auto;
 }
 
@@ -527,10 +531,28 @@ a {
 }
 
 .cta-description {
-    font-size: var(--h3-font-size);
+    font-size: 45px;
     padding-bottom: 32px;
+    word-spacing: -14px;
+    letter-spacing: -3px;
+}
+
+.cta-gray-description {
+    color: var(--color--grey-600);
+}
+
+.cta-image-container {
+    width: 75%;
 }
 
 .cta-image {
     width: 100%;
 }
+
+.cta-button {
+    font-size: 16px;
+    text-decoration: none;
+    word-spacing: -6px;
+    letter-spacing: -1px;
+}
+
