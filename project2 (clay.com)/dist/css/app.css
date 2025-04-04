@@ -855,8 +855,7 @@ a {
 /*----PRODUCT----*/
 .product {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 
 .product-header {
@@ -865,6 +864,7 @@ a {
   align-items: center;
   flex-direction: row;
   gap: 32px;
+  margin-bottom: 100px;
 }
 
 .product-header-description-container {
@@ -940,4 +940,70 @@ a {
 .product-mini-card-image {
   width: 100%;
   padding-bottom: 16px;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.product-mini-card-testimonial {
+  font-size: 20px;
+  word-spacing: -6px;
+  padding-bottom: 4px;
+}
+
+.product-mini-card-company {
+  font-size: 12px;
+  margin-top: -20px;
+  font-weight: 400;
+}
+
+.product-mini-card-author {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-mini-card-improves {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-mini-card-badge {
+  font-size: 18px;
+}
+
+.product-mini-card-descr {
+  font-size: 14px;
+  word-spacing: -4px;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+.product-mini-card-hr {
+  width: 100%;
+  color: #000;
+}
+
+.product-mini-footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-mini-footer-logo {
+  width: 160px;
+}
+
+.product-mini-card-footer-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 16px;
+  letter-spacing: -1px;
+  word-spacing: -6px;
 }/*# sourceMappingURL=app.css.map */
