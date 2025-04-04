@@ -49,6 +49,7 @@
     --color--lemon-100: #fff8d2;
 
     /* Matcha */
+    --color--matcha-800: #043822;
     --color--matcha-700: #02693e;
     --color--matcha-600: #078a52;
     --color--matcha-500: #0dac65;
@@ -693,6 +694,8 @@ a {
         font-size: 30px;
         border: var(--color--grey-800) 1px solid;
         padding: 16px 20px;
+        min-width: 60px;
+        text-align: center;
     }
 
     .feature-footer-descr-paragraph {
@@ -771,4 +774,86 @@ a {
 
 .width-200 {
     width: 200px
+}
+
+.bg-dark-green {
+    @extend .button-secondary;
+    color: white;
+    font-size: 30px;
+    border: var(--color--grey-800) 1px solid;
+    padding: 16px 20px;
+    min-width: 60px;
+    text-align: center;
+    background-color: var(--color--matcha-800);
+}
+
+.feature-img-container {
+    background-color: var(--color--matcha-800);
+    border-radius: 32px;
+    width: 100%;
+}
+
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.bottom-feature-img {
+    background-color: white;
+    position: relative;
+    bottom: 0px;
+    top: 150px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.feature-transparent-img-1 {
+    position: relative;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    left: 400px;
+    width: 20%;
+}
+
+.feature-transparent-img-2 {
+    position: relative;
+    bottom: 0px;
+    top: 70px;
+    right: 0px;
+    left: -70px;
+    width: 20%;
+}
+
+.feature-tsunoda-img {
+    position: relative;
+    bottom: 0px;
+    top: 100px;
+    right: -100px;
+    left: 0px;
+    width: 35%;
+}
+
+.feature-melissa-img {
+    position: relative;
+    bottom: 0px;
+    top: 120px;
+    right: -100px;
+    left: 120px;
+    width: 35%;
+    z-index: 3;
+}
+
+.feature-peter-img {
+    position: relative;
+    bottom: 0px;
+    top: 100px;
+    right: 10px;
+    left: 40px;
+    width: 35%;
+    z-index: 0;
 }
