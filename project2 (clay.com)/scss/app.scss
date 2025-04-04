@@ -947,16 +947,25 @@ a {
     justify-content: center;
     align-items: start;
     width: 100%;
-    padding: 32px;  
+    padding: 32px;
     border-radius: 32px;
+    gap: 16px;
 }
 
-.bg-secondary {
-    background-color: var(--section-background-color-secondary);
+.product-mini-card-header {
+    letter-spacing: -8px;
+    word-spacing: -12px;
+    line-height: 48px;
 }
 
-.product-card-image {
+.product-mini-card-label {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.product-mini-card-image {
     width: 100%;
+    padding-bottom: 16px;
 }
 
 .product-full-card-container {}
