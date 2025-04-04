@@ -857,3 +857,47 @@ a {
     width: 35%;
     z-index: 0;
 }
+
+/*----PRODUCT----*/
+.product {}
+
+.product-header{
+    @include flexDisplay(row);
+    gap: 32px;
+}
+
+.product-header-description-container{
+    @include flexDisplay(column);
+    align-items: start;
+    row-gap: 16px;
+    width: 100%;
+}
+
+.product-header-h2{
+    letter-spacing: -6px;
+    word-spacing: -16px;
+    line-height: 48px;
+}
+
+.product-paragraph{
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-size: 16px;
+}
+
+.product-button{
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-size: 12px;
+}
+
+.product-img-container{
+    width: 100%;
+}
+.product-img{
+    width: 100%;
+}
+
+.product-mini-card-container {}
+
+.product-full-card-container {}
