@@ -721,4 +721,13 @@ a {
 
 .width-160 {
   width: 160px;
+}
+
+/*----feature-3----*/
+.bg-tertiary-color {
+  background-color: var(--section-background-color-forth);
+}
+
+.width-200 {
+  width: 200px;
 }/*# sourceMappingURL=app.css.map */
