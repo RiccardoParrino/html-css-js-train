@@ -607,7 +607,7 @@ a {
     letter-spacing: -1px;
 }
 
-/*----feature-1----*/
+/*----feature section----*/
 .feature {
     background-color: var(--section-background-color-tertiary);
 }
@@ -725,3 +725,41 @@ a {
         word-spacing: -6px;
     }
 }
+
+/*----feature-2----*/
+.bg-secondary-color {
+    background-color: var(--section-background-color-secondary);
+}
+
+.feature-2-footer-descr-container {
+    background-color: var(--section-background-color-secondary);
+    padding: 16px;
+    border: #000 1px solid;
+    border-radius: 7px;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.ls-1 {
+    letter-spacing: -1px;
+}
+
+.white-border-1 {
+    border: white 1px solid;
+}
+
+.feature-2-footer-author {
+    font-size: 16px;
+    word-spacing: -4px;
+    padding-bottom: 3px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.width-160 {
+    width: 160px
+} 
