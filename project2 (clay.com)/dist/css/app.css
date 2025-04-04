@@ -493,7 +493,7 @@ a {
 /*----feature-button-section----*/
 .feature-button-index {
   position: sticky;
-  top: auto;
+  top: 100px;
 }
 
 .feature-button-index-container {
