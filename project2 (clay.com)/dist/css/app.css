@@ -226,7 +226,7 @@ a {
   width: 11px;
 }
 
-.button-secondary, .feature-1-descr-container .disabled-button {
+.button-secondary, .feature-descr-container .disabled-button {
   padding: 10px 14px;
   border: var(--color--oat-200) 1px solid;
   background-color: white;
@@ -579,11 +579,11 @@ a {
 }
 
 /*----feature-1----*/
-.feature-1 {
+.feature {
   background-color: var(--section-background-color-tertiary);
 }
 
-.feature-1-container {
+.feature-container {
   max-width: 1200px;
   padding: 128px 32px;
   margin: 0px auto;
@@ -595,17 +595,17 @@ a {
        column-gap: 24px;
 }
 
-.feature-1-video-container {
+.feature-video-container {
   width: 100%;
   border-radius: 32px;
 }
 
-.feature-1-video {
+.feature-video {
   width: 100%;
   border-radius: 44px;
 }
 
-.feature-1-descr-container {
+.feature-descr-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -613,24 +613,24 @@ a {
   color: white;
   width: 100%;
 }
-.feature-1-descr-container .feature-1-descr-h3 {
+.feature-descr-container .feature-descr-h3 {
   word-spacing: -9px;
   letter-spacing: -1px;
   padding-bottom: 16px;
 }
-.feature-1-descr-container .feature-1-descr-paragraph, .feature-1-descr-container .feature-footer-descr-paragraph {
+.feature-descr-container .feature-descr-paragraph, .feature-descr-container .feature-footer-descr-paragraph {
   font-size: 16px;
   word-spacing: -4px;
   padding-bottom: 20px;
 }
-.feature-1-descr-container .feature-1-list {
+.feature-descr-container .feature-list {
   font-size: 16px;
   word-spacing: -4px;
   list-style: none;
   padding-bottom: 32px;
   gap: 16px;
 }
-.feature-1-descr-container .feature-1-list p::before {
+.feature-descr-container .feature-list p::before {
   content: "";
   padding-right: 10px;
   margin-right: 10px;
@@ -641,11 +641,11 @@ a {
   border-radius: 20px;
   background-color: var(--color--oat-900);
 }
-.feature-1-descr-container .feature-1-list p {
+.feature-descr-container .feature-list p {
   font-size: 16px;
   padding-bottom: 12px;
 }
-.feature-1-descr-container .feature-footer-descr-container {
+.feature-descr-container .feature-footer-descr-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -653,30 +653,30 @@ a {
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-.feature-1-descr-container .disabled-button {
+.feature-descr-container .disabled-button {
   background-color: var(--color--blueberry-500);
   color: white;
   font-size: 30px;
   border: var(--color--grey-800) 1px solid;
   padding: 16px 20px;
 }
-.feature-1-descr-container .feature-footer-descr-paragraph {
+.feature-descr-container .feature-footer-descr-paragraph {
   padding-bottom: 0px;
 }
-.feature-1-descr-container .feature-footer-horizontal-rule {
+.feature-descr-container .feature-footer-horizontal-rule {
   width: 100%;
 }
-.feature-1-descr-container .feature-footer-container {
+.feature-descr-container .feature-footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   width: 100%;
 }
-.feature-1-descr-container .feature-footer-logo {
+.feature-descr-container .feature-footer-logo {
   width: 100px;
 }
-.feature-1-descr-container .feature-footer-button {
+.feature-descr-container .feature-footer-button {
   background-color: transparent;
   color: white;
   border: none;

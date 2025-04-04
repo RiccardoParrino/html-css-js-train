@@ -608,11 +608,11 @@ a {
 }
 
 /*----feature-1----*/
-.feature-1 {
+.feature {
     background-color: var(--section-background-color-tertiary);
 }
 
-.feature-1-container {
+.feature-container {
     max-width: 1200px;
     padding: 128px 32px;
     margin: 0px auto;
@@ -623,17 +623,17 @@ a {
     column-gap: 24px;
 }
 
-.feature-1-video-container {
+.feature-video-container {
     width: 100%;
     border-radius: 32px;
 }
 
-.feature-1-video {
+.feature-video {
     width: 100%;
     border-radius: 44px;
 }
 
-.feature-1-descr-container {
+.feature-descr-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -641,19 +641,19 @@ a {
     color: white;
     width: 100%;
 
-    .feature-1-descr-h3 {
+    .feature-descr-h3 {
         word-spacing: -9px;
         letter-spacing: -1px;
         padding-bottom: 16px;
     }
 
-    .feature-1-descr-paragraph {
+    .feature-descr-paragraph {
         font-size: 16px;
         word-spacing: -4px;
         padding-bottom: 20px;
     }
 
-    .feature-1-list {
+    .feature-list {
         font-size: 16px;
         word-spacing: -4px;
         list-style: none;
@@ -661,7 +661,7 @@ a {
         gap: 16px;
     }
 
-    .feature-1-list p::before {
+    .feature-list p::before {
         content: "";
         padding-right: 10px;
         margin-right: 10px;
@@ -673,7 +673,7 @@ a {
         background-color: var(--color--oat-900);
     }
 
-    .feature-1-list p{
+    .feature-list p{
         font-size: 16px;
         padding-bottom: 12px;
     }
@@ -696,7 +696,7 @@ a {
     }
 
     .feature-footer-descr-paragraph {
-        @extend .feature-1-descr-paragraph;
+        @extend .feature-descr-paragraph;
         padding-bottom: 0px;
     }
 
