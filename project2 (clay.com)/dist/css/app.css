@@ -1372,8 +1372,16 @@ a {
 
 /*----background-img----*/
 .footer {
-  background-image: url("../img/background/img-clay-footer-garden.png");
-  padding-top: 100px;
+  background-color: white;
+  padding-top: 128px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 64px;
 }
 
 .footer-badge {
@@ -1381,6 +1389,7 @@ a {
   margin: 0px auto;
   background-color: var(--color--oat-100);
   border-radius: 32px;
+  padding: 32px;
 }
 
 .footer-header-container {
@@ -1407,6 +1416,27 @@ a {
   border: black 1px solid;
 }
 
+.footer-head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-head-container h3 {
+  padding-bottom: 16px;
+}
+.footer-head-container img {
+  width: 128px;
+}
+
+.footer-link-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 48px;
+}
+
 .footer-link-container {
   display: flex;
   flex-direction: row;
@@ -1416,6 +1446,7 @@ a {
        column-gap: 16px;
   max-width: 1200px;
   margin: 0px auto;
+  padding-top: 64px;
 }
 .footer-link-container a {
   text-decoration: none;
