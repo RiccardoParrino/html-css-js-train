@@ -1226,7 +1226,7 @@ a {
 
 .customer-wrapper {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     column-gap: 16px;
 }
 
@@ -1275,4 +1275,8 @@ a {
         width: 48px;
     }
 
+}
+
+.customer-card:hover + .customer-card {
+    color: move-horizontally();
 }

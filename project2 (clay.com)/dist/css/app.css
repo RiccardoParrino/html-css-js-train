@@ -1286,7 +1286,7 @@ a {
 
 .customer-wrapper {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
@@ -1329,4 +1329,8 @@ a {
 }
 .customer-card .customer-footer-logo {
   width: 48px;
+}
+
+.customer-card:hover + .customer-card {
+  color: move-horizontally();
 }/*# sourceMappingURL=app.css.map */
