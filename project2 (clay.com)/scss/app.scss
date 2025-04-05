@@ -1324,6 +1324,13 @@ a {
     padding-top: 100px;
 }
 
+.footer-badge {
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: var(--color--oat-100);
+    border-radius: 32px;
+}
+
 .footer-header-container {
     max-width: 1200px;
     margin: 0px auto;
@@ -1355,15 +1362,20 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     column-gap: 16px;
     @include mixin.center(1200px);
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .link-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     row-gap: 16px;
 }
