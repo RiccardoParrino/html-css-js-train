@@ -1317,3 +1317,53 @@ a {
 .customer-card:hover + .customer-card {
     color: move-horizontally();
 }
+
+/*----background-img----*/
+.footer {
+    background-image: url("../img/background/img-clay-footer-garden.png");
+    padding-top: 100px;
+}
+
+.footer-header-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+
+    h2 {
+        line-height: 56px;
+        padding-bottom: 32px;
+    }
+
+    p {
+        padding-bottom: 32px;
+    }
+
+    .footer-button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 16px;
+
+        .button-secondary {
+            border: black 1px solid;
+        }
+    }
+}
+
+.footer-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    @include mixin.center(1200px);
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+}

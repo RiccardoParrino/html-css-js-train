@@ -1368,4 +1368,53 @@ a {
 
 .customer-card:hover + .customer-card {
   color: move-horizontally();
+}
+
+/*----background-img----*/
+.footer {
+  background-image: url("../img/background/img-clay-footer-garden.png");
+  padding-top: 100px;
+}
+
+.footer-header-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+.footer-header-container h2 {
+  line-height: 56px;
+  padding-bottom: 32px;
+}
+.footer-header-container p {
+  padding-bottom: 32px;
+}
+.footer-header-container .footer-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.footer-header-container .footer-button-container .button-secondary, .footer-header-container .footer-button-container .feature-descr-container .disabled-button, .feature-descr-container .footer-header-container .footer-button-container .disabled-button, .footer-header-container .footer-button-container .bg-dark-green, .footer-header-container .footer-button-container .badge-second, .footer-header-container .footer-button-container .badge-third, .footer-header-container .footer-button-container .badge-fourth, .footer-header-container .footer-button-container .badge-fifth, .footer-header-container .footer-button-container .badge-sixth, .footer-header-container .footer-button-container .customer-header-container .customer-button-container button, .customer-header-container .customer-button-container .footer-header-container .footer-button-container button {
+  border: black 1px solid;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
 }/*# sourceMappingURL=app.css.map */
