@@ -240,7 +240,7 @@
   background-color: var(--section-background-color-grey);
 }
 
-.bg-second, .badge-second {
+.bg-second {
   background-color: var(--section-background-color-secondary);
 }
 
@@ -248,15 +248,15 @@
   background-color: var(--section-background-color-tertiary);
 }
 
-.bg-fourth, .badge-fourth {
+.bg-fourth {
   background-color: var(--section-background-color-forth);
 }
 
-.bg-fifth, .badge-fifth {
+.bg-fifth {
   background-color: var(--section-background-color-fifth);
 }
 
-.bg-sixth, .badge-sixth {
+.bg-sixth {
   background-color: var(--section-background-color-sixth);
 }
 
@@ -847,7 +847,7 @@ a {
 }
 
 /*----feature-3----*/
-.bg-tertiary-color, .badge-third {
+.bg-tertiary-color {
   background-color: var(--section-background-color-forth);
 }
 
@@ -863,6 +863,26 @@ a {
   min-width: 60px;
   text-align: center;
   background-color: var(--color--matcha-800);
+}
+
+.badge-second {
+  background-color: var(--section-background-color-secondary);
+}
+
+.badge-third {
+  background-color: var(--section-background-color-tertiary);
+}
+
+.badge-fourth {
+  background-color: var(--section-background-color-forth);
+}
+
+.badge-fifth {
+  background-color: var(--section-background-color-fifth);
+}
+
+.badge-sixth {
+  background-color: var(--section-background-color-sixth);
 }
 
 .feature-img-container {

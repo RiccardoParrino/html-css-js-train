@@ -817,27 +817,27 @@ a {
 
 .badge-second {
     @extend .bg-dark-green;
-    @extend .bg-second;
+    background-color: var(--section-background-color-secondary);
 }
 
 .badge-third {
     @extend .bg-dark-green;
-    @extend .bg-tertiary-color;
+    background-color: var(--section-background-color-tertiary);
 }
 
 .badge-fourth {
     @extend .bg-dark-green;
-    @extend .bg-fourth;
+    background-color: var(--section-background-color-forth);
 }
 
 .badge-fifth {
     @extend .bg-dark-green;
-    @extend .bg-fifth;
+    background-color: var(--section-background-color-fifth);
 }
 
 .badge-sixth {
     @extend .bg-dark-green;
-    @extend .bg-sixth;
+    background-color: var(--section-background-color-sixth);
 }
 
 .feature-img-container {
