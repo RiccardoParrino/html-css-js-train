@@ -1372,7 +1372,9 @@ a {
 
 /*----background-img----*/
 .footer {
-  background-color: white;
+  background-image: url("../../img/background/img-clay-footer-garden.png"); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center center;
   padding-top: 128px;
 }
 
