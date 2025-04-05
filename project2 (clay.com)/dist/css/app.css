@@ -240,7 +240,7 @@
   background-color: var(--section-background-color-grey);
 }
 
-.bg-second {
+.bg-second, .badge-second {
   background-color: var(--section-background-color-secondary);
 }
 
@@ -248,15 +248,15 @@
   background-color: var(--section-background-color-tertiary);
 }
 
-.bg-fourth {
+.bg-fourth, .badge-fourth {
   background-color: var(--section-background-color-forth);
 }
 
-.bg-fifth {
+.bg-fifth, .badge-fifth {
   background-color: var(--section-background-color-fifth);
 }
 
-.bg-sixth {
+.bg-sixth, .badge-sixth {
   background-color: var(--section-background-color-sixth);
 }
 
@@ -347,7 +347,7 @@ a {
   width: 11px;
 }
 
-.button-secondary, .bg-dark-green, .feature-descr-container .disabled-button {
+.button-secondary, .bg-dark-green, .badge-sixth, .badge-fifth, .badge-fourth, .badge-third, .badge-second, .feature-descr-container .disabled-button {
   padding: 10px 14px;
   border: var(--color--oat-200) 1px solid;
   background-color: white;
@@ -847,7 +847,7 @@ a {
 }
 
 /*----feature-3----*/
-.bg-tertiary-color {
+.bg-tertiary-color, .badge-third {
   background-color: var(--section-background-color-forth);
 }
 
@@ -855,7 +855,7 @@ a {
   width: 200px;
 }
 
-.bg-dark-green {
+.bg-dark-green, .badge-sixth, .badge-fifth, .badge-fourth, .badge-third, .badge-second {
   color: white;
   font-size: 30px;
   border: var(--color--grey-800) 1px solid;
@@ -1208,7 +1208,7 @@ a {
   word-spacing: -16px;
   letter-spacing: -1px;
 }
-.security-header-container .button-secondary, .security-header-container .feature-descr-container .disabled-button, .feature-descr-container .security-header-container .disabled-button, .security-header-container .bg-dark-green {
+.security-header-container .button-secondary, .security-header-container .feature-descr-container .disabled-button, .feature-descr-container .security-header-container .disabled-button, .security-header-container .bg-dark-green, .security-header-container .badge-second, .security-header-container .badge-third, .security-header-container .badge-fourth, .security-header-container .badge-fifth, .security-header-container .badge-sixth {
   border: black 1px solid;
   font-weight: 700;
   font-size: 16px;
@@ -1257,4 +1257,56 @@ a {
 
 .security-element-img {
   width: 210px;
+}
+
+/*----CUSTOMER----*/
+.customer {
+  margin-bottom: 1000px;
+}
+
+.customer-wrapper {
+  display: flex;
+  overflow-x: auto;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.customer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  width: 600px;
+  height: 400px;
+  border: black 1px solid;
+  flex-shrink: 0; /* Prevents cards from shrinking */
+}
+.customer-card p {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+}
+.customer-card .customer-card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.customer-card .customer-card-footer .customer-card-footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.customer-card .customer-card-footer .customer-card-footer-left .customer-reference {
+  text-align: start;
+}
+.customer-card .customer-img {
+  width: 48px;
+}
+.customer-card .customer-footer-logo {
+  width: 48px;
 }/*# sourceMappingURL=app.css.map */

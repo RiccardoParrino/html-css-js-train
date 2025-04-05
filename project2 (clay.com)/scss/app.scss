@@ -815,6 +815,31 @@ a {
     background-color: var(--color--matcha-800);
 }
 
+.badge-second {
+    @extend .bg-dark-green;
+    @extend .bg-second;
+}
+
+.badge-third {
+    @extend .bg-dark-green;
+    @extend .bg-tertiary-color;
+}
+
+.badge-fourth {
+    @extend .bg-dark-green;
+    @extend .bg-fourth;
+}
+
+.badge-fifth {
+    @extend .bg-dark-green;
+    @extend .bg-fifth;
+}
+
+.badge-sixth {
+    @extend .bg-dark-green;
+    @extend .bg-sixth;
+}
+
 .feature-img-container {
     background-color: var(--color--matcha-800);
     border-radius: 32px;
@@ -1192,4 +1217,62 @@ a {
 
 .security-element-img {
     width: 210px;
+}
+
+/*----CUSTOMER----*/
+.customer {
+    margin-bottom: 1000px;
+}
+
+.customer-wrapper {
+    display: flex;
+    overflow-x: auto;
+    column-gap: 16px;
+}
+
+.customer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 600px;
+    height: 400px;
+    border: black 1px solid;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+
+    p {
+        text-align: start;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .customer-card-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .customer-card-footer-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 16px;
+        
+            .customer-reference {
+                text-align: start;
+            }
+        }
+        
+    }
+
+    .customer-img {
+        width: 48px;
+    }
+
+    .customer-footer-logo {
+        width: 48px;
+    }
+
 }
