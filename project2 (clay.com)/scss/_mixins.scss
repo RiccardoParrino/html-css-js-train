@@ -20,3 +20,8 @@
     left: $left;
     bottom: $bottom;
 }
+
+@mixin center($width-value) {
+    max-width: $width-value;
+    margin: 0px auto;
+}

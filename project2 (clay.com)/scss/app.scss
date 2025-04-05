@@ -1221,7 +1221,24 @@ a {
 
 /*----CUSTOMER----*/
 .customer {
-    margin-bottom: 1000px;
+    padding-top: 128px;
+    background-color: var(--color--oat-100);
+}
+
+.customer-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+    @include mixin.center(1200px);
+
+    h2 {
+        letter-spacing: -1px;
+        word-spacing: -16px;
+        font-size: 42px;
+        line-height: 44px;
+    }
 }
 
 .customer-wrapper {
