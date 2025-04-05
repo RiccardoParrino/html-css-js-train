@@ -923,7 +923,6 @@ a {
   width: 100%;
   padding: 32px;
   border-radius: 32px;
-  gap: 16px;
 }
 
 .product-mini-card-header {
@@ -944,6 +943,10 @@ a {
 
 .flex-space-between {
   justify-content: space-between;
+}
+
+.product-mini-card-header-container {
+  margin-bottom: 12px;
 }
 
 .product-mini-card-testimonial {
@@ -969,6 +972,14 @@ a {
   font-size: 12px;
   margin-top: -20px;
   font-weight: 400;
+}
+
+.product-mini-card-badge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
 }
 
 .product-mini-card-improves {
