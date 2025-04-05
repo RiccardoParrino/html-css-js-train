@@ -347,7 +347,7 @@ a {
   width: 11px;
 }
 
-.button-secondary, .bg-dark-green, .badge-sixth, .badge-fifth, .badge-fourth, .badge-third, .badge-second, .feature-descr-container .disabled-button {
+.button-secondary, .customer-header-container .customer-button-container button, .bg-dark-green, .badge-sixth, .badge-fifth, .badge-fourth, .badge-third, .badge-second, .feature-descr-container .disabled-button {
   padding: 10px 14px;
   border: var(--color--oat-200) 1px solid;
   background-color: white;
@@ -1228,7 +1228,7 @@ a {
   word-spacing: -16px;
   letter-spacing: -1px;
 }
-.security-header-container .button-secondary, .security-header-container .feature-descr-container .disabled-button, .feature-descr-container .security-header-container .disabled-button, .security-header-container .bg-dark-green, .security-header-container .badge-second, .security-header-container .badge-third, .security-header-container .badge-fourth, .security-header-container .badge-fifth, .security-header-container .badge-sixth {
+.security-header-container .button-secondary, .security-header-container .customer-header-container .customer-button-container button, .customer-header-container .customer-button-container .security-header-container button, .security-header-container .feature-descr-container .disabled-button, .feature-descr-container .security-header-container .disabled-button, .security-header-container .bg-dark-green, .security-header-container .badge-second, .security-header-container .badge-third, .security-header-container .badge-fourth, .security-header-container .badge-fifth, .security-header-container .badge-sixth {
   border: black 1px solid;
   font-weight: 700;
   font-size: 16px;
@@ -1299,6 +1299,24 @@ a {
   word-spacing: -16px;
   font-size: 42px;
   line-height: 44px;
+}
+.customer-header-container .customer-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+.customer-header-container .customer-button-container button {
+  background-color: white;
+  color: black;
+  font-size: 28px;
+  border: var(--color--grey-800) 1px solid;
+  padding: 6px 10px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 100;
 }
 
 .customer-wrapper {
