@@ -2,10 +2,12 @@
 
 .product-full-card-container {
     @include mixin.flexDisplay(row);
+    align-items: start;
     grid-column: 1 / span 2;
     background-color: var(--color--oat-200);
     border-radius: 32px;
     padding: 32px;
+    gap: 64px;
 }
 
 .description-container {
@@ -13,7 +15,9 @@
     height: 100%;
 }
 
-.description-header-container {}
+.description-header-container {
+    padding-bottom: 26px;
+}
 
 .full-card-header {
     letter-spacing: -3px;
@@ -26,9 +30,13 @@
     color: var(--color--grey-600);
 }
 
-.description-paragraph-container {}
+.description-paragraph-container {
 
-.full-card-paragraph {}
+}
+
+.full-card-paragraph {
+    font-size: 14px;
+}
 
 .illustration-container {
     background-color: var(--color--oat-400);
@@ -58,4 +66,12 @@
     p {
         font-size: 14px;
     }
+}
+
+#free-badge-1 {
+    @include mixin.relative_position (100,100,100,100);
+}
+
+#free-badge-2 {
+    @include mixin.relative_position (0,0,0,0);
 }

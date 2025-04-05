@@ -4,3 +4,19 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin relative_position ($top,$right,$left,$bottom) {
+    position: relative;
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+}
+
+@mixin absolute_position ($top,$right,$left,$bottom) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+}
