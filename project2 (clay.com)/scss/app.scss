@@ -82,6 +82,7 @@
     --color--oat-500: white;
     --color--oat-400: #dad4c8;
     --color--oat-200: #f3f2ed;
+    --color--oat-100: #f9f8f6;
     --color--oat-50: white;
 
     /* Pomegranate */
@@ -884,7 +885,8 @@ a {
 /*----PRODUCT----*/
 .product {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 0px auto;
+    margin-bottom: 100px;
 }
 
 .product-header{
@@ -931,7 +933,6 @@ a {
     grid-template-rows: 1fr 1fr;
     gap: 32px;
     max-width: 1200px;
-    height: 1000px;
     justify-items: center;
     align-items: center;
 }
@@ -1047,4 +1048,78 @@ a {
     font-size: 16px;
     letter-spacing: -1px;
     word-spacing: -6px;
+}
+
+.enterprise {
+    background-color: var(--color--oat-100);
+}
+
+.enterprise-header-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-bottom: 32px;
+}
+
+.enterprise-button-container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.enterprise-wrapper {
+    @include mixin.flexDisplay(row);
+    justify-content: start;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.enterprise-left {
+    width: 100%;
+    @include mixin.flexDisplay(column);
+    align-items: start;
+}
+
+.enterprise-description-container {
+    @include mixin.flexDisplay(column);
+    padding-bottom: 64px;
+}
+
+.enterprise-description-container {}
+
+.enterprise-description-header {
+    letter-spacing: -2px;
+    word-spacing: -12px;
+}
+
+.enterprise-description-paragraph {}
+
+.enterprise-testimonial-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    max-width: 400px;
+    padding: 16px;
+}
+
+.enterprise-testimonial-description p{
+    font-size: 14px;
+}
+
+.enterprise-testimonial-footer {
+    @include mixin.flexDisplay(row);
+    justify-content: space-between;
+}
+
+.enterprise-testimonial-logo-container {}
+
+.enterprise-testimonial-logo {
+    width: 48px;
+}
+
+.enterprise-right {
+    width: 100%;
+}
+
+.enterprise-img-container {
+    width: 100%;
 }

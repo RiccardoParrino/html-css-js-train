@@ -155,6 +155,7 @@
   --color--oat-500: white;
   --color--oat-400: #dad4c8;
   --color--oat-200: #f3f2ed;
+  --color--oat-100: #f9f8f6;
   --color--oat-50: white;
   /* Pomegranate */
   --color--pomegranate-700: #b21a3f;
@@ -938,7 +939,8 @@ a {
 /*----PRODUCT----*/
 .product {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 0px auto;
+  margin-bottom: 100px;
 }
 
 .product-header {
@@ -992,7 +994,6 @@ a {
   grid-template-rows: 1fr 1fr;
   gap: 32px;
   max-width: 1200px;
-  height: 1000px;
   justify-items: center;
   align-items: center;
 }
@@ -1108,4 +1109,84 @@ a {
   font-size: 16px;
   letter-spacing: -1px;
   word-spacing: -6px;
+}
+
+.enterprise {
+  background-color: var(--color--oat-100);
+}
+
+.enterprise-header-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-bottom: 32px;
+}
+
+.enterprise-button-container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.enterprise-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.enterprise-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+
+.enterprise-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 64px;
+}
+
+.enterprise-description-header {
+  letter-spacing: -2px;
+  word-spacing: -12px;
+}
+
+.enterprise-testimonial-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  max-width: 400px;
+  padding: 16px;
+}
+
+.enterprise-testimonial-description p {
+  font-size: 14px;
+}
+
+.enterprise-testimonial-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enterprise-testimonial-logo {
+  width: 48px;
+}
+
+.enterprise-right {
+  width: 100%;
+}
+
+.enterprise-img-container {
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */
