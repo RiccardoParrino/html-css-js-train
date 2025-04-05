@@ -4,15 +4,21 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-items: start;
   grid-column: 1/span 2;
   background-color: var(--color--oat-200);
   border-radius: 32px;
   padding: 32px;
+  gap: 64px;
 }
 
 .description-container {
   width: 100%;
   height: 100%;
+}
+
+.description-header-container {
+  padding-bottom: 26px;
 }
 
 .full-card-header {
@@ -24,6 +30,10 @@
 
 .grey-color {
   color: var(--color--grey-600);
+}
+
+.full-card-paragraph {
+  font-size: 14px;
 }
 
 .illustration-container {
@@ -53,6 +63,23 @@
 }
 .badge-container p {
   font-size: 14px;
+}
+
+#free-badge-1 {
+  position: absolute;
+  top: 200;
+  right: 100;
+  left: 200;
+  bottom: 100;
+  z-index: 2;
+}
+
+#free-badge-2 {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 :root {

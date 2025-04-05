@@ -69,7 +69,8 @@
 }
 
 #free-badge-1 {
-    @include mixin.relative_position (100,100,100,100);
+    @include mixin.absolute_position (200,100,200,100);
+    z-index: 2;
 }
 
 #free-badge-2 {
