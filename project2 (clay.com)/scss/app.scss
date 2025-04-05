@@ -1,3 +1,6 @@
+@use "mixins" as mixin;
+@use "full-card-style" as fcs;
+
 :root{    
     /* Black */
     --color--black: #000;
@@ -172,13 +175,6 @@ $paragraph-color-primary: #000;
 $anchor-color-primary: #222;
 $heading-color-secondary: #fff;
 $paragraph-color-secondary: #fff;
-
-@mixin flexDisplay ($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
 
 .bg-white {
     background-color: white;
@@ -467,12 +463,12 @@ a {
 }
 
 .partners-container {
-    @include flexDisplay(column);
+    @include mixin.flexDisplay(column);
     gap: 16px;
 }
 
 .partners-community {
-    @include flexDisplay(row);
+    @include mixin.flexDisplay(row);
     gap: 16px;
 }
 
@@ -490,20 +486,20 @@ a {
 }
 
 .partnert-community {
-    @include flexDisplay(row);
+    @include mixin.flexDisplay(row);
     gap: 16px;
 }
 .partners-community-left {
-    @include flexDisplay(row);
+    @include mixin.flexDisplay(row);
     gap: 4px;
 }
 
 .partners-community-right {
-    @include flexDisplay(row);
+    @include mixin.flexDisplay(row);
 }
 
 .partners-community-stars {
-    @include flexDisplay(row);
+    @include mixin.flexDisplay(row);
     gap: 2px;
 }
 
@@ -892,13 +888,13 @@ a {
 }
 
 .product-header{
-    @include flexDisplay(row);
+    @include mixin.flexDisplay(row);
     gap: 32px;
     margin-bottom: 100px;
 }
 
 .product-header-description-container{
-    @include flexDisplay(column);
+    @include mixin.flexDisplay(column);
     align-items: start;
     row-gap: 16px;
     width: 100%;
@@ -1052,5 +1048,3 @@ a {
     letter-spacing: -1px;
     word-spacing: -6px;
 }
-
-.product-full-card-container {}
