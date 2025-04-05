@@ -285,7 +285,7 @@ a {
 }
 
 .button-primary:not(:hover){
-    
+
 }
 
 .navbar-icon {
@@ -1126,4 +1126,70 @@ a {
 
 .enterprise-img-container {
     width: 100%;
+}
+
+/*----security-element----*/
+.security{
+    background-color: var(--color--oat-100);
+}
+
+.security-header-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 48px;
+
+    h2 {
+        font-size: 36px;
+        padding-bottom: 40px;
+        line-height: 32px;
+        word-spacing: -16px;
+        letter-spacing: -1px;
+    }
+
+    .button-secondary {
+        border: black  1px solid;
+        font-weight: 700;
+        font-size: 16px;   
+        letter-spacing: -2px;
+        word-spacing: -4px;
+    }
+}
+
+.security-element-container {
+    @include mixin.flexDisplay(row);
+    justify-content: space-around;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0px auto;
+    column-gap: 16px;
+}
+
+.security-element{
+    @include mixin.flexDisplay(column);
+    justify-content: space-around;
+    max-width: calc(80%/4);
+    height: 100%;
+    
+    h4 {
+        font-size: 16px;
+        letter-spacing: -1px;
+        padding-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 24px;
+        word-spacing: -4px;
+        letter-spacing: -1px;
+    }
+
+    .security-element-img {
+        padding-bottom: 16px;
+    }
+}
+
+.security-element-img {
+    width: 210px;
 }

@@ -1189,4 +1189,72 @@ a {
 
 .enterprise-img-container {
   width: 100%;
+}
+
+/*----security-element----*/
+.security {
+  background-color: var(--color--oat-100);
+}
+
+.security-header-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 48px;
+}
+.security-header-container h2 {
+  font-size: 36px;
+  padding-bottom: 40px;
+  line-height: 32px;
+  word-spacing: -16px;
+  letter-spacing: -1px;
+}
+.security-header-container .button-secondary, .security-header-container .feature-descr-container .disabled-button, .feature-descr-container .security-header-container .disabled-button, .security-header-container .bg-dark-green {
+  border: black 1px solid;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -2px;
+  word-spacing: -4px;
+}
+
+.security-element-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0px auto;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.security-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 20%;
+  height: 100%;
+}
+.security-element h4 {
+  font-size: 16px;
+  letter-spacing: -1px;
+  padding-bottom: 8px;
+}
+.security-element p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+  word-spacing: -4px;
+  letter-spacing: -1px;
+}
+.security-element .security-element-img {
+  padding-bottom: 16px;
+}
+
+.security-element-img {
+  width: 210px;
 }/*# sourceMappingURL=app.css.map */
