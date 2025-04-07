@@ -1180,6 +1180,7 @@ a {
 
 .enterprise {
   background-color: var(--color--oat-100);
+  padding-top: 128px;
 }
 
 .enterprise-header-container {
