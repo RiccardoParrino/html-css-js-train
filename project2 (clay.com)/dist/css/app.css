@@ -1384,7 +1384,7 @@ a {
   margin: 0px auto;
   background-color: var(--color--oat-100);
   border-radius: 32px;
-  padding: 32px;
+  padding: 64px 48px;
 }
 
 .footer-header-container {
@@ -1396,6 +1396,7 @@ a {
   row-gap: 16px;
   max-width: 1200px;
   margin: 0px auto;
+  margin-bottom: 312px;
 }
 .footer-header-container h2 {
   line-height: 56px;
@@ -1425,11 +1426,17 @@ a {
   font-size: 16px;
 }
 
+.footer-head-left h3 {
+  letter-spacing: -2px;
+  word-spacing: -10px;
+}
+
 .footer-head-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .footer-head-container h3 {
   padding-bottom: 16px;
@@ -1456,6 +1463,7 @@ a {
   max-width: 1200px;
   margin: 0px auto;
   padding-top: 64px;
+  width: 100%;
 }
 .footer-link-container a {
   text-decoration: none;
@@ -1468,4 +1476,14 @@ a {
   justify-content: center;
   align-items: start;
   row-gap: 16px;
+}
+.link-container h4 {
+  font-size: 16px;
+}
+.link-container a {
+  color: var(--color--grey-700);
+}
+.link-container a:hover {
+  color: #000;
+  transition: color linear 0.1s;
 }/*# sourceMappingURL=app.css.map */
