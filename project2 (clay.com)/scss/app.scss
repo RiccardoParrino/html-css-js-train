@@ -1147,6 +1147,7 @@ a {
     max-width: 1200px;
     margin: 0px auto;
     padding-bottom: 32px;
+    @include mixin.text-adjustment($letter-spacing:-4px, $word-spacing:-20px, $line-height:60px);
 }
 
 .enterprise-button-container {
