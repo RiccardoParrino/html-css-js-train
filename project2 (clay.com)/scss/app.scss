@@ -1222,7 +1222,6 @@ a {
 /*----CUSTOMER----*/
 .customer {
     background-color: var(--color--oat-100);
-    padding-bottom: 512px;
 }
 
 .customer-header-container {
@@ -1320,10 +1319,9 @@ a {
 
 /*----background-img----*/
 .footer {
-    background-image: url('../../img/background/img-clay-footer-garden.png');  /* Path to your image */
-    background-size: cover;                 /* Ensures the image covers the entire section */
-    background-position: center center;    
-    padding-top: 256px;
+    // background-image: url('../../img/background/img-clay-footer-garden.png');  /* Path to your image */
+    // background-size: cover;                 /* Ensures the image covers the entire section */
+    // background-position: center center;
 }
 
 .footer-wrapper {
@@ -1333,7 +1331,6 @@ a {
     align-items: center;
     row-gap: 64px;
     position: relative;
-    top: -312px;
 }
 
 .footer-badge {
@@ -1345,17 +1342,24 @@ a {
 }
 
 .footer-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 16px;
     max-width: 1200px;
     margin: 0px auto;
-    text-align: center;
-
     h2 {
         line-height: 56px;
-        padding-bottom: 32px;
+        word-spacing: -16px;
+        letter-spacing: -2px;
     }
 
     p {
-        padding-bottom: 32px;
+        font-size: 14px;
+        word-spacing: -2px;
+        letter-spacing: -1px;
     }
 
     .footer-button-container {
@@ -1364,9 +1368,16 @@ a {
         justify-content: center;
         align-items: center;
         column-gap: 16px;
+        word-spacing: -4px;
+        letter-spacing: -1px;
 
         .button-secondary {
             border: black 1px solid;
+            font-size: 16px;
+        }
+
+        .button-primary {
+            font-size: 16px;
         }
     }
 }

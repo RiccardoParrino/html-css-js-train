@@ -1282,7 +1282,6 @@ a {
 /*----CUSTOMER----*/
 .customer {
   background-color: var(--color--oat-100);
-  padding-bottom: 512px;
 }
 
 .customer-header-container {
@@ -1371,13 +1370,6 @@ a {
 }
 
 /*----background-img----*/
-.footer {
-  background-image: url("../../img/background/img-clay-footer-garden.png"); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center center;
-  padding-top: 256px;
-}
-
 .footer-wrapper {
   display: flex;
   flex-direction: column;
@@ -1385,7 +1377,6 @@ a {
   align-items: center;
   row-gap: 64px;
   position: relative;
-  top: -312px;
 }
 
 .footer-badge {
@@ -1397,16 +1388,24 @@ a {
 }
 
 .footer-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 16px;
   max-width: 1200px;
   margin: 0px auto;
-  text-align: center;
 }
 .footer-header-container h2 {
   line-height: 56px;
-  padding-bottom: 32px;
+  word-spacing: -16px;
+  letter-spacing: -2px;
 }
 .footer-header-container p {
-  padding-bottom: 32px;
+  font-size: 14px;
+  word-spacing: -2px;
+  letter-spacing: -1px;
 }
 .footer-header-container .footer-button-container {
   display: flex;
@@ -1415,9 +1414,15 @@ a {
   align-items: center;
   -moz-column-gap: 16px;
        column-gap: 16px;
+  word-spacing: -4px;
+  letter-spacing: -1px;
 }
 .footer-header-container .footer-button-container .button-secondary, .footer-header-container .footer-button-container .feature-descr-container .disabled-button, .feature-descr-container .footer-header-container .footer-button-container .disabled-button, .footer-header-container .footer-button-container .bg-dark-green, .footer-header-container .footer-button-container .badge-second, .footer-header-container .footer-button-container .badge-third, .footer-header-container .footer-button-container .badge-fourth, .footer-header-container .footer-button-container .badge-fifth, .footer-header-container .footer-button-container .badge-sixth, .footer-header-container .footer-button-container .customer-header-container .customer-button-container button, .customer-header-container .customer-button-container .footer-header-container .footer-button-container button {
   border: black 1px solid;
+  font-size: 16px;
+}
+.footer-header-container .footer-button-container .button-primary {
+  font-size: 16px;
 }
 
 .footer-head-container {
