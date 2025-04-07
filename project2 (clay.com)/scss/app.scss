@@ -1266,6 +1266,11 @@ a {
 
     .security-element-img {
         padding-bottom: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    .security-element-img:hover {
+        transform: rotate(-15deg);
     }
 }
 

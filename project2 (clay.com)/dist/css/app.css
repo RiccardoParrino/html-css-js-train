@@ -1314,6 +1314,10 @@ a {
 }
 .security-element .security-element-img {
   padding-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+.security-element .security-element-img:hover {
+  transform: rotate(-15deg);
 }
 
 .security-element-img {
