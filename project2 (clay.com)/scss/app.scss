@@ -1052,8 +1052,49 @@ a {
     gap: 16px;
 }
 
+// .product-mini-card-badge {
+//     background-color: var(--color--matcha-800);
+//     border: var(--color--grey-800) 1px solid;
+//     border-radius: 10px;
+//     color: white;
+    
+//     max-width: 60px;
+//     min-width: 60px;
+
+//     padding: 10px 1em;
+
+//     text-align: center;
+//     font-size: 18px;
+//     font-weight: 600;
+//     text-decoration: none;
+//     text-wrap: wrap;
+// }
+
 .product-mini-card-badge {
-    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color--matcha-800);
+    border: var(--color--grey-800) 1px solid;
+    border-radius: 10px;
+
+    max-width: 96px;
+    min-width: 96px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    p {
+        color: white;
+        font-size: 19px;
+        font-weight: 600;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .product-mini-card-descr {
