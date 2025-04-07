@@ -1510,6 +1510,8 @@ a {
 
 .footer-copyright {
   text-align: start;
+  align-self: start;
+  padding-top: 96px;
 }
 .footer-copyright p {
   font-size: 12px;
