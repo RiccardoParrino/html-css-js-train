@@ -1191,6 +1191,7 @@ a {
   word-spacing: -20px;
   line-height: 60px;
   font-size: 0px;
+  font-weight: 300;
 }
 
 .enterprise-button-container {
@@ -1202,6 +1203,7 @@ a {
   word-spacing: -4px;
   line-height: 0px;
   font-size: 15px;
+  font-weight: 300;
   margin-right: 10px;
 }
 .enterprise-button-container .button-secondary, .enterprise-button-container .customer-header-container .customer-button-container button, .customer-header-container .customer-button-container .enterprise-button-container button, .enterprise-button-container .feature-descr-container .disabled-button, .feature-descr-container .enterprise-button-container .disabled-button, .enterprise-button-container .bg-dark-green, .enterprise-button-container .badge-second, .enterprise-button-container .badge-third, .enterprise-button-container .badge-fourth, .enterprise-button-container .badge-fifth, .enterprise-button-container .badge-sixth {
@@ -1209,6 +1211,7 @@ a {
   word-spacing: -4px;
   line-height: 0px;
   font-size: 15px;
+  font-weight: 300;
   border: black 1px solid;
 }
 
@@ -1252,6 +1255,7 @@ a {
   word-spacing: -4px;
   line-height: 24px;
   font-size: 15px;
+  font-weight: 300;
   font-weight: 400;
 }
 
@@ -1261,11 +1265,12 @@ a {
   flex-direction: column;
   border-radius: 32px;
   max-width: 400px;
-  padding: 16px;
+  padding: 16px 32px;
 }
 
 .enterprise-testimonial-description p {
   font-size: 14px;
+  margin-bottom: 16px;
 }
 
 .enterprise-testimonial-footer {
@@ -1274,6 +1279,23 @@ a {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  margin-top: 16px;
+}
+
+.enterprise-testimonial-author .name {
+  letter-spacing: -1px;
+  word-spacing: -4px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.enterprise-testimonial-author .company {
+  margin-top: -2px;
+  letter-spacing: 0px;
+  word-spacing: -4px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .enterprise-testimonial-logo {
@@ -1291,6 +1313,7 @@ a {
 /*----security-element----*/
 .security {
   background-color: var(--color--oat-100);
+  padding-top: 96px;
 }
 
 .security-header-container {
@@ -1363,6 +1386,7 @@ a {
 /*----CUSTOMER----*/
 .customer {
   background-color: var(--color--oat-100);
+  padding-top: 128px;
 }
 
 .customer-header-container {

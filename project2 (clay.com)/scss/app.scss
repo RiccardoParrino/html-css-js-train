@@ -1206,16 +1206,43 @@ a {
     flex-direction: column;
     border-radius: 32px;
     max-width: 400px;
-    padding: 16px;
+    padding: 16px 32px;
 }
 
 .enterprise-testimonial-description p{
     font-size: 14px;
+    margin-bottom: 16px;
 }
 
 .enterprise-testimonial-footer {
     @include mixin.flexDisplay(row);
     justify-content: space-between;
+    margin-top: 16px;
+}
+
+.enterprise-testimonial-author {
+    
+    .name {
+        @include mixin.text-adjustment(
+            $font-size:15px,
+            $font-weight:600, 
+            $letter-spacing:-1px, 
+            $word-spacing:-4px, 
+            $line-height:24px
+        );
+
+    }
+
+    .company {
+        margin-top: -2px;
+        @include mixin.text-adjustment(
+            $font-size:12px,
+            $font-weight:400, 
+            $letter-spacing:0px, 
+            $word-spacing:-4px, 
+            $line-height:24px
+        );
+    }
 }
 
 .enterprise-testimonial-logo-container {}
@@ -1235,6 +1262,7 @@ a {
 /*----security-element----*/
 .security{
     background-color: var(--color--oat-100);
+    padding-top: 96px;
 }
 
 .security-header-container {
@@ -1306,6 +1334,7 @@ a {
 /*----CUSTOMER----*/
 .customer {
     background-color: var(--color--oat-100);
+    padding-top: 128px;
 }
 
 .customer-header-container {
