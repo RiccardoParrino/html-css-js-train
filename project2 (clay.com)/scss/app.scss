@@ -1514,11 +1514,11 @@ a {
         color: var(--color--grey-700);
         font-size: 12px;
         font-weight: 500;
+        transition: color 0.1s linear;
     }
 
     a:hover {
         color: #000;
-        transition: color linear 0.1s;
     }
 }
 
