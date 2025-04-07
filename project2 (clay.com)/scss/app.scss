@@ -1183,6 +1183,7 @@ a {
 
 .enterprise-description-container {
     @include mixin.flexDisplay(column);
+    max-width: 500px;
     padding-bottom: 64px;
 }
 
@@ -1194,7 +1195,10 @@ a {
     padding-bottom: 16px;
 }
 
-.enterprise-description-paragraph {}
+.enterprise-description-paragraph {
+    @include mixin.text-adjustment($font-size:15px, $letter-spacing:-1px, $word-spacing:-4px, $line-height:24px);
+    font-weight: 400;
+}
 
 .enterprise-testimonial-container {
     background-color: white;
