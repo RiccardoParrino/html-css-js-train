@@ -1281,8 +1281,8 @@ a {
 
 /*----CUSTOMER----*/
 .customer {
-  padding-top: 128px;
   background-color: var(--color--oat-100);
+  padding-bottom: 512px;
 }
 
 .customer-header-container {
@@ -1375,15 +1375,17 @@ a {
   background-image: url("../../img/background/img-clay-footer-garden.png"); /* Path to your image */
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center center;
-  padding-top: 128px;
+  padding-top: 256px;
 }
 
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   row-gap: 64px;
+  position: relative;
+  top: -312px;
 }
 
 .footer-badge {
