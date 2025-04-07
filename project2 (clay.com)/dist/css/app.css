@@ -1370,6 +1370,16 @@ a {
 }
 
 /*----background-img----*/
+.footer {
+  background-color: var(--color--oat-100);
+  background-image: url("../../img/background/img-clay-footer-garden.png"); /* Path to your image */
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center 100px;
+  padding-top: 132px;
+}
+
 .footer-wrapper {
   display: flex;
   flex-direction: column;
@@ -1377,6 +1387,7 @@ a {
   align-items: center;
   row-gap: 64px;
   position: relative;
+  padding-bottom: 128px;
 }
 
 .footer-badge {
@@ -1455,8 +1466,8 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: start;
-  -moz-column-gap: 0px;
-       column-gap: 0px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   max-width: 1200px;
   margin: 0px auto;
   padding-top: 64px;
@@ -1485,9 +1496,12 @@ a {
 }
 .link-container h4 {
   font-size: 16px;
+  padding-bottom: 4px;
 }
 .link-container a {
   color: var(--color--grey-700);
+  font-size: 12px;
+  font-weight: 500;
 }
 .link-container a:hover {
   color: #000;
