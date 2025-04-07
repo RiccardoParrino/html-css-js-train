@@ -408,6 +408,14 @@ a {
   right: 0;
 }
 
+.top-element {
+  pointer-events: none;
+}
+
+.top-button {
+  pointer-events: auto; /* Make the top button clickable */
+}
+
 .navbar-cta-container {
   display: flex;
   flex-direction: row;
