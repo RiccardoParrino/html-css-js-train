@@ -928,7 +928,6 @@ a {
 .product-header{
     @include mixin.flexDisplay(row);
     gap: 32px;
-    margin-bottom: 100px;
 }
 
 .product-header-description-container{
