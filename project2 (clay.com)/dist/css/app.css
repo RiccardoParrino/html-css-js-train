@@ -1506,4 +1506,15 @@ a {
 .link-container a:hover {
   color: #000;
   transition: color linear 0.1s;
+}
+
+.footer-copyright {
+  text-align: start;
+}
+.footer-copyright p {
+  font-size: 12px;
+  color: var(--color--grey-600);
+  font-weight: 400;
+  letter-spacing: -1px;
+  word-spacing: -3px;
 }/*# sourceMappingURL=app.css.map */
