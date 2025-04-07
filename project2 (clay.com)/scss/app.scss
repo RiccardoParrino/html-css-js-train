@@ -1045,7 +1045,7 @@ a {
 }
 
 .product-mini-card-bottom {
-    
+    width: 100%;
 }
 
 .product-mini-card-badge-container {
@@ -1054,6 +1054,8 @@ a {
     justify-content: center;
     align-items: start;
     gap: 16px;
+    width: 100%;
+    margin-bottom: 64px;
 }
 
 .product-mini-card-improves {
@@ -1101,6 +1103,7 @@ a {
 .product-mini-card-hr {
     width: 100%;
     color: #000;
+    margin-bottom: 24px;
 }
 
 .product-mini-footer-container {
