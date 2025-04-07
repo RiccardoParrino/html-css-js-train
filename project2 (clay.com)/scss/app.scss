@@ -1147,13 +1147,24 @@ a {
 .enterprise-header-container {
     max-width: 1200px;
     margin: 0px auto;
-    padding-bottom: 32px;
+    padding-bottom: 48px;
     @include mixin.text-adjustment($letter-spacing:-4px, $word-spacing:-20px, $line-height:60px);
 }
 
 .enterprise-button-container {
     max-width: 1200px;
     margin: 0px auto;
+
+    .button-primary {
+        @include mixin.text-adjustment($font-size:15px, $letter-spacing:-1px, $word-spacing:-4px, $line-height:0px);
+        margin-right: 10px;
+    }
+
+    .button-secondary {
+        @include mixin.text-adjustment($font-size:15px, $letter-spacing:-1px, $word-spacing:-4px, $line-height:0px);
+        border: black 1px solid;
+    }
+
 }
 
 .enterprise-wrapper {
@@ -1161,6 +1172,7 @@ a {
     justify-content: start;
     max-width: 1200px;
     margin: 0px auto;
+    margin-top: 24px;
 }
 
 .enterprise-left {
@@ -1179,6 +1191,7 @@ a {
 .enterprise-description-header {
     letter-spacing: -2px;
     word-spacing: -12px;
+    padding-bottom: 16px;
 }
 
 .enterprise-description-paragraph {}

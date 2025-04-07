@@ -1186,15 +1186,30 @@ a {
 .enterprise-header-container {
   max-width: 1200px;
   margin: 0px auto;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
   letter-spacing: -4px;
   word-spacing: -20px;
   line-height: 60px;
+  font-size: 0px;
 }
 
 .enterprise-button-container {
   max-width: 1200px;
   margin: 0px auto;
+}
+.enterprise-button-container .button-primary {
+  letter-spacing: -1px;
+  word-spacing: -4px;
+  line-height: 0px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.enterprise-button-container .button-secondary, .enterprise-button-container .customer-header-container .customer-button-container button, .customer-header-container .customer-button-container .enterprise-button-container button, .enterprise-button-container .feature-descr-container .disabled-button, .feature-descr-container .enterprise-button-container .disabled-button, .enterprise-button-container .bg-dark-green, .enterprise-button-container .badge-second, .enterprise-button-container .badge-third, .enterprise-button-container .badge-fourth, .enterprise-button-container .badge-fifth, .enterprise-button-container .badge-sixth {
+  letter-spacing: -1px;
+  word-spacing: -4px;
+  line-height: 0px;
+  font-size: 15px;
+  border: black 1px solid;
 }
 
 .enterprise-wrapper {
@@ -1205,6 +1220,7 @@ a {
   justify-content: start;
   max-width: 1200px;
   margin: 0px auto;
+  margin-top: 24px;
 }
 
 .enterprise-left {
@@ -1227,6 +1243,7 @@ a {
 .enterprise-description-header {
   letter-spacing: -2px;
   word-spacing: -12px;
+  padding-bottom: 16px;
 }
 
 .enterprise-testimonial-container {
