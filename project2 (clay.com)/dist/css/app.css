@@ -365,7 +365,7 @@ a {
 /*----NEW NAVBAR----*/
 .navbar {
   z-index: 100;
-  max-width: 1200px;
+  max-width: 125rem;
   margin: 0px auto;
 }
 
