@@ -618,6 +618,7 @@ a {
 .feature-button-index {
   position: sticky;
   top: 100px;
+  z-index: 999;
 }
 
 .feature-button-index-container {
