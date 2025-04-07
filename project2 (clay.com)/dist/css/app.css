@@ -236,6 +236,10 @@
   background-color: white;
 }
 
+.bg-grey-100 {
+  background-color: var(--color--oat-100);
+}
+
 .bg-first {
   background-color: var(--section-background-color-grey);
 }
@@ -1066,7 +1070,6 @@ a {
 .product-mini-card-testimonial {
   font-size: 20px;
   word-spacing: -6px;
-  padding-bottom: 4px;
 }
 
 .product-mini-card-testimonial-container {
