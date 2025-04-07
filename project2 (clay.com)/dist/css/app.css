@@ -1401,6 +1401,8 @@ a {
 .customer {
   background-color: var(--color--oat-100);
   padding-top: 128px;
+  padding-right: 64px;
+  padding-left: 64px;
 }
 
 .customer-header-container {
