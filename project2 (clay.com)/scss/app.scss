@@ -1256,7 +1256,22 @@ a {
 }
 
 .enterprise-img-container {
-    width: 100%;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    left: 96px;
+    bottom: 32px;
+    overflow: hidden;
+    border: #000 1px solid;
+}
+
+.enterprise-img {
+    width: 130%;
+    height: 110%;
+    position: relative;
+    left: -148px;
+    right: 128px;
+    bottom: 28px;
 }
 
 /*----security-element----*/
