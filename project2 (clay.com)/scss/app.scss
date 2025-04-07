@@ -1334,7 +1334,9 @@ a {
 }
 
 .footer-badge {
+    @include mixin.flexDisplay(column);
     max-width: 1200px;
+    width: 100%;
     margin: 0px auto;
     background-color: var(--color--oat-100);
     border-radius: 32px;
@@ -1405,20 +1407,12 @@ a {
     }
 }
 
-.footer-link-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 48px;
-}
-
 .footer-link-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    column-gap: 16px;
+    column-gap: 0px;
     @include mixin.center(1200px);
     padding-top: 64px;
     width: 100%;
@@ -1426,6 +1420,15 @@ a {
         text-decoration: none;
         color: black;
     }
+}
+
+.footer-link-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 48px;
+    width: calc(100%/5);
 }
 
 .link-container {
