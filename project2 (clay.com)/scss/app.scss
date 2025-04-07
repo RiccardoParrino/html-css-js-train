@@ -1229,7 +1229,10 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 64px;
     padding-bottom: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
     @include mixin.center(1200px);
 
     h2 {
