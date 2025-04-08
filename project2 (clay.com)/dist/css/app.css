@@ -629,6 +629,7 @@ a {
   z-index: 900;
   opacity: 0;
   transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 .logo-customer-card .customer-card-header, .logo-customer-card-rippling .customer-card-header, .logo-customer-card-open-ai .customer-card-header, .logo-customer-card-dropbox .customer-card-header, .logo-customer-card-vanta .customer-card-header {
   display: flex;
