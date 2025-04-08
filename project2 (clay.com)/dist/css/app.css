@@ -602,10 +602,6 @@ a {
   align-items: center;
 }
 
-.logo-container-with-after:hover .logo-customer-card {
-  display: flex;
-}
-
 .logo-container-with-after {
   display: flex;
   flex-direction: row;
@@ -613,7 +609,8 @@ a {
   align-items: center;
   position: relative;
 }
-.logo-container-with-after .logo-customer-card {
+
+.logo-customer-card {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -630,8 +627,9 @@ a {
   top: -286px;
   left: 96px;
   z-index: 900;
+  opacity: 0;
 }
-.logo-container-with-after .logo-customer-card .customer-card-header {
+.logo-customer-card .customer-card-header {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -640,36 +638,42 @@ a {
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-.logo-container-with-after .logo-customer-card .customer-card-header .company-logo {
+.logo-customer-card .customer-card-header .company-logo {
   width: 32px;
 }
-.logo-container-with-after .logo-customer-card .customer-card-header p {
+.logo-customer-card .customer-card-header p {
   font-size: 16px;
   font-weight: 900;
 }
-.logo-container-with-after .logo-customer-card .testimonial {
+.logo-customer-card .testimonial {
   font-size: 48px;
   font-weight: 900;
 }
-.logo-container-with-after .logo-customer-card .customer-card-hr {
+.logo-customer-card .customer-card-hr {
   width: 100%;
   border: black 2px solid;
 }
-.logo-container-with-after .logo-customer-card .customer-card-footer {
+.logo-customer-card .customer-card-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.logo-container-with-after .logo-customer-card .customer-card-footer .left-footer {
+.logo-customer-card .customer-card-footer .left-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
-.logo-container-with-after .logo-customer-card .customer-card-footer .right-footer .customer-photo .customer-photo-img {
+.logo-customer-card .customer-card-footer .right-footer .customer-photo .customer-photo-img {
   width: 48px;
+}
+
+.logo-container-with-after:hover .logo-customer-card {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.1s ease;
 }
 
 .logo-container-with-after::after {
