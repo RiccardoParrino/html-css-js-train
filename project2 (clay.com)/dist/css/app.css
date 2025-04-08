@@ -624,11 +624,12 @@ a {
   border-radius: 32px;
   background-color: white;
   position: absolute;
-  top: -286px;
+  top: 0px;
   left: 96px;
   z-index: 900;
   opacity: 0;
   transition: opacity 0.2s ease;
+  transition: translate 0.2s ease;
 }
 .logo-customer-card .customer-card-header {
   display: flex;
@@ -689,7 +690,9 @@ a {
 
 .wrapper:hover ~ .logo-customer-card {
   opacity: 1;
+  transform: translate(0px, -286px);
   transition: opacity 0.2s ease;
+  transition: translate 0.2s ease;
 }
 
 .partners-logo {
