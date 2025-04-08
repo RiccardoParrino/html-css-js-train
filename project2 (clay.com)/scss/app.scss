@@ -632,8 +632,11 @@ a {
 
 .logo-customer-card-vanta {
     @extend .logo-customer-card;
-    top: -275px;
+    top: -225px;
     left: -260px;
+    transform: translate(0px,50px);
+    transition: opacity 0.2s ease,
+                transform 0.2s ease;
 }
 
 .wrapper-vanta::after {
@@ -645,7 +648,11 @@ a {
 .wrapper-vanta:hover {
     & ~ .logo-customer-card {
         opacity: 1;
-        transition: opacity 0.2s ease;
+        top: -225px;
+        left: -260px;
+        transform: translate(0px, -50px);
+        transition: opacity 0.2s ease,
+                    transform 0.2s ease;
     }
 }
 

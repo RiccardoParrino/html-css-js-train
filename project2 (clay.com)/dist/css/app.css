@@ -687,8 +687,10 @@ a {
 }
 
 .logo-customer-card-vanta {
-  top: -275px;
+  top: -225px;
   left: -260px;
+  transform: translate(0px, 50px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .wrapper-vanta::after {
@@ -698,7 +700,10 @@ a {
 
 .wrapper-vanta:hover ~ .logo-customer-card, .wrapper-vanta:hover ~ .logo-customer-card-rippling, .wrapper-vanta:hover ~ .logo-customer-card-open-ai, .wrapper-vanta:hover ~ .logo-customer-card-dropbox, .wrapper-vanta:hover ~ .logo-customer-card-vanta {
   opacity: 1;
-  transition: opacity 0.2s ease;
+  top: -225px;
+  left: -260px;
+  transform: translate(0px, -50px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .logo-customer-card-dropbox {
