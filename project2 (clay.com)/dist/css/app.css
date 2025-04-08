@@ -727,8 +727,10 @@ a {
 }
 
 .logo-customer-card-open-ai {
-  top: -275px;
+  top: -225px;
   left: 0px;
+  transform: translate(0px, 50px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .wrapper-open-ai::after {
@@ -738,7 +740,17 @@ a {
 
 .wrapper-open-ai:hover ~ .logo-customer-card, .wrapper-open-ai:hover ~ .logo-customer-card-rippling, .wrapper-open-ai:hover ~ .logo-customer-card-vanta, .wrapper-open-ai:hover ~ .logo-customer-card-dropbox, .wrapper-open-ai:hover ~ .logo-customer-card-open-ai {
   opacity: 1;
-  transition: opacity 0.2s ease;
+  top: -225px;
+  left: 0px;
+  transform: translate(0px, -50px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.logo-customer-card-rippling {
+  top: -240px;
+  left: -260px;
+  transform: translate(0px, 50px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .wrapper-rippling::after {
@@ -746,14 +758,12 @@ a {
   left: 30%;
 }
 
-.wrapper-rippling:hover ~ .logo-customer-card, .wrapper-rippling:hover ~ .logo-customer-card-rippling, .wrapper-rippling:hover ~ .logo-customer-card-vanta, .wrapper-rippling:hover ~ .logo-customer-card-dropbox, .wrapper-rippling:hover ~ .logo-customer-card-open-ai {
+.wrapper-rippling:hover ~ .logo-customer-card, .wrapper-rippling:hover ~ .logo-customer-card-vanta, .wrapper-rippling:hover ~ .logo-customer-card-dropbox, .wrapper-rippling:hover ~ .logo-customer-card-open-ai, .wrapper-rippling:hover ~ .logo-customer-card-rippling {
   opacity: 1;
-  transition: opacity 0.2s ease;
-}
-
-.logo-customer-card-rippling {
-  top: -290px;
+  top: -240px;
   left: -260px;
+  transform: translate(0px, -50px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .partners-logo {

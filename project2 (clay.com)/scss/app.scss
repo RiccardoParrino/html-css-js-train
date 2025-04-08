@@ -684,8 +684,11 @@ a {
 
 .logo-customer-card-open-ai {
     @extend .logo-customer-card;
-    top: -275px;
+    top: -225px;
     left: 0px;
+    transform: translate(0px,50px);
+    transition: opacity 0.2s ease,
+                transform 0.2s ease;
 }
 
 .wrapper-open-ai::after {
@@ -697,8 +700,21 @@ a {
 .wrapper-open-ai:hover {
     & ~ .logo-customer-card {
         opacity: 1;
-        transition: opacity 0.2s ease;
+        top: -225px;
+        left: 0px;
+        transform: translate(0px, -50px);
+        transition: opacity 0.2s ease,
+                    transform 0.2s ease;
     }
+}
+
+.logo-customer-card-rippling {
+    @extend .logo-customer-card;
+    top: -240px;
+    left: -260px;
+    transform: translate(0px,50px);
+    transition: opacity 0.2s ease,
+                transform 0.2s ease;
 }
 
 .wrapper-rippling::after {
@@ -710,14 +726,12 @@ a {
 .wrapper-rippling:hover {
     & ~ .logo-customer-card {
         opacity: 1;
-        transition: opacity 0.2s ease;
+        top: -240px;
+        left: -260px;
+        transform: translate(0px, -50px);
+        transition: opacity 0.2s ease,
+                    transform 0.2s ease;
     }
-}
-
-.logo-customer-card-rippling {
-    @extend .logo-customer-card;
-    top: -290px;
-    left: -260px;
 }
 
 .partners-logo {
