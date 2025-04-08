@@ -617,7 +617,7 @@ a {
     }
 }
 
-.wrapper::after {
+.general-after {
     content: "Case study";
     color: var(--color--blueberry-600);
     background-color: var(--color--blueberry-200);
@@ -628,11 +628,30 @@ a {
     position: absolute;
     width: max-content;
     opacity: 1;
+}
+
+.wrapper-vanta::after {
+    @extend .general-after;
     top: 75%;
     left: 30%;
 }
 
-.wrapper:hover {
+.wrapper-vanta:hover {
+    & ~ .logo-customer-card {
+        opacity: 1;
+        transform: translate(0px, -286px);
+        transition: opacity 0.2s ease;
+        transition: translate 0.2s ease;
+    }
+}
+
+.wrapper-dropbox:after {
+    @extend .general-after;
+    top: 75%;
+    left: 30%;
+}
+
+.wrapper-dropbox:hover {
     & ~ .logo-customer-card {
         opacity: 1;
         transform: translate(0px, -286px);
