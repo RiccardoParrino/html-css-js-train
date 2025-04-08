@@ -629,6 +629,12 @@ a {
     opacity: 1;
 }
 
+.logo-customer-card-vanta {
+    @extend .logo-customer-card;
+    top: -275px;
+    left: -260px;
+}
+
 .wrapper-vanta::after {
     @extend .general-after;
     top: 75%;
@@ -642,6 +648,12 @@ a {
     }
 }
 
+.logo-customer-card-dropbox {
+    @extend .logo-customer-card;
+    top: -285px;
+    left: -260px;
+}
+
 .wrapper-dropbox::after {
     @extend .general-after;
     top: 112%;
@@ -653,6 +665,12 @@ a {
         opacity: 1;
         transition: opacity 0.2s ease;
     }
+}
+
+.logo-customer-card-open-ai {
+    @extend .logo-customer-card;
+    top: -275px;
+    left: 0px;
 }
 
 .wrapper-open-ai::after {
@@ -679,6 +697,12 @@ a {
         opacity: 1;
         transition: opacity 0.2s ease;
     }
+}
+
+.logo-customer-card-rippling {
+    @extend .logo-customer-card;
+    top: -290px;
+    left: -260px;
 }
 
 .partners-logo {
