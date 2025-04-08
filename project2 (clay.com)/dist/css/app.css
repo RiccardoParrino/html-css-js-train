@@ -627,7 +627,7 @@ a {
   top: -286px;
   left: 96px;
   z-index: 900;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.2s ease;
 }
 .logo-customer-card .customer-card-header {
@@ -671,12 +671,12 @@ a {
   width: 48px;
 }
 
-.logo-container-with-after:hover .logo-customer-card {
+.logo-anchor:hover .logo-anchor ~ div {
   opacity: 1;
   transition: opacity 0.2s ease;
 }
 
-.logo-container-with-after::after {
+.logo-customer-card::after {
   content: "Case study";
   color: var(--color--blueberry-600);
   background-color: var(--color--blueberry-200);
@@ -684,9 +684,10 @@ a {
   font-weight: 900;
   border-radius: 5.5rem;
   word-spacing: 0px;
-  position: absolute;
+  position: relative;
   width: -moz-max-content;
   width: max-content;
+  opacity: 1;
   top: 100%;
   left: 100%;
 }
