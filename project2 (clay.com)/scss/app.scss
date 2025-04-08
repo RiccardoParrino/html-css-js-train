@@ -658,8 +658,11 @@ a {
 
 .logo-customer-card-dropbox {
     @extend .logo-customer-card;
-    top: -285px;
+    top: -235px;
     left: -260px;
+    transform: translate(0px,50px);
+    transition: opacity 0.2s ease,
+                transform 0.2s ease;
 }
 
 .wrapper-dropbox::after {
@@ -671,7 +674,11 @@ a {
 .wrapper-dropbox:hover {
     & ~ .logo-customer-card {
         opacity: 1;
-        transition: opacity 0.2s ease;
+        top: -235px;
+        left: -260px;
+        transform: translate(0px, -50px);
+        transition: opacity 0.2s ease,
+                    transform 0.2s ease;
     }
 }
 
