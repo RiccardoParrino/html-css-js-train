@@ -672,7 +672,7 @@ a {
   width: 48px;
 }
 
-.general-after, .wrapper-open-ai::after, .wrapper-dropbox::after, .wrapper-vanta::after {
+.general-after, .wrapper-rippling::after, .wrapper-open-ai::after, .wrapper-dropbox::after, .wrapper-vanta::after {
   content: "Case study";
   color: var(--color--blueberry-600);
   background-color: var(--color--blueberry-200);
@@ -716,6 +716,18 @@ a {
 }
 
 .wrapper-open-ai:hover ~ .logo-customer-card {
+  opacity: 1;
+  transform: translate(0px, -286px);
+  transition: opacity 0.2s ease;
+  transition: translate 0.2s ease;
+}
+
+.wrapper-rippling::after {
+  top: 111%;
+  left: 30%;
+}
+
+.wrapper-rippling:hover ~ .logo-customer-card {
   opacity: 1;
   transform: translate(0px, -286px);
   transition: opacity 0.2s ease;

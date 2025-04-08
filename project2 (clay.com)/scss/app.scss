@@ -675,6 +675,21 @@ a {
     }
 }
 
+.wrapper-rippling::after {
+    @extend .general-after;
+    top: 111%;
+    left: 30%;
+}
+
+.wrapper-rippling:hover {
+    & ~ .logo-customer-card {
+        opacity: 1;
+        transform: translate(0px, -286px);
+        transition: opacity 0.2s ease;
+        transition: translate 0.2s ease;
+    }
+}
+
 .partners-logo {
     width: 100px;
     margin: auto auto;
