@@ -602,6 +602,10 @@ a {
   align-items: center;
 }
 
+.logo-container-with-after:hover .logo-customer-card {
+  display: flex;
+}
+
 .logo-container-with-after {
   display: flex;
   flex-direction: row;
@@ -610,7 +614,7 @@ a {
   position: relative;
 }
 .logo-container-with-after .logo-customer-card {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -621,6 +625,11 @@ a {
   border: black 2px solid;
   padding: 32px 32px;
   border-radius: 32px;
+  background-color: white;
+  position: absolute;
+  top: -286px;
+  left: 96px;
+  z-index: 900;
 }
 .logo-container-with-after .logo-customer-card .customer-card-header {
   display: flex;
