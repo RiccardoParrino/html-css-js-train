@@ -602,6 +602,14 @@ a {
   align-items: center;
 }
 
+.logo-container-with-after {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .logo-container-with-after::after {
   content: "Case study";
   color: var(--color--blueberry-600);
@@ -610,10 +618,16 @@ a {
   font-weight: 900;
   border-radius: 5.5rem;
   word-spacing: 0px;
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  top: 100%;
+  left: 100%;
 }
 
 .partners-logo {
   width: 100px;
+  margin: auto auto;
 }
 
 /*----MEDIA-QUERIES----*/
