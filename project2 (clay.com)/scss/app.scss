@@ -542,6 +542,71 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
+
+    .logo-customer-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 300px;
+        width: 300px;
+        max-height: 200px;
+        height: 200px;
+        border: black 2px solid;
+        padding: 32px 32px;
+        border-radius: 32px;
+
+        .customer-card-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            column-gap: 16px;
+
+            .company-logo {
+                width: 32px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 900;
+            }
+        }
+
+        .testimonial {
+            font-size: 48px;
+            font-weight: 900;
+        }
+
+        .customer-card-hr {
+            width: 100%;
+            border: black 2px solid;
+        }
+
+        .customer-card-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .left-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+            }
+
+            .right-footer {
+                .customer-photo {
+                    .customer-photo-img {
+                        width: 48px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .logo-container-with-after::after {

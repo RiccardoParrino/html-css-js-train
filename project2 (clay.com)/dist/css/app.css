@@ -609,6 +609,59 @@ a {
   align-items: center;
   position: relative;
 }
+.logo-container-with-after .logo-customer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  width: 300px;
+  max-height: 200px;
+  height: 200px;
+  border: black 2px solid;
+  padding: 32px 32px;
+  border-radius: 32px;
+}
+.logo-container-with-after .logo-customer-card .customer-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.logo-container-with-after .logo-customer-card .customer-card-header .company-logo {
+  width: 32px;
+}
+.logo-container-with-after .logo-customer-card .customer-card-header p {
+  font-size: 16px;
+  font-weight: 900;
+}
+.logo-container-with-after .logo-customer-card .testimonial {
+  font-size: 48px;
+  font-weight: 900;
+}
+.logo-container-with-after .logo-customer-card .customer-card-hr {
+  width: 100%;
+  border: black 2px solid;
+}
+.logo-container-with-after .logo-customer-card .customer-card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo-container-with-after .logo-customer-card .customer-card-footer .left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.logo-container-with-after .logo-customer-card .customer-card-footer .right-footer .customer-photo .customer-photo-img {
+  width: 48px;
+}
 
 .logo-container-with-after::after {
   content: "Case study";
