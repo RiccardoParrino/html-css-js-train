@@ -625,11 +625,10 @@ a {
   background-color: white;
   position: absolute;
   top: 0px;
-  left: 96px;
+  left: 0px;
   z-index: 900;
   opacity: 0;
   transition: opacity 0.2s ease;
-  transition: translate 0.2s ease;
 }
 .logo-customer-card .customer-card-header {
   display: flex;
@@ -693,9 +692,7 @@ a {
 
 .wrapper-vanta:hover ~ .logo-customer-card {
   opacity: 1;
-  transform: translate(0px, -286px);
   transition: opacity 0.2s ease;
-  transition: translate 0.2s ease;
 }
 
 .wrapper-dropbox::after {
@@ -705,9 +702,7 @@ a {
 
 .wrapper-dropbox:hover ~ .logo-customer-card {
   opacity: 1;
-  transform: translate(0px, -286px);
   transition: opacity 0.2s ease;
-  transition: translate 0.2s ease;
 }
 
 .wrapper-open-ai::after {
@@ -717,9 +712,7 @@ a {
 
 .wrapper-open-ai:hover ~ .logo-customer-card {
   opacity: 1;
-  transform: translate(0px, -286px);
   transition: opacity 0.2s ease;
-  transition: translate 0.2s ease;
 }
 
 .wrapper-rippling::after {
@@ -729,9 +722,7 @@ a {
 
 .wrapper-rippling:hover ~ .logo-customer-card {
   opacity: 1;
-  transform: translate(0px, -286px);
   transition: opacity 0.2s ease;
-  transition: translate 0.2s ease;
 }
 
 .partners-logo {
