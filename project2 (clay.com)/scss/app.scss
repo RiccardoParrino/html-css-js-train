@@ -545,7 +545,7 @@ a {
 }
 
 .logo-customer-card {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -562,7 +562,8 @@ a {
     left: 96px;
     z-index: 900;
     opacity: 0;
-    
+    transition: opacity 0.2s ease;
+
     .customer-card-header {
         display: flex;
         flex-direction: row;
@@ -617,12 +618,10 @@ a {
 
 .logo-container-with-after:hover {
     .logo-customer-card {
-        display: flex;
         opacity: 1;
-        transition: opacity 0.1s ease;
+        transition: opacity 0.2s ease;
     }
 }
-
 
 .logo-container-with-after::after {
     content: "Case study";

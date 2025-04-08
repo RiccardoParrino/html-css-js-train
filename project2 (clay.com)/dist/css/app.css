@@ -611,7 +611,7 @@ a {
 }
 
 .logo-customer-card {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -628,6 +628,7 @@ a {
   left: 96px;
   z-index: 900;
   opacity: 0;
+  transition: opacity 0.2s ease;
 }
 .logo-customer-card .customer-card-header {
   display: flex;
@@ -671,9 +672,8 @@ a {
 }
 
 .logo-container-with-after:hover .logo-customer-card {
-  display: flex;
   opacity: 1;
-  transition: opacity 0.1s ease;
+  transition: opacity 0.2s ease;
 }
 
 .logo-container-with-after::after {
