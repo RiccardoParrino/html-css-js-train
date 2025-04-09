@@ -364,6 +364,8 @@ a {
   text-decoration: none;
   -moz-column-gap: 4px;
        column-gap: 4px;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .icon-container {
