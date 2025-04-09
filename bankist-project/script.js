@@ -22,4 +22,4 @@ const giovanna = {
 window.addEventListener("load", function() {
     const navbar_username = this.document.getElementById("logged-username");
     navbar_username.innerText = riccardo.username;
-})
+});
