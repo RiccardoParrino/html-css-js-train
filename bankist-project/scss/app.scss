@@ -9,6 +9,36 @@
     text-transform: capitalize;
 }
 
+.input-text {
+    border-radius: 32px;
+    min-height: 32px;
+    text-align: center;
+}
+
+.input-text::placeholder {
+    text-align: center;
+}
+
+.right-navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+
+    #send-button {
+        border: none;
+        background-color: transparent;
+
+        .send-img {
+            width: 32px;
+        }
+
+    }
+
+}
+
 .logo-navbar {
     width: 128px;
 }

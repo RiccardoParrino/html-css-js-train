@@ -23,3 +23,13 @@ window.addEventListener("load", function() {
     const navbar_username = this.document.getElementById("logged-username");
     navbar_username.innerText = riccardo.username;
 });
+
+const send_button = document.getElementById("send-button");
+console.log(send_button);
+
+send_button.addEventListener("click", function() {
+    const typed_username = document.getElementById("username");
+    const typed_pin = document.getElementById("pin");
+    console.log(typed_username);
+    console.log(typed_pin);
+});
