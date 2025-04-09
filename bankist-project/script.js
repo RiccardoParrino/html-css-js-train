@@ -18,3 +18,8 @@ const giovanna = {
     balance: 5000,
     ops: [4000,-500,500,500,500]
 }
+
+window.addEventListener("load", function() {
+    const navbar_username = this.document.getElementById("logged-username");
+    navbar_username.innerText = riccardo.username;
+})
