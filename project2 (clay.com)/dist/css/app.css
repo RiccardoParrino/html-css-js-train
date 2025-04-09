@@ -396,6 +396,10 @@ a {
 }
 
 .button-secondary, .customer-header-container .customer-button-container button, .bg-dark-green, .badge-sixth, .badge-fifth, .badge-fourth, .badge-third, .badge-second, .feature-descr-container .disabled-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 14px;
   border: var(--color--oat-200) 1px solid;
   background-color: white;
@@ -403,6 +407,7 @@ a {
   border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
+  min-height: 22px;
 }
 
 /*----NAVBAR----*/

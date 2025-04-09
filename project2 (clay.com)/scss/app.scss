@@ -345,6 +345,10 @@ a {
 }
 
 .button-secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
     padding: 10px 14px;
     border: var(--color--oat-200) 1px solid;
     background-color: white;
@@ -352,6 +356,7 @@ a {
     border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
+    min-height: 22px;
 }
 
 .button-tertiary {}
