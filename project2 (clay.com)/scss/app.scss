@@ -287,6 +287,27 @@ a {
     border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
+    column-gap: 4px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.ws-3 {
+    word-spacing: -3px;
+}
+
+.ls-3 {
+    letter-spacing: -1px;
+}
+
+.icon-container {
+    width: 18px;
+}
+
+.pt-2 {
+    padding-top: 4px;
 }
 
 .button-primary:hover {
