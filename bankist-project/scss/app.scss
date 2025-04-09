@@ -58,6 +58,11 @@ body {
 
 /*----MAIN----*/
 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
     max-width: 950px;
     margin: 0px auto;
 }
