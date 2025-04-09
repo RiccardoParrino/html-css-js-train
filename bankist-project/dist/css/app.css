@@ -1,1 +1,10 @@
-/*# sourceMappingURL=app.css.map */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-navbar {
+  width: 128px;
+}/*# sourceMappingURL=app.css.map */
