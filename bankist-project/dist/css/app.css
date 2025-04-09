@@ -72,6 +72,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .main-header-right {
@@ -88,6 +89,7 @@ body {
   align-items: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
+  width: 100%;
 }
 
 #movements-container {
@@ -142,6 +144,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .main-footer-left {
