@@ -17,7 +17,9 @@ const giovanna = {
     pin: "123455",
     balance: 5000,
     ops: [4000,-500,500,500,500]
-}
+};
+
+const user_list = [riccardo, francesco, giovanna, riccardo];
 
 window.addEventListener("load", function() {
     const navbar_username = this.document.getElementById("logged-username");
@@ -28,8 +30,13 @@ const send_button = document.getElementById("send-button");
 console.log(send_button);
 
 send_button.addEventListener("click", function() {
-    const typed_username = document.getElementById("username");
-    const typed_pin = document.getElementById("pin");
-    console.log(typed_username);
-    console.log(typed_pin);
+    const typed_username = document.getElementById("username").value;
+    const typed_pin = document.getElementById("pin").value;
+    console.log(user_list.findIndex(function(element){
+        if (element.username === typed_username) {
+            return element.pin === typed_pin;
+        } else {
+            return false;
+        }
+    }));
 });
