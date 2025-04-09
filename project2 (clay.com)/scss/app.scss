@@ -310,6 +310,21 @@ a {
 
 .icon-container {
     overflow: hidden;
+    width: 18px;
+    height: 18px;
+}
+
+.rarrow-icon {
+    transition: transform 0.2s ease;
+}
+
+.hero-button:hover {
+
+    & .rarrow-icon {
+        transform: translate(0px, -24px);
+        transition: transform 0.2s ease;
+    }
+
 }
 
 .rarrow-icon {
