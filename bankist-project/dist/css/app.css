@@ -17,6 +17,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0px auto;
+  margin-bottom: 32px;
 }
 
 .username-navbar {
@@ -54,7 +55,7 @@ body {
 }
 
 .logo-navbar {
-  width: 128px;
+  width: 80px;
 }
 
 /*----MAIN----*/
