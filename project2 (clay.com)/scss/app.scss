@@ -1392,12 +1392,16 @@ a {
 }
 
 .enterprise-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 16px;
     max-width: 1200px;
     margin: 0px auto;
 
     .button-primary {
         @include mixin.text-adjustment($font-size:15px, $letter-spacing:-1px, $word-spacing:-4px, $line-height:0px);
-        margin-right: 10px;
     }
 
     .button-secondary {

@@ -1402,6 +1402,12 @@ a {
 }
 
 .enterprise-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   max-width: 1200px;
   margin: 0px auto;
 }
@@ -1411,7 +1417,6 @@ a {
   line-height: 0px;
   font-size: 15px;
   font-weight: 300;
-  margin-right: 10px;
 }
 .enterprise-button-container .button-secondary, .enterprise-button-container .customer-header-container .customer-button-container button, .customer-header-container .customer-button-container .enterprise-button-container button, .enterprise-button-container .feature-descr-container .disabled-button, .feature-descr-container .enterprise-button-container .disabled-button, .enterprise-button-container .bg-dark-green, .enterprise-button-container .badge-second, .enterprise-button-container .badge-third, .enterprise-button-container .badge-fourth, .enterprise-button-container .badge-fifth, .enterprise-button-container .badge-sixth {
   letter-spacing: -1px;
