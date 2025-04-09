@@ -1,3 +1,4 @@
+/*----NAVBAR-SECTION----*/
 .navbar {
   display: flex;
   flex-direction: row;
@@ -41,4 +42,80 @@
 
 .logo-navbar {
   width: 128px;
+}
+
+/*----MAIN----*/
+.main {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+#movements-container {
+  background-color: gray;
+  width: 75%;
+  border-radius: 32px;
+  min-height: 600px;
+}
+
+.movement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.right-content {
+  width: 25%;
+}
+
+#transfer-request {
+  background-color: yellowgreen;
+}
+
+#loan-request {
+  background-color: green;
+}
+
+#close-request {
+  background-color: red;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }/*# sourceMappingURL=app.css.map */
