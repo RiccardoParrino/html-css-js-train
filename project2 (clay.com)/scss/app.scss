@@ -209,6 +209,25 @@ $paragraph-color-secondary: #fff;
 .bg-eighth {
     background-color: var(--section-background-color-eight);
 }
+
+/*----Tailwind-like CSS RULES----*/
+.fs-14 {
+    font-size: 14px;
+}
+
+.ws-3 {
+    word-spacing: -3px;
+}
+
+.ls-3 {
+    letter-spacing: -1px;
+}
+
+.pt-2 {
+    padding-top: 4px;
+}
+
+
 /*-------------GENERAL RULES-------------*/
 
 * {
@@ -261,7 +280,6 @@ a {
     font-size: var(--p-font-size);
 }
 
-
 /*-------------COMPONENT-------------*/
 
 .logo {}
@@ -290,24 +308,12 @@ a {
     column-gap: 4px;
 }
 
-.fs-14 {
-    font-size: 14px;
-}
-
-.ws-3 {
-    word-spacing: -3px;
-}
-
-.ls-3 {
-    letter-spacing: -1px;
-}
-
 .icon-container {
-    width: 18px;
+    overflow: hidden;
 }
 
-.pt-2 {
-    padding-top: 4px;
+.rarrow-icon {
+    width: 18px;
 }
 
 .button-primary:hover {
