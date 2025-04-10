@@ -34,6 +34,10 @@ window.addEventListener("load", function() {
     load_content(0);
 });
 
+window.addEventListener("click", function() {
+    remaining_logged_time = 60 * 9;
+})
+
 function load_content(logged_user_index = 0) {
     const navbar_username = this.document.getElementById("logged-username");
     navbar_username.innerText = user_list[logged_user_index].username;
