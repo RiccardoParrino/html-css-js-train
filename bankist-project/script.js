@@ -22,11 +22,15 @@ const giovanna = {
 const user_list = [riccardo, francesco, giovanna];
 
 window.addEventListener("load", function() {
+    load_content(0);
+});
+
+function load_content(logged_user_index = 0) {
     const navbar_username = this.document.getElementById("logged-username");
-    navbar_username.innerText = riccardo.username;
+    navbar_username.innerText = user_list[logged_user_index].username;
 
     const total_balance_element = this.document.getElementById("total-balance");
-    total_balance_element.getElementsByTagName("p")[0].innerText = "$" + riccardo.balance;
+    total_balance_element.getElementsByTagName("p")[0].innerText = "$" + user_list[logged_user_index].balance;
 
     const current_date = this.document.getElementById("current-date");
     const d = new Date(); 
@@ -34,13 +38,13 @@ window.addEventListener("load", function() {
 
     const left_content = this.document.getElementsByClassName("left-content")[0];
 
-    for (let i = 0; i < riccardo.ops.length; i++) {
-        if (riccardo.ops[i] > 0) {
+    for (let i = 0; i < user_list[logged_user_index].ops.length; i++) {
+        if (user_list[logged_user_index].ops[i] > 0) {
             const deposit_template = this.document.getElementById("deposit-template");
             const deposit_template_content = deposit_template.content;
             deposit_template_content.querySelector(".movement-deposit-container").innerText = i + " deposit";
             deposit_template_content.querySelector(".date-container").innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
-            deposit_template_content.querySelector(".amount").innerText =  riccardo.ops[i];
+            deposit_template_content.querySelector(".amount").innerText =  user_list[logged_user_index].ops[i];
             const clone = deposit_template.content.cloneNode(true);
             left_content.appendChild(clone);
         } else {
@@ -48,14 +52,12 @@ window.addEventListener("load", function() {
             const withdrawal_template_content = withdrawal_template.content;
             withdrawal_template_content.querySelector(".movement-withdrawal-container").innerText = i + " withdrawal";
             withdrawal_template_content.querySelector(".date-container").innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
-            withdrawal_template_content.querySelector(".movement-amount-container").getElementsByClassName("amount")[0].innerText =  riccardo.ops[i];
+            withdrawal_template_content.querySelector(".movement-amount-container").getElementsByClassName("amount")[0].innerText =  user_list[logged_user_index].ops[i];
             const clone = withdrawal_template.content.cloneNode(true);
             left_content.appendChild(clone);
         }
-
     }
-
-});
+}
 
 const send_button = document.getElementById("change-user-button");
 
