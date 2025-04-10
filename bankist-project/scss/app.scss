@@ -161,6 +161,15 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 16px;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
 }
 
 .right-content {
