@@ -37,6 +37,7 @@ function load_content(logged_user_index = 0) {
     current_date.innerText = "As of " + d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
 
     const left_content = this.document.getElementsByClassName("left-content")[0];
+    left_content.innerHTML = "";
 
     for (let i = 0; i < user_list[logged_user_index].ops.length; i++) {
         if (user_list[logged_user_index].ops[i] > 0) {
