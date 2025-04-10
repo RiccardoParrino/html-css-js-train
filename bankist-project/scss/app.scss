@@ -113,6 +113,8 @@ body {
     width: 75%;
     max-width: 75%;
     border-radius: 32px;
+    min-height: 600px;
+    overflow: auto;
 }
 
 .movement {
@@ -132,8 +134,14 @@ body {
     align-items: center;
     column-gap: 8px;
 
-    .movement-id-type-container {
+    .movement-deposit-container {
         background-color: red;
+        border-radius: 32px;
+        padding: 8px;
+    }
+
+    .movement-withdrawal-container {
+        background-color: greenyellow;
         border-radius: 32px;
         padding: 8px;
     }
