@@ -19,7 +19,7 @@ const giovanna = {
     ops: [4000,-500,500,500,500]
 };
 
-const user_list = [riccardo, francesco, giovanna, riccardo];
+const user_list = [riccardo, francesco, giovanna];
 
 window.addEventListener("load", function() {
     const navbar_username = this.document.getElementById("logged-username");
@@ -33,7 +33,6 @@ window.addEventListener("load", function() {
     current_date.innerText = "As of " + d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
 
     const left_content = this.document.getElementsByClassName("left-content")[0];
-    console.log(left_content);
 
     for (let i = 0; i < riccardo.ops.length; i++) {
         if (riccardo.ops[i] > 0) {
@@ -59,7 +58,6 @@ window.addEventListener("load", function() {
 });
 
 const send_button = document.getElementById("change-user-button");
-console.log(send_button);
 
 send_button.addEventListener("click", function() {
     const typed_username = document.getElementById("username").value;
