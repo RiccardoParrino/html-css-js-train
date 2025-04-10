@@ -46,11 +46,12 @@ window.addEventListener("load", function() {
             left_content.appendChild(clone);
         } else {
             const withdrawal_template = this.document.getElementById("withdrawal-template");
-            withdrawal_template.getElementsByClassName("movement-withdrawal-container")[0].innerText = i + " withdrawal";
-            withdrawal_template.getElementsByClassName("date-container")[0].innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
-            withdrawal_template.getElementsByClassName("movement-amount-container")[0].getElementsByClassName("amount")[0].innerText =  riccardo.ops[i];
+            const withdrawal_template_content = withdrawal_template.content;
+            withdrawal_template_content.querySelector(".movement-withdrawal-container").innerText = i + " withdrawal";
+            withdrawal_template_content.querySelector(".date-container").innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
+            withdrawal_template_content.querySelector(".movement-amount-container").getElementsByClassName("amount")[0].innerText =  riccardo.ops[i];
             const clone = withdrawal_template.content.cloneNode(true);
-            withdrawal_template.appendChild(clone);
+            left_content.appendChild(clone);
         }
 
     }
