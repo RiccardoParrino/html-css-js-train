@@ -29,18 +29,19 @@ window.addEventListener("load", function() {
     total_balance_element.getElementsByTagName("p")[0].innerText = "$" + riccardo.balance;
 
     const current_date = this.document.getElementById("current-date");
-    const d = new Date();
+    const d = new Date(); 
     current_date.innerText = "As of " + d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
 
-    const left_content = this.document.getElementById("left-content");
+    const left_content = this.document.getElementsByClassName("left-content")[0];
+    console.log(left_content);
 
     for (let i = 0; i < riccardo.ops.length; i++) {
         if (riccardo.ops[i] > 0) {
             const deposit_template = this.document.getElementById("deposit-template");
-            console.log(deposit_template);
-            deposit_template.getElementsByClassName("movement-deposit-container")[0].innerText = i + " deposit";
-            deposit_template.getElementsByClassName("date-container")[0].innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
-            deposit_template.getElementsByClassName("movement-amount-container")[0].getElementsByClassName("amount")[0].innerText =  riccardo.ops[i];
+            const deposit_template_content = deposit_template.content;
+            deposit_template_content.querySelector(".movement-deposit-container").innerText = i + " deposit";
+            deposit_template_content.querySelector(".date-container").innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
+            deposit_template_content.querySelector(".amount").innerText =  riccardo.ops[i];
             const clone = deposit_template.content.cloneNode(true);
             left_content.appendChild(clone);
         } else {
