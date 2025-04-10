@@ -107,15 +107,16 @@ transfer_request_button.addEventListener("click", function() {
     if(regex.test(transfer_amount)){
         alert("Inserisci un budget corretto!");
         return;
-    } else {
-        transfer_amount = new Number(transfer_amount);
     }
-    
+
+    let numeric_transfer_amount = new Number(transfer_amount);
+    console.log( typeof numeric_transfer_amount );
+
     if (user_list[current_logged_user].balance >= transfer_amount) {
-        user_list[current_logged_user].balance -= transfer_amount;
-        user_list[current_logged_user].ops.push(-transfer_amount);
-        user_list[transfer_to_index].balance += transfer_amount;
-        user_list[transfer_to_index].ops.push(transfer_amount);
+        user_list[current_logged_user].balance -= numeric_transfer_amount;
+        user_list[current_logged_user].ops.push(-numeric_transfer_amount);
+        user_list[transfer_to_index].balance += numeric_transfer_amount;
+        user_list[transfer_to_index].ops.push(numeric_transfer_amount);
         load_content(current_logged_user);
     }
 });
