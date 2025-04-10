@@ -26,7 +26,7 @@ window.addEventListener("load", function() {
     navbar_username.innerText = riccardo.username;
 });
 
-const send_button = document.getElementById("send-button");
+const send_button = document.getElementById("change-user-button");
 console.log(send_button);
 
 send_button.addEventListener("click", function() {
