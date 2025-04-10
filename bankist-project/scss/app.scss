@@ -7,13 +7,11 @@
 body {
     font-family: 'Roboto';
     height: 100vh;
-    max-height: 100vh;
 }
 
 /*----NAVBAR-SECTION----*/
 .navbar {
     background-color: white;
-    margin-bottom: 2vh;
 }
 
 .navbar-container {
@@ -23,7 +21,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0px auto;
-    max-height: 8vh;
+    max-height: 80px;
 }
 
 .username-navbar {
@@ -80,8 +78,8 @@ body {
     row-gap: 32px;
     max-width: 950px;
     margin: 0px auto;
-    height: 90vh;
-    max-height: 90vh;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .main-header {
