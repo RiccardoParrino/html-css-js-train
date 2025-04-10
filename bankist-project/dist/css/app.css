@@ -199,6 +199,8 @@ body {
   font-size: 15px;
 }
 .fields-container .input-text-container .button .send-img {
+  background-color: white;
+  padding: 4px;
   position: relative;
   top: 4px;
 }
