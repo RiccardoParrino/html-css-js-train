@@ -86,6 +86,12 @@ change_user_button.addEventListener("click", function() {
             return false;
         }
     });
+
+    if (logged_user_index === -1) {
+        alert("Utente non trovato!");
+        return;
+    }
+
     document.getElementById("username").value = "";
     document.getElementById("pin").value = "";
     load_content(logged_user_index);
