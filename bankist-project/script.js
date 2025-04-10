@@ -188,3 +188,32 @@ close_request_button.addEventListener("click", function () {
 
     load_content(current_logged_user);
 });
+
+
+// LOGIN SECTION
+const login_button =  document.getElementById("login-button");
+
+login_button.addEventListener("click", function() {
+    const typed_username = document.getElementById("login-username-input").value;
+    const typed_pin = document.getElementById("login-pin-input").value;
+    const logged_user_index = user_list.findIndex(function(element){
+        if (element.username === typed_username) {
+            return element.pin === typed_pin;
+        } else {
+            return false;
+        }
+    });
+
+    if (logged_user_index === -1) {
+        alert("Utente non trovato!");
+        return;
+    }
+
+    document.getElementById("login-username-input").value = "";
+    document.getElementById("login-pin-input").value = "";
+
+    document.getElementById("login").style.display = "none";
+    document.getElementById("spa").style.display = "block";
+    load_content(logged_user_index);
+});
+
