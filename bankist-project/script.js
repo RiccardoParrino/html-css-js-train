@@ -59,16 +59,17 @@ function load_content(logged_user_index = 0) {
     }
 }
 
-const send_button = document.getElementById("change-user-button");
+const change_user_button = document.getElementById("change-user-button");
 
-send_button.addEventListener("click", function() {
+change_user_button.addEventListener("click", function() {
     const typed_username = document.getElementById("username").value;
     const typed_pin = document.getElementById("pin").value;
-    console.log(user_list.findIndex(function(element){
+    const logged_user_index = user_list.findIndex(function(element){
         if (element.username === typed_username) {
             return element.pin === typed_pin;
         } else {
             return false;
         }
-    }));
+    });
+    load_content(logged_user_index);
 });
