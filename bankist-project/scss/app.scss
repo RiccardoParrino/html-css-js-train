@@ -9,6 +9,16 @@ body {
     height: 100vh;
 }
 
+/*----COMPONENT----*/
+.button {
+    border: none;
+        background-color: transparent;
+
+    .send-img {
+        width: 32px;
+    }
+}
+
 /*----NAVBAR-SECTION----*/
 .navbar {
     background-color: white;
@@ -46,13 +56,6 @@ body {
     column-gap: 16px;
 
     #send-button {
-        border: none;
-        background-color: transparent;
-
-        .send-img {
-            width: 32px;
-        }
-
     }
 
 }
@@ -106,13 +109,21 @@ body {
     width: 100%;
 }
 
-#movements-container {
+#left-content {
     background-color: gray;
-    width: 75%;
-    max-width: 75%;
+    width: 60%;
     border-radius: 32px;
     min-height: 600px;
     overflow: auto;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    row-gap: 32px;
 }
 
 .movement {
@@ -159,7 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     padding: 16px;
     row-gap: 16px;
@@ -171,15 +182,12 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 16px;
-}
 
-.right-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 25%;
-    row-gap: 32px;
+    .input-text {
+        border: none;
+        opacity: 80%;
+        border-radius: 8px;
+    }
 }
 
 #transfer-request {
