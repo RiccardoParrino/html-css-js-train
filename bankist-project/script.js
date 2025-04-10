@@ -106,7 +106,7 @@ transfer_request_button.addEventListener("click", function() {
     if (transfer_to_index === -1) {
         alert("Utente non trovato!");
         return;
-    } 
+    }
 
     const regex = /[a-zA-Z]/g;
     if(regex.test(transfer_amount)){
@@ -129,4 +129,27 @@ transfer_request_button.addEventListener("click", function() {
         user_list[transfer_to_index].ops.push(numeric_transfer_amount);
         load_content(current_logged_user);
     }
+});
+
+const loan_request_button = document.getElementById("loan-request-button");
+
+loan_request_button.addEventListener("click", function() {
+    request_amount = document.getElementById("request-amount").value;
+
+    document.getElementById("request-amount").value = "";
+
+    const regex = /[a-zA-Z]/g;
+    if(regex.test(request_amount)){
+        alert("Inserisci un budget corretto!");
+        return;
+    }
+
+    let numeric_request_amount = new Number(request_amount);
+    
+    alert("Prestito approvato!");
+
+    const loanTimeout = setTimeout(function() {
+        user_list[current_logged_user].balance += numeric_request_amount;
+        load_content(current_logged_user);
+    }, 10000); // approve the loan after ten second
 });
