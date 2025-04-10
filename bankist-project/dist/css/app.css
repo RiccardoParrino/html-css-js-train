@@ -27,6 +27,45 @@ body {
   width: 20px;
 }
 
+/*----LOGIN----*/
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.login-img {
+  width: 64px;
+}
+
+.login-input-text {
+  height: 32px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.login-button {
+  width: 100%;
+  max-width: 84px;
+  height: 32px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: rgb(70, 70, 70) 1px solid;
+  background-color: rgb(237, 237, 237);
+}
+
+.login-button::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.login-button::placeholder {
+  text-transform: capitalize;
+}
+
 /*----NAVBAR-SECTION----*/
 .navbar {
   background-color: white;
