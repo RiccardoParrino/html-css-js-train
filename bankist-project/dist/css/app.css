@@ -10,6 +10,14 @@ body {
   height: 100vh;
 }
 
+.login {
+  display: block;
+}
+
+.spa {
+  display: none;
+}
+
 /*----COMPONENT----*/
 .button {
   border: none;
