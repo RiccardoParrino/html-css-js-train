@@ -21,6 +21,15 @@ const giovanna = {
 
 const user_list = [riccardo, francesco, giovanna];
 
+let remaining_logged_time = 60 * 9; // 9 minutes
+
+let timerId = setInterval(function (){
+    remaining_logged_time -= 1;
+    remaining_minutes = Math.floor(remaining_logged_time / 60);
+    remaining_seconds = remaining_logged_time - remaining_minutes*60;
+    document.getElementById("remaining-time").innerText = "You will be logged out in " + remaining_minutes + ":" + remaining_seconds;
+}, 1000);
+
 window.addEventListener("load", function() {
     load_content(0);
 });
