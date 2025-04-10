@@ -153,3 +153,32 @@ loan_request_button.addEventListener("click", function() {
         load_content(current_logged_user);
     }, 10000); // approve the loan after ten second
 });
+
+const close_request_button = document.getElementById("close-request-button");
+
+close_request_button.addEventListener("click", function () {
+    const request_user_close = document.getElementById("request-user-close").value;
+    const request_pin_close = document.getElementById("request-pin-close").value;
+
+    const index_user_to_be_removed = user_list.findIndex(function(element){
+        if (element.username === request_user_close) {
+            return element.pin === request_pin_close;
+        } else {
+            return false;
+        }
+    });
+    
+    if (index_user_to_be_removed === -1) {
+        alert("Utente non trovato!");
+        return;
+    }
+
+    document.getElementById("request-user-close").value = "";
+    document.getElementById("request-pin-close").value = "";
+
+    user_list.splice(index_user_to_be_removed, 1);
+
+    alert("Utente rimosso con successo!");
+
+    load_content(current_logged_user);
+});
