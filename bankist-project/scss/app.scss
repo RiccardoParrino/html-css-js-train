@@ -180,8 +180,25 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     column-gap: 16px;
+
+    .input-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 8px;
+
+        p {
+            font-size: 15px;
+        }
+
+        .button .send-img {
+            position: relative;
+            top: 4px;
+        }
+    }
 
     .input-text {
         border: none;

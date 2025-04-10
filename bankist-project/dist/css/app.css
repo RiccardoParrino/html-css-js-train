@@ -168,9 +168,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   -moz-column-gap: 16px;
        column-gap: 16px;
+}
+.fields-container .input-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 8px;
+}
+.fields-container .input-text-container p {
+  font-size: 15px;
+}
+.fields-container .input-text-container .button .send-img {
+  position: relative;
+  top: 4px;
 }
 .fields-container .input-text {
   border: none;
