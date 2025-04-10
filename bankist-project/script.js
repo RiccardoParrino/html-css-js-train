@@ -1,25 +1,26 @@
 const riccardo = {
     username: "riccardo",
     pin: "111111",
-    balance: 26000,
+    balance: new Number(26000),
     ops: [26000,-3000,500,2000,100,400]
 };
 
 const francesco = {
     username: "francesco",
     pin: "123456",
-    balance: 2000,
+    balance: new Number(2000),
     ops: [1000,-500,500,500,500]
 };
 
 const giovanna = {
     username: "giovanna",
     pin: "123455",
-    balance: 5000,
+    balance: new Number(5000),
     ops: [4000,-500,500,500,500]
 };
 
 const user_list = [riccardo, francesco, giovanna];
+let current_logged_user = 0;
 
 let remaining_logged_time = 60 * 9; // 9 minutes
 
@@ -31,7 +32,7 @@ let timerId = setInterval(function (){
 }, 1000);
 
 window.addEventListener("load", function() {
-    load_content(0);
+    load_content(current_logged_user);
 });
 
 window.addEventListener("click", function() {
@@ -86,4 +87,35 @@ change_user_button.addEventListener("click", function() {
         }
     });
     load_content(logged_user_index);
+});
+
+const transfer_request_button = document.getElementById("transfer-request-button");
+
+transfer_request_button.addEventListener("click", function() {
+    const transfer_to = document.getElementById("transfer-to").value;
+    const transfer_amount = document.getElementById("transfer-amount").value;
+
+    const transfer_to_index = user_list.findIndex(function (element){
+        return transfer_to === element.username;
+    });
+    if (transfer_to_index === -1) {
+        alert("Utente non trovato!");
+        return;
+    } 
+
+    const regex = /[a-zA-Z]/g;
+    if(regex.test(transfer_amount)){
+        alert("Inserisci un budget corretto!");
+        return;
+    } else {
+        transfer_amount = new Number(transfer_amount);
+    }
+    
+    if (user_list[current_logged_user].balance >= transfer_amount) {
+        user_list[current_logged_user].balance -= transfer_amount;
+        user_list[current_logged_user].ops.push(-transfer_amount);
+        user_list[transfer_to_index].balance += transfer_amount;
+        user_list[transfer_to_index].ops.push(transfer_amount);
+        load_content(current_logged_user);
+    }
 });
