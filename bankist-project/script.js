@@ -31,6 +31,8 @@ window.addEventListener("load", function() {
     const current_date = this.document.getElementById("current-date");
     const d = new Date();
     current_date.innerText = "As of " + d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
+
+    
 });
 
 const send_button = document.getElementById("change-user-button");
