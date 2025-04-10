@@ -155,8 +155,21 @@ body {
 
 }
 
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 25%;
+    row-gap: 32px;
 }
 
 #transfer-request {
