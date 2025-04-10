@@ -70,6 +70,10 @@ body {
 
 /*----MAIN----*/
 .main {
+  background-color: rgb(244, 244, 244);
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
