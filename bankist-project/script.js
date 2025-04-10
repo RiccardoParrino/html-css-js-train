@@ -32,7 +32,23 @@ window.addEventListener("load", function() {
     const d = new Date();
     current_date.innerText = "As of " + d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
 
-    
+    for (let i = 0; i < riccardo.ops.length; i++) {
+        if (riccardo.ops[i] > 0) {
+            const deposit_template = this.document.getElementById("deposit-template");
+            deposit_template.getElementsByClassName("movement-deposit-container")[0].innerText = i + " deposit";
+            deposit_template.getElementsByClassName("date-container")[0].innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
+            deposit_template.getElementsByClassName("movement-amount-container")[0].getElementsByClassName("amount")[0].innerText =  riccardo.ops[i];
+        } else {
+            const withdrawal_template = this.document.getElementById("withdrawal-template");
+            withdrawal_template.getElementsByClassName("movement-withdrawal-container")[0].innerText = i + " withdrawal";
+            withdrawal_template.getElementsByClassName("date-container")[0].innerText = d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
+            withdrawal_template.getElementsByClassName("movement-amount-container")[0].getElementsByClassName("amount")[0].innerText =  riccardo.ops[i];
+        }
+
+        const clone = template.content.cloneNode(true);
+        container.appendChild(clone);
+    }
+
 });
 
 const send_button = document.getElementById("change-user-button");
