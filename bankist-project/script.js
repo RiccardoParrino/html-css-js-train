@@ -114,6 +114,11 @@ transfer_request_button.addEventListener("click", function() {
         return;
     }
 
+    if(transfer_to_index === current_logged_user) {
+        alert("Non puoi trasferire denaro a te stesso!");
+        return;
+    }
+
     let numeric_transfer_amount = new Number(transfer_amount);
     console.log( typeof numeric_transfer_amount );
 
