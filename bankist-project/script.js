@@ -24,6 +24,9 @@ const user_list = [riccardo, francesco, giovanna, riccardo];
 window.addEventListener("load", function() {
     const navbar_username = this.document.getElementById("logged-username");
     navbar_username.innerText = riccardo.username;
+
+    const total_balance_element = this.document.getElementById("total-balance");
+    total_balance_element.getElementsByTagName("p")[0].innerText = "$" + riccardo.balance;
 });
 
 const send_button = document.getElementById("change-user-button");
