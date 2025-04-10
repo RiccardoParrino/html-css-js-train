@@ -27,6 +27,10 @@ window.addEventListener("load", function() {
 
     const total_balance_element = this.document.getElementById("total-balance");
     total_balance_element.getElementsByTagName("p")[0].innerText = "$" + riccardo.balance;
+
+    const current_date = this.document.getElementById("current-date");
+    const d = new Date();
+    current_date.innerText = "As of " + d.getDate() +"/"+ d.getDay() +"/"+ d.getFullYear() +", "+ d.getHours() + ":" + d.getMinutes();
 });
 
 const send_button = document.getElementById("change-user-button");
