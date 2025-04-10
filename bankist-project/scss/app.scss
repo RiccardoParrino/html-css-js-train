@@ -108,6 +108,7 @@ body {
     align-items: start;
     column-gap: 32px;
     width: 100%;
+    height: 100%;
 }
 
 .left-content {
@@ -115,10 +116,13 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: gray;
+    flex-grow: 1;
+    background-color: rgb(99, 99, 99);
     width: 100%;
+    height: 568px;
     border-radius: 32px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .right-content {
