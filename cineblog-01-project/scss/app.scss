@@ -215,58 +215,69 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: $space-10x;
+    background-color: white;
 }
 
 .film-item {
     background-image: url("../../img/film1.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 250px;
-    max-height: 300px;
 
-    .quality-video {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgb(0,0,0,.6);
-        padding: $space-2x;
-    }
-
-    .film-title-value {
+    .film-item-container {
+        position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        position: absolute;
-        row-gap: $space-4x;
         width: 100%;
-        bottom: 0px;
-        padding-top: $space-3x;
-        padding-bottom: $space-2x;
-        background-color: rgb(0,0,0,.6);
-        transition: transform 0.2s ease;
+        height: 100%;
+        min-height: 250px;
+        max-height: 300px;
+        z-index: 100;
+        overflow: hidden;
 
-        .film-title {
-            font-size: $font-size-7x;
+        .quality-video {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(0,0,0,.6);
+            padding: $space-2x;
         }
 
-        .film-evaluation {
+        .film-title-value {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            column-gap: $space-1x;;
-            .img-value {
-                width: 32px;
-            }
-            
-        }
+            text-align: center;
+            position: absolute;
+            row-gap: $space-4x;
+            width: 100%;
+            bottom: -32px;
+            padding-top: $space-3x;
+            padding-bottom: $space-2x;
+            background-color: rgb(0,0,0,.6);
+            transition: transform 0.2s ease;
+            z-index: 99;
 
+            .film-title {
+                font-size: $font-size-7x;
+            }
+
+            .film-evaluation {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                column-gap: $space-1x;;
+                .img-value {
+                    width: 32px;
+                }
+                
+            }
+
+        }
     }
 }
 
@@ -276,7 +287,7 @@ body {
     }
 
     .film-title-value {
-        transform: translate(0px, -32px);
+        transform: translate(0px, -34px);
         transition: transform 0.2s ease;
     }
 }
