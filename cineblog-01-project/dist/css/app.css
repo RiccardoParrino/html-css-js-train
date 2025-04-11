@@ -49,6 +49,7 @@ body {
   -moz-column-gap: 32px;
        column-gap: 32px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  padding: 16px 16px;
 }
 .navbar-section-container p {
   display: flex;
@@ -58,10 +59,31 @@ body {
   -moz-column-gap: 4px;
        column-gap: 4px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
 }
 .navbar-section-container p svg {
   width: 20px;
+}
+
+.navbar-header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  row-gap: 16px;
+}
+.navbar-header-section p.title {
+  color: rgb(255, 179, 10);
+  font-size: 15.21px;
+}
+.navbar-header-section p.subtitle {
+  color: red;
+  font-size: 13.2px;
+  font-weight: 200;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: -0.01px;
 }
 
 /*----main----*/

@@ -109,9 +109,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 32px;
+    column-gap: $space-8x;
     background: linear-gradient(to bottom, rgba(255, 255, 255, .15), rgba(255, 255, 255, .1));
-    
+    padding: $space-4x $space-4x;
+
     p {
         display: flex;
         flex-direction: row;
@@ -119,11 +120,34 @@ body {
         align-items: center;
         column-gap: $space-1x;
         text-transform: uppercase;
-        font-size: $font-size-7x;
+        font-size: $font-size-6x;
 
         svg {
             width: $space-5x;
         }
+    }
+}
+
+.navbar-header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: $space-10x;
+    margin-bottom: $space-10x;
+    row-gap: $space-4x;
+
+    p.title {
+        color: $tertiary-color;
+        font-size: $font-size-5x;
+    }
+
+    p.subtitle {
+        color: red;
+        font-size: $font-size-3x;
+        font-weight: $font-weight-low;
+        font-family: $secondary-font;
+        letter-spacing: -0.01px;
     }
 }
 
