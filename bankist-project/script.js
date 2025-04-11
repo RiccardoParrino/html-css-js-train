@@ -216,4 +216,3 @@ login_button.addEventListener("click", function() {
     document.getElementById("spa").style.display = "block";
     load_content(logged_user_index);
 });
-
