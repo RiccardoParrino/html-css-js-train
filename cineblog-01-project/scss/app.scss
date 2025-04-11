@@ -127,6 +127,15 @@ a {
     font-weight: 500;
 }
 
+.actor-anchor {
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    background-color: black;
+    color: white;
+    padding: $space-1x;
+    font-size: $font-size-1x;
+}
+
 /*----header----*/
 .header-section {
     display: flex;
@@ -381,6 +390,7 @@ a {
 .disclaimer {
     background-color: $secondary-bg-color;
     padding: $space-4x;
+    margin-bottom: $space-10x;
 
     p {
         font-family: $secondary-font;
@@ -404,6 +414,12 @@ a {
 
 .actors-section {
     width: 100%;
+
+    p {
+        margin-top: $space-2x;
+        margin-bottom: $space-2x;
+        line-height: 2em;
+    }
 }
 
 /*----footer----*/

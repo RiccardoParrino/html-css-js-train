@@ -59,6 +59,15 @@ a {
   font-weight: 500;
 }
 
+.actor-anchor {
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  background-color: black;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+}
+
 /*----header----*/
 .header-section {
   display: flex;
@@ -297,6 +306,7 @@ a {
 .disclaimer {
   background-color: #252525;
   padding: 16px;
+  margin-bottom: 40px;
 }
 .disclaimer p {
   font-family: "Open Sans Condensed", sans-serif;
@@ -319,6 +329,11 @@ a {
 
 .actors-section {
   width: 100%;
+}
+.actors-section p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 2em;
 }
 
 /*----footer----*//*# sourceMappingURL=app.css.map */
