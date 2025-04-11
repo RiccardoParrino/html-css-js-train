@@ -15,6 +15,21 @@ body {
   background-color: black;
 }
 
+/*----COMPONENT----*/
+.primary-button {
+  background-color: rgb(8, 148, 214);
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.search-bar {
+  background-color: #252525;
+  border: none;
+  height: 100%;
+  padding: 16px 8px;
+}
+
 /*----header----*/
 .header-section {
   display: flex;
@@ -98,6 +113,8 @@ body {
   padding-right: 16px;
   padding-left: 16px;
   margin: 0px auto;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 /*---right-content---*/
@@ -136,11 +153,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   width: 25%;
 }
 
 .left-img-container {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.search-bar-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 

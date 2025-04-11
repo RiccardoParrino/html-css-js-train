@@ -57,6 +57,7 @@ $primary-color: white;
 $secondary-color: rgb(8, 148, 214);
 $tertiary-color: rgb(255, 179, 10);
 $fourth-color: red;
+$secondary-bg-color: #252525;
 
 // fonts
 $primary-font: "Ubuntu Condensed", sans-serif;
@@ -76,6 +77,21 @@ $secondary-font: "Open Sans Condensed", sans-serif;
 body {
     font-family: $primary-font;
     background-color: black;
+}
+
+/*----COMPONENT----*/
+.primary-button {
+    background-color: $secondary-color;
+    padding: $space-2x $space-4x;
+    font-size: $font-size-6x;
+    font-family: $secondary-font;
+}
+
+.search-bar {
+    background-color: #252525;
+    border: none;
+    height: 100%;
+    padding: $space-4x $space-2x;
 }
 
 /*----header----*/
@@ -163,6 +179,7 @@ body {
     padding-right: $space-4x;
     padding-left: $space-4x;
     margin: 0px auto;
+    column-gap: $space-10x;
 }
 
 /*---right-content---*/
@@ -206,11 +223,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     width: 25%;
 }
 
 .left-img-container {
+    margin-bottom: $space-4x;
+    width: 100%;
+}
+
+.search-bar-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
