@@ -148,7 +148,6 @@ body {
 }
 
 .film-item {
-  background-image: url("../../img/film1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -204,11 +203,27 @@ body {
   width: 32px;
 }
 
+#film-item-1 {
+  background-image: url("../../img/film1.jpg");
+}
+
+#film-item-2 {
+  background-image: url("../../img/film2.jpg");
+}
+
+#film-item-3 {
+  background-image: url("../../img/film3.jpg");
+}
+
+#film-item-4 {
+  background-image: url("../../img/film4.jpg");
+}
+
 .film-item:hover .quality-video {
   background-color: rgb(8, 148, 214);
 }
 .film-item:hover .film-title-value {
-  transform: translate(0px, -34px);
+  transform: translate(0px, -32px);
   transition: transform 0.2s ease;
 }
 
