@@ -269,6 +269,12 @@ body {
     }
 }
 
+.film-item:hover {
+    .quality-video {
+        background-color: $secondary-color;
+    }
+}
+
 /*---left-content---*/
 .left-content {
     display: flex;

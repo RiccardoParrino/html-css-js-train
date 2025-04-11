@@ -193,6 +193,10 @@ body {
   width: 32px;
 }
 
+.film-item:hover .quality-video {
+  background-color: rgb(8, 148, 214);
+}
+
 /*---left-content---*/
 .left-content {
   display: flex;
