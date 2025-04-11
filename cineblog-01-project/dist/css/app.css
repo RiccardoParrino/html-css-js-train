@@ -28,6 +28,7 @@ body {
   background-color: #252525;
   border: none;
   height: 100%;
+  width: 100%;
   padding: 12px 8px;
 }
 
@@ -158,6 +159,10 @@ body {
   width: 25%;
 }
 
+.social-img-container {
+  width: 100%;
+}
+
 .left-img-container {
   margin-bottom: 16px;
   width: 100%;
@@ -166,9 +171,10 @@ body {
 .search-bar-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .left-content-img {
