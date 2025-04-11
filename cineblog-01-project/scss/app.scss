@@ -411,6 +411,10 @@ a {
 }
 
 .comments-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     width: 100%;
 }
 
@@ -423,6 +427,41 @@ a {
         line-height: 2.2em;
         word-spacing: 0.3em;
     }   
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    .profile-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-wrap: nowrap;
+        .img-profile {
+            width: 32px;
+        }
+
+    }
+
+    .film-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-wrap: nowrap;
+    }
 }
 
 /*----footer----*/
