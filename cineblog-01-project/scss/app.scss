@@ -37,14 +37,14 @@ $border-radius-7x: 32px;
 $border-radius-8x: 36px;
 
 // font size
-$font-large: 19.2px;
-$font-medium-large: 18px;
-$font-medium: 16px;
-$font-small-medium: 15.21px;
-$font-small: 14px;
-$font-extra-small: 13.2px;
-$font-extra-extra-small: 13px;
-$font-extra-small2: 12px;
+$font-size-8x: 19.2px;
+$font-size-7x: 18px;
+$font-size-6x: 16px;
+$font-size-5x: 15.21px;
+$font-size-4x: 14px;
+$font-size-3x: 13.2px;
+$font-size-2x: 13px;
+$font-size-1x: 12px;
 
 // font weight
 $font-weight-low: 200;
@@ -53,9 +53,10 @@ $font-weight-high: 800;
 
 // colors
 $gray-bg-color: black;
-$primary-color: rgb(8, 148, 214);
-$secondary-color: rgb(255, 179, 10);
-$tertiary-color: red;
+$primary-color: white;
+$secondary-color: rgb(8, 148, 214);
+$tertiary-color: rgb(255, 179, 10);
+$fourth-color: red;
 
 // fonts
 $primary-font: "Ubuntu Condensed", sans-serif;
@@ -65,10 +66,67 @@ $secondary-font: "Open Sans Condensed", sans-serif;
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    color: $primary-color;
 }
 
 /*----body----*/
 body {
     font-family: $primary-font;
+    background-color: black;
 }
 
+/*----header----*/
+.header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .15), rgba(255, 255, 255, .1));
+    margin-bottom: 32px;
+}
+
+.img-container {
+    width: 256px;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+/*----navbar----*/
+.navbar-section {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.navbar-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .15), rgba(255, 255, 255, .1));
+    
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: $space-1x;
+        text-transform: uppercase;
+        font-size: $font-size-7x;
+
+        svg {
+            width: $space-5x;
+        }
+    }
+}
+
+/*----main----*/
+
+/*----footer----*/
