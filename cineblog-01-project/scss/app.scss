@@ -219,6 +219,8 @@ body {
 
 .film-item {
     background-image: url("../../img/film1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
     width: 100%;
     height: 100%;
