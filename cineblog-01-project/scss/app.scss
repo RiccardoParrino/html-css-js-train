@@ -185,8 +185,8 @@ body {
     column-gap: $space-10x;
 }
 
-/*---right-content---*/
-.right-content {
+/*---left-content---*/
+.left-content {
     width: 75%;
 }
 
@@ -306,8 +306,8 @@ body {
     }
 }
 
-/*---left-content---*/
-.left-content {
+/*---right-content---*/
+.right-content {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -334,7 +334,7 @@ body {
     margin-bottom: $space-4x;
 }
 
-.left-content-img {
+.right-content-img {
     width:100%;
 }
 
