@@ -17,6 +17,9 @@ $space-13x: 52px;
 $space-14x: 56px;
 $space-15x: 60px;
 
+// line-height
+$line-height-value: 1.42857143;
+
 // border-size
 $border-size-1x: 1px;
 $border-size-2x: 2px;
@@ -381,6 +384,8 @@ a {
 
     p {
         font-family: $secondary-font;
+        font-size: $font-size-6x;
+        line-height: $line-height-value;
     }
 }
 
