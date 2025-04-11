@@ -58,6 +58,7 @@ $secondary-color: rgb(8, 148, 214);
 $tertiary-color: rgb(255, 179, 10);
 $fourth-color: red;
 $secondary-bg-color: #252525;
+$border-color: #555;
 
 // fonts
 $primary-font: "Ubuntu Condensed", sans-serif;
@@ -95,6 +96,18 @@ body {
     height: 100%;
     width: 100%;
     padding: $space-3x $space-2x;
+}
+
+.button-page {
+    border: $border-color 1px solid;
+    padding: $space-3x;
+    background-color: transparent;
+}
+
+.button-page-clicked {
+    background-color: white;
+    color: $secondary-color;
+    border: white 1px solid;
 }
 
 /*----header----*/
@@ -215,6 +228,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: $space-10x;
+    margin-bottom: $space-10x;
 }
 
 .film-item {
@@ -336,6 +350,15 @@ body {
 
 .right-content-img {
     width:100%;
+}
+
+/*--page-container--*/
+.page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: $space-10x;
 }
 
 /*----footer----*/

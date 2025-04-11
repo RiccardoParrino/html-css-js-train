@@ -33,6 +33,18 @@ body {
   padding: 12px 8px;
 }
 
+.button-page {
+  border: #555 1px solid;
+  padding: 12px;
+  background-color: transparent;
+}
+
+.button-page-clicked {
+  background-color: white;
+  color: rgb(8, 148, 214);
+  border: white 1px solid;
+}
+
 /*----header----*/
 .header-section {
   display: flex;
@@ -144,6 +156,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
+  margin-bottom: 40px;
 }
 
 .film-item {
@@ -256,6 +269,15 @@ body {
 
 .right-content-img {
   width: 100%;
+}
+
+/*--page-container--*/
+.page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 /*----footer----*//*# sourceMappingURL=app.css.map */
