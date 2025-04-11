@@ -167,7 +167,6 @@ body {
 
 /*---right-content---*/
 .right-content {
-    background-color: violet;
     width: 75%;
 }
 
@@ -179,6 +178,27 @@ body {
 .swiper-border {
     border: gray $border-size-4x dashed;
     min-height: 300px;
+}
+
+.header-grid-container {
+    margin-top: $space-10x;
+    margin-left: $space-5x;
+    p {
+        font-size: $font-size-8x;
+    }
+
+}
+
+.film-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: $space-10x;
+}
+
+.film-item {
+    background-color: violet;
+    min-width: 30px;
+    min-height: 30px;
 }
 
 /*---left-content---*/

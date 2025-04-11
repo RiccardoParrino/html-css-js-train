@@ -102,7 +102,6 @@ body {
 
 /*---right-content---*/
 .right-content {
-  background-color: violet;
   width: 75%;
 }
 
@@ -110,6 +109,26 @@ body {
 .swiper-border {
   border: gray 8px dashed;
   min-height: 300px;
+}
+
+.header-grid-container {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.header-grid-container p {
+  font-size: 19.2px;
+}
+
+.film-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.film-item {
+  background-color: violet;
+  min-width: 30px;
+  min-height: 30px;
 }
 
 /*---left-content---*/
