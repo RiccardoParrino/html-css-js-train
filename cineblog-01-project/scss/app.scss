@@ -1,8 +1,40 @@
 /*----VARS----*/
 
 // spacing
+$space-1x:  4px;
+$space-2x:  8px;
+$space-3x: 12px;
+$space-4x: 16px;
+$space-5x: 20px;
+$space-6x: 24px;
+$space-7x: 28px;
+$space-8x: 32px;
+$space-9x: 36px;
+$space-10x: 40px;
+$space-11x: 44px;
+$space-12x: 48px;
+$space-13x: 52px;
+$space-14x: 56px;
+$space-15x: 60px;
 
-// border
+// border-size
+$border-size-1x: 1px;
+$border-size-2x: 2px;
+$border-size-3x: 4px;
+$border-size-4x: 8px;;
+
+// border-radius
+$border-radius-1x:  1px;
+$border-radius-2x:  2px;
+$border-radius-3x:  4px;
+$border-radius-4x:  8px;
+$border-radius-5x: 12px;
+$border-radius-6x: 16px;
+$border-radius-7x: 20px;
+$border-radius-8x: 24px;
+$border-radius-6x: 28px;
+$border-radius-7x: 32px;
+$border-radius-8x: 36px;
 
 // font size
 $font-large: 19.2px;
@@ -26,8 +58,8 @@ $secondary-color: rgb(255, 179, 10);
 $tertiary-color: red;
 
 // fonts
-
-// border size
+$primary-font: "Ubuntu Condensed", sans-serif;
+$secondary-font: "Open Sans Condensed", sans-serif;
 
 /*----UNIVERSAL----*/
 * {
@@ -37,6 +69,6 @@ $tertiary-color: red;
 
 /*----body----*/
 body {
-    font-family: "Ubuntu Condensed", sans-serif;
+    font-family: $primary-font;
 }
 
