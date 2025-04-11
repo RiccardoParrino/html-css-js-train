@@ -46,8 +46,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
 }
 .navbar-section-container p {
