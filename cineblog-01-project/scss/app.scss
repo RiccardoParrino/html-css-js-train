@@ -132,8 +132,9 @@ a {
     text-wrap: nowrap;
     background-color: black;
     color: white;
-    padding: $space-1x;
+    padding: $space-2x 6px;
     font-size: $font-size-1x;
+    word-spacing: 0.1em;
 }
 
 /*----header----*/
@@ -406,6 +407,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: $secondary-bg-color;
+    margin-bottom: $space-10x;
 }
 
 .comments-section {
@@ -418,8 +420,9 @@ a {
     p {
         margin-top: $space-2x;
         margin-bottom: $space-2x;
-        line-height: 2em;
-    }
+        line-height: 2.2em;
+        word-spacing: 0.3em;
+    }   
 }
 
 /*----footer----*/

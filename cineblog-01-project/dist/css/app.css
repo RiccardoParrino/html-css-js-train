@@ -64,8 +64,9 @@ a {
   text-wrap: nowrap;
   background-color: black;
   color: white;
-  padding: 4px;
+  padding: 8px 6px;
   font-size: 12px;
+  word-spacing: 0.1em;
 }
 
 /*----header----*/
@@ -321,6 +322,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #252525;
+  margin-bottom: 40px;
 }
 
 .comments-section {
@@ -333,7 +335,8 @@ a {
 .actors-section p {
   margin-top: 8px;
   margin-bottom: 8px;
-  line-height: 2em;
+  line-height: 2.2em;
+  word-spacing: 0.3em;
 }
 
 /*----footer----*//*# sourceMappingURL=app.css.map */
