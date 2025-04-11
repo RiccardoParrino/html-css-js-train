@@ -171,12 +171,13 @@ body {
   align-items: center;
   text-align: center;
   position: absolute;
-  row-gap: 28px;
+  row-gap: 16px;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   padding-top: 12px;
   padding-bottom: 8px;
   background-color: rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
 }
 .film-item .film-title-value .film-title {
   font-size: 18px;
@@ -195,6 +196,10 @@ body {
 
 .film-item:hover .quality-video {
   background-color: rgb(8, 148, 214);
+}
+.film-item:hover .film-title-value {
+  transform: translate(0px, -32px);
+  transition: transform 0.2s ease;
 }
 
 /*---left-content---*/
