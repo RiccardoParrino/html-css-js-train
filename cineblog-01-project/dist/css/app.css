@@ -29,6 +29,8 @@ body {
 
 .img-container {
   width: 256px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .img-logo {
@@ -87,4 +89,33 @@ body {
 }
 
 /*----main----*/
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0px auto;
+}
+
+/*---right-content---*/
+.right-content {
+  background-color: violet;
+  width: 75%;
+}
+
+/*--swiper--*/
+.swiper-border {
+  border: gray 8px dashed;
+  min-height: 300px;
+}
+
+/*---left-content---*/
+.left-content {
+  background-color: red;
+  width: 25%;
+}
+
 /*----footer----*//*# sourceMappingURL=app.css.map */

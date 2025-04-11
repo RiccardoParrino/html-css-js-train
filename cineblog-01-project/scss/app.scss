@@ -92,6 +92,8 @@ body {
 
 .img-container {
     width: 256px;
+    padding-right: $space-4x;
+    padding-left: $space-4x;
 }
 
 .img-logo {
@@ -152,5 +154,37 @@ body {
 }
 
 /*----main----*/
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding-right: $space-4x;
+    padding-left: $space-4x;
+    margin: 0px auto;
+}
+
+/*---right-content---*/
+.right-content {
+    background-color: violet;
+    width: 75%;
+}
+
+/*--swiper--*/
+.swiper {
+
+}
+
+.swiper-border {
+    border: gray $border-size-4x dashed;
+    min-height: 300px;
+}
+
+/*---left-content---*/
+.left-content {
+    background-color: red;
+    width: 25%;
+}
 
 /*----footer----*/
