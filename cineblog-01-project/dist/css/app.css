@@ -9,7 +9,7 @@
   color: white;
 }
 
-/*----body----*/
+/*----BODY----*/
 body {
   font-family: "Ubuntu Condensed", sans-serif;
   background-color: black;
@@ -18,16 +18,17 @@ body {
 /*----COMPONENT----*/
 .primary-button {
   background-color: rgb(8, 148, 214);
-  padding: 8px 16px;
+  padding: 8px 20px;
   font-size: 16px;
   font-family: "Open Sans Condensed", sans-serif;
+  border: none;
 }
 
 .search-bar {
   background-color: #252525;
   border: none;
   height: 100%;
-  padding: 16px 8px;
+  padding: 12px 8px;
 }
 
 /*----header----*/
