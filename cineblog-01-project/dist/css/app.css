@@ -45,6 +45,20 @@ body {
   border: white 1px solid;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(8, 148, 214);
+}
+
+.a-bold {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.p-bold {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 500;
+}
+
 /*----header----*/
 .header-section {
   display: flex;
@@ -278,6 +292,14 @@ body {
   justify-content: end;
   align-items: center;
   margin-bottom: 40px;
+}
+
+.disclaimer {
+  background-color: #252525;
+  padding: 16px;
+}
+.disclaimer p {
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 /*----footer----*//*# sourceMappingURL=app.css.map */

@@ -110,6 +110,20 @@ body {
     border: white 1px solid;
 }
 
+a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+.a-bold {
+    font-family: $primary-font;
+}
+
+.p-bold {
+    font-family: $primary-font;
+    font-weight: 500;
+}
+
 /*----header----*/
 .header-section {
     display: flex;
@@ -359,6 +373,15 @@ body {
     justify-content: end;
     align-items: center;
     margin-bottom: $space-10x;
+}
+
+.disclaimer {
+    background-color: $secondary-bg-color;
+    padding: $space-4x;
+
+    p {
+        font-family: $secondary-font;
+    }
 }
 
 /*----footer----*/
