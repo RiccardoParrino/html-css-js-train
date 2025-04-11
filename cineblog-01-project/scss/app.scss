@@ -203,8 +203,19 @@ body {
 
 /*---left-content---*/
 .left-content {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     width: 25%;
+}
+
+.left-img-container {
+    width: 100%;
+}
+
+.left-content-img {
+    width:100%;
 }
 
 /*----footer----*/
