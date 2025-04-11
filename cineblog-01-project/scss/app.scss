@@ -389,4 +389,21 @@ a {
     }
 }
 
+/*--comments--*/
+.comments-actors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-bg-color;
+}
+
+.comments-section {
+    width: 100%;
+}
+
+.actors-section {
+    width: 100%;
+}
+
 /*----footer----*/

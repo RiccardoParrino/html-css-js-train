@@ -304,4 +304,21 @@ a {
   line-height: 1.42857143;
 }
 
+/*--comments--*/
+.comments-actors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+
+.comments-section {
+  width: 100%;
+}
+
+.actors-section {
+  width: 100%;
+}
+
 /*----footer----*//*# sourceMappingURL=app.css.map */
