@@ -354,6 +354,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 24px 0px;
   overflow: auto;
   max-height: 300px;
 }
