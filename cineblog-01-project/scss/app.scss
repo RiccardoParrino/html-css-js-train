@@ -416,6 +416,11 @@ a {
     justify-content: start;
     align-items: start;
     width: 100%;
+
+    p {
+        margin-bottom: $space-3x;
+        font-size: $font-size-7x;
+    }
 }
 
 .actors-section {
@@ -447,12 +452,13 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        align-items: center;
+        align-items: start;
         text-wrap: nowrap;
         column-gap: $space-1x;
 
         .img-profile {
-            width: 32px;
+            width: 18px;
+            margin-right: $space-1x;
         }
 
         .username {

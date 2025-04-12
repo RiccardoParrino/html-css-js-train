@@ -332,6 +332,10 @@ a {
   align-items: start;
   width: 100%;
 }
+.comments-section p {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
 
 .actors-section {
   width: 100%;
@@ -361,13 +365,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   text-wrap: nowrap;
   -moz-column-gap: 4px;
        column-gap: 4px;
 }
 .comment-item .profile-section .img-profile {
-  width: 32px;
+  width: 18px;
+  margin-right: 4px;
 }
 .comment-item .profile-section .username {
   font-family: "Ubuntu Condensed", sans-serif;
