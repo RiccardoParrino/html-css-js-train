@@ -449,8 +449,19 @@ a {
         justify-content: start;
         align-items: center;
         text-wrap: nowrap;
+        column-gap: $space-1x;
+
         .img-profile {
             width: 32px;
+        }
+
+        .username {
+
+        }
+
+        .comment {
+            font-family: $secondary-font;
+            text-wrap: wrap;
         }
 
     }
@@ -461,6 +472,7 @@ a {
         justify-content: start;
         align-items: center;
         text-wrap: nowrap;
+        font-family: $secondary-font;
     }
 }
 

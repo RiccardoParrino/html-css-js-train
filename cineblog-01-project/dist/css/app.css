@@ -363,9 +363,15 @@ a {
   justify-content: start;
   align-items: center;
   text-wrap: nowrap;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
 }
 .comment-item .profile-section .img-profile {
   width: 32px;
+}
+.comment-item .profile-section .comment {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-wrap: wrap;
 }
 .comment-item .film-section {
   display: flex;
@@ -373,6 +379,7 @@ a {
   justify-content: start;
   align-items: center;
   text-wrap: nowrap;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 /*----footer----*//*# sourceMappingURL=app.css.map */
