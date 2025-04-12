@@ -72,3 +72,5 @@ button_quality_list.addEventListener("click", function() {
     button_year_list.className = "secondary-button";
     button_quality_list.className = "clicked-button";
 });
+
+// swiper section animation

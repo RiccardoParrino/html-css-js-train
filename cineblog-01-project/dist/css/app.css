@@ -189,6 +189,10 @@ a {
   min-height: 300px;
 }
 
+.swiper-legend {
+  font-size: 19.2px;
+}
+
 .header-grid-container {
   margin-top: 40px;
   margin-left: 20px;
