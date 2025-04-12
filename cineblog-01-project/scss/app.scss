@@ -416,10 +416,12 @@ a {
     justify-content: start;
     align-items: start;
     width: 100%;
+    padding-right: $space-3x;
+    padding-left: $space-3x;
 
-    p {
-        margin-bottom: $space-3x;
+    & > p {
         font-size: $font-size-7x;
+        margin-bottom: $space-4x;   
     }
 }
 
@@ -482,6 +484,10 @@ a {
         align-items: center;
         text-wrap: nowrap;
         font-family: $secondary-font;
+
+        .film {
+            font-size: $font-size-3x;
+        }
     }
 }
 
