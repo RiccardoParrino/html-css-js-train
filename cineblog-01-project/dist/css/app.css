@@ -460,10 +460,10 @@ a {
 .section-list-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   width: 100%;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -519,9 +519,9 @@ a {
   margin-top: 4px;
   margin-bottom: 4px;
   display: none;
-  text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  width: 100%;
 }
 .quality-resolution hr {
   width: 100%;

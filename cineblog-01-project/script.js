@@ -61,6 +61,7 @@ button_quality_list.addEventListener("click", function() {
     section_list_container.style.opacity = 0;
     year_section.style.opacity = 0;
     quality_resolution.style.opacity = 0;
+    
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
             quality_resolution.style.opacity = 1;
