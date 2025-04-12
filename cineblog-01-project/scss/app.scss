@@ -549,12 +549,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-top: $space-6x;
+    margin-top: $space-3x;
     row-gap: $space-3x;
     width: 100%;
 
     a {
         color: white;
+        padding-left: $space-4x;
+    }
+
+    hr {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #666;
     }
 }   
 

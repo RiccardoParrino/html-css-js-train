@@ -451,12 +451,18 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin-top: 24px;
+  margin-top: 12px;
   row-gap: 12px;
   width: 100%;
 }
 .section-list-container a {
   color: white;
+  padding-left: 16px;
+}
+.section-list-container hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #666;
 }
 
 /*----footer----*/
