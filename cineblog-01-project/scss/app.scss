@@ -269,13 +269,26 @@ a {
     min-height: 300px;
     column-gap: $space-6x;
     padding: $space-4x;
-    width: 700px;
-    overflow-x: hidden;
+    max-width: 800px;
+    overflow: hidden;
     background-color: #555;
+    flex-shrink: 0;
 
-    .swiper-img {
-        width: 256px;
+    .swiper-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+        background-color: violet;
+
+        .swiper-img {
+            height: 100%;
+        }
+
     }
+
 }
 
 .swiper-legend {

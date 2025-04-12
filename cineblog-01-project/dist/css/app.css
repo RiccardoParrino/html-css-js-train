@@ -197,12 +197,22 @@ a {
   -moz-column-gap: 24px;
        column-gap: 24px;
   padding: 16px;
-  width: 700px;
-  overflow-x: hidden;
+  max-width: 800px;
+  overflow: hidden;
   background-color: #555;
+  flex-shrink: 0;
 }
-.swiper-container .swiper-img {
-  width: 256px;
+.swiper-container .swiper-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  background-color: violet;
+}
+.swiper-container .swiper-item .swiper-img {
+  height: 100%;
 }
 
 .swiper-legend {
