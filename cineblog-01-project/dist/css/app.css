@@ -498,6 +498,10 @@ a {
   border-top: 1px solid #666;
 }
 
+.quality-resolution {
+  text-align: center;
+}
+
 /*----footer----*/
 .footer-container {
   display: flex;
