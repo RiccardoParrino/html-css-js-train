@@ -369,9 +369,15 @@ a {
 .comment-item .profile-section .img-profile {
   width: 32px;
 }
+.comment-item .profile-section .username {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
 .comment-item .profile-section .comment {
   font-family: "Open Sans Condensed", sans-serif;
   text-wrap: wrap;
+  font-size: 13.2px;
 }
 .comment-item .film-section {
   display: flex;
