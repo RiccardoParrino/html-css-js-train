@@ -563,6 +563,8 @@ a {
     margin-top: $space-2x;
     margin-bottom: $space-2x;
     width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 
     a {
         color: white;
@@ -589,6 +591,8 @@ a {
     width: 100%;
     margin-top: $space-2x;
     margin-bottom: $space-2x;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 
     .year-item {
         display: flex;
@@ -622,6 +626,8 @@ a {
     margin-bottom: $space-1x;
     display: none;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 
     hr {
         width: 100%;

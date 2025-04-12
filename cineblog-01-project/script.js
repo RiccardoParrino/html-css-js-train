@@ -19,6 +19,16 @@ button_film_list.addEventListener("click", function () {
     section_list_container.style.display = "flex";
     year_section.style.display = "none";
     quality_resolution.style.display = "none";
+
+    section_list_container.style.opacity = 0;
+    year_section.style.opacity = 0;
+    quality_resolution.style.opacity = 0;
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            section_list_container.style.opacity = 1;
+        });
+    });
+
     button_film_list.className = "clicked-button";
     button_year_list.className = "secondary-button";
     button_quality_list.className = "secondary-button";
@@ -28,6 +38,16 @@ button_year_list.addEventListener("click", function() {
     section_list_container.style.display = "none";
     year_section.style.display = "grid";
     quality_resolution.style.display = "none";
+
+    section_list_container.style.opacity = 0;
+    year_section.style.opacity = 0;
+    quality_resolution.style.opacity = 0;
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            year_section.style.opacity = 1;
+        });
+    });
+
     button_film_list.className = "secondary-button";
     button_year_list.className = "clicked-button";
     button_quality_list.className = "secondary-button";
@@ -37,6 +57,16 @@ button_quality_list.addEventListener("click", function() {
     section_list_container.style.display = "none";
     year_section.style.display = "none";
     quality_resolution.style.display = "block";
+
+    section_list_container.style.opacity = 0;
+    year_section.style.opacity = 0;
+    quality_resolution.style.opacity = 0;
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            quality_resolution.style.opacity = 1;
+        });
+    });
+
     button_film_list.className = "secondary-button";
     button_year_list.className = "secondary-button";
     button_quality_list.className = "clicked-button";

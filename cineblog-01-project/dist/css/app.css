@@ -465,6 +465,8 @@ a {
   margin-top: 8px;
   margin-bottom: 8px;
   width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 .section-list-container a {
   color: white;
@@ -487,6 +489,8 @@ a {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .year-section .year-item {
   display: flex;
@@ -516,6 +520,8 @@ a {
   margin-bottom: 4px;
   display: none;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .quality-resolution hr {
   width: 100%;
