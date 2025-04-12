@@ -197,8 +197,9 @@ a {
   -moz-column-gap: 24px;
        column-gap: 24px;
   padding: 16px;
-  width: 800px;
+  width: 700px;
   overflow-x: hidden;
+  background-color: #555;
 }
 .swiper-container .swiper-img {
   width: 256px;

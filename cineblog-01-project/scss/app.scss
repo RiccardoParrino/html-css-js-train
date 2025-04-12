@@ -269,8 +269,9 @@ a {
     min-height: 300px;
     column-gap: $space-6x;
     padding: $space-4x;
-    width: 800px;
+    width: 700px;
     overflow-x: hidden;
+    background-color: #555;
 
     .swiper-img {
         width: 256px;
