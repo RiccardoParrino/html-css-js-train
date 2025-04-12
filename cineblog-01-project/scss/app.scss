@@ -550,12 +550,17 @@ a {
     justify-content: center;
     align-items: start;
     margin-top: $space-3x;
-    row-gap: $space-3x;
     width: 100%;
 
     a {
         color: white;
-        padding-left: $space-4x;
+        width: 100%;
+        height: 100%;
+        padding: $space-3x $space-4x;
+    }
+
+    a:hover {
+        background-color: #555;
     }
 
     hr {
