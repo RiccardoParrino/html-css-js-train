@@ -487,6 +487,9 @@ a {
   height: 100%;
   padding: 12px 16px;
 }
+.year-section .year-item a:hover {
+  background-color: #555;
+}
 .year-section .year-item hr {
   width: 100%;
   border: none;

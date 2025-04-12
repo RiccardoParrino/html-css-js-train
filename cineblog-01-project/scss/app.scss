@@ -589,6 +589,10 @@ a {
             padding: $space-3x $space-4x;
         }
 
+        a:hover {
+            background-color: #555;
+        }
+
         hr {
             width: 100%;
             border: none;
