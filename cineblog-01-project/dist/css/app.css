@@ -451,7 +451,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin-top: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
   width: 100%;
 }
 .section-list-container a {
@@ -473,7 +474,8 @@ a {
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  margin-bottom: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 .year-section .year-item {
   display: flex;
@@ -499,8 +501,13 @@ a {
 }
 
 .quality-resolution {
+  margin-top: 4px;
+  margin-bottom: 8px;
   display: none;
   text-align: center;
+}
+.quality-resolution hr {
+  width: 100%;
 }
 
 /*----footer----*/

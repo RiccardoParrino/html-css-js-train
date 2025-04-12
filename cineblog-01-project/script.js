@@ -1,15 +1,12 @@
-// db section
+/*----------------------database  section----------------------*/
 
-// backend section
+/*----------------------backend   section----------------------*/
 
-// frontend section
+/*----------------------frontend  section----------------------*/
 
-// animation section
-"section-list-container"
-"year-section"
-"quality-resolution"
+/*----------------------animation section----------------------*/
 
-// choice section list
+// right content section list
 const button_film_list = document.getElementById("button-film-list");
 const button_year_list = document.getElementById("button-year-list");
 const button_quality_list = document.getElementById("button-quality-list");

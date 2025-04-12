@@ -549,7 +549,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-top: $space-3x;
+    margin-top: $space-1x;
+    margin-bottom: $space-2x;
     width: 100%;
 
     a {
@@ -575,7 +576,8 @@ a {
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    margin-bottom: $space-3x;
+    margin-top: $space-1x;
+    margin-bottom: $space-2x;
 
     .year-item {
         display: flex;
@@ -605,8 +607,14 @@ a {
 }
 
 .quality-resolution {
+    margin-top: $space-1x;
+    margin-bottom: $space-2x;
     display: none;
     text-align: center;
+
+    hr {
+        width: 100%;
+    }
 }
 
 /*----footer----*/
