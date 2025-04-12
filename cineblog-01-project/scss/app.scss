@@ -379,6 +379,24 @@ a {
     width:100%;
 }
 
+.category-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-color;
+    width: 100%;
+    padding: $space-3x;
+
+    p {
+        font-size: $font-size-4x;
+    }
+
+    svg {
+        width: 16px;
+    }
+}
+
 /*--page-container--*/
 .page-container {
     display: flex;

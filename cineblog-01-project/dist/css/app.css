@@ -295,6 +295,22 @@ a {
   width: 100%;
 }
 
+.category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(8, 148, 214);
+  width: 100%;
+  padding: 12px;
+}
+.category-container p {
+  font-size: 14px;
+}
+.category-container svg {
+  width: 16px;
+}
+
 /*--page-container--*/
 .page-container {
   display: flex;
