@@ -75,11 +75,11 @@ button_quality_list.addEventListener("click", function() {
 
 // swiper section animation
 const swiper_item_collection = document.getElementsByClassName("swiper-item");
-let shift = 100;
+let shift = 400;
 
 const swiper_animation = setInterval(function(){
     for (element of swiper_item_collection) {
         element.style.setProperty('left', -shift + "px");
     }
-    shift = (shift + 100)%1200;
+    shift = (shift + 200)%1200;
 }, 1500);
