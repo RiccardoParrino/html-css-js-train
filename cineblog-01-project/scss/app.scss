@@ -544,6 +544,20 @@ a {
     }
 }
 
+.section-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: $space-6x;
+    row-gap: $space-3x;
+    width: 100%;
+
+    a {
+        color: white;
+    }
+}   
+
 /*----footer----*/
 .footer {
 }
