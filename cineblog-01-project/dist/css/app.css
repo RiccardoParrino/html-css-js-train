@@ -363,6 +363,7 @@ a {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  margin-top: 12px;
 }
 .comment-item .profile-section {
   display: flex;
