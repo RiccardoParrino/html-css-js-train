@@ -407,4 +407,20 @@ a {
   font-size: 13.2px;
 }
 
-/*----footer----*//*# sourceMappingURL=app.css.map */
+/*----footer----*/
+.footer-container {
+  display: flex;
+  background-color: #252525;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 12px 20px;
+}
+.footer-container p {
+  margin-right: 8px;
+}
+.footer-container .logo-footer {
+  width: 128px;
+}/*# sourceMappingURL=app.css.map */

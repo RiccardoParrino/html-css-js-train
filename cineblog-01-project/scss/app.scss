@@ -502,3 +502,24 @@ a {
 }
 
 /*----footer----*/
+.footer {
+}
+
+.footer-container {
+    display: flex;
+    background-color: $secondary-bg-color;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: $space-3x $space-5x;
+
+    p {
+        margin-right: $space-2x;
+    }
+
+    .logo-footer {
+        width: 128px;
+    }
+}
