@@ -355,6 +355,7 @@ a {
   justify-content: center;
   align-items: center;
   overflow: auto;
+  max-height: 300px;
 }
 
 .comment-item {
@@ -393,8 +394,14 @@ a {
   align-items: center;
   text-wrap: nowrap;
   font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .comment-item .film-section .film {
+  font-size: 13.2px;
+  margin-right: 4px;
+}
+.comment-item .film-section .when {
   font-size: 13.2px;
 }
 

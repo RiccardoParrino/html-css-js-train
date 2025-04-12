@@ -442,6 +442,7 @@ a {
     justify-content: center;
     align-items: center;
     overflow: auto;
+    max-height: 300px;
 }
 
 .comment-item {
@@ -484,8 +485,15 @@ a {
         align-items: center;
         text-wrap: nowrap;
         font-family: $secondary-font;
+        margin-top: $space-1x;
+        margin-bottom: $space-1x;
 
         .film {
+            font-size: $font-size-3x;
+            margin-right: $space-1x;
+        }
+
+        .when{
             font-size: $font-size-3x;
         }
     }
