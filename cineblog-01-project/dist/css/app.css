@@ -25,6 +25,17 @@ body {
   height: 100%;
 }
 
+.secondary-button {
+  background-color: #252525;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 500;
+  border: none;
+  height: 100%;
+  color: #999;
+}
+
 .search-bar {
   background-color: #252525;
   border: none;
@@ -309,6 +320,13 @@ a {
 }
 .category-container svg {
   width: 16px;
+}
+
+.button-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 
 /*--page-container--*/
