@@ -36,6 +36,17 @@ body {
   color: #999;
 }
 
+.clicked-button {
+  background-color: rgb(8, 148, 214);
+  font-size: 16px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  border: none;
+  height: 100%;
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
 .search-bar {
   background-color: #252525;
   border: none;

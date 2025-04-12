@@ -19,16 +19,25 @@ button_film_list.addEventListener("click", function () {
     section_list_container.style.display = "flex";
     year_section.style.display = "none";
     quality_resolution.style.display = "none";
+    button_film_list.className = "clicked-button";
+    button_year_list.className = "secondary-button";
+    button_quality_list.className = "secondary-button";
 });
 
 button_year_list.addEventListener("click", function() {
     section_list_container.style.display = "none";
     year_section.style.display = "grid";
     quality_resolution.style.display = "none";
+    button_film_list.className = "secondary-button";
+    button_year_list.className = "clicked-button";
+    button_quality_list.className = "secondary-button";
 })
 
 button_quality_list.addEventListener("click", function() {
     section_list_container.style.display = "none";
     year_section.style.display = "none";
     quality_resolution.style.display = "block";
+    button_film_list.className = "secondary-button";
+    button_year_list.className = "secondary-button";
+    button_quality_list.className = "clicked-button";
 });

@@ -104,6 +104,17 @@ body {
     color: #999;
 }
 
+.clicked-button {
+    background-color: $secondary-color;
+    font-size: $font-size-6x;
+    font-family: $primary-font;
+    border: none;
+    height: 100%;
+    color: white;
+    font-size: $font-size-4x;
+    padding: $space-2x $space-5x;
+}
+
 .search-bar {
     background-color: #252525;
     border: none;
