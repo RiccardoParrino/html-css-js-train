@@ -75,11 +75,26 @@ button_quality_list.addEventListener("click", function() {
 
 // swiper section animation
 const swiper_item_collection = document.getElementsByClassName("swiper-item");
-let shift = 400;
+let counter = 0;
+let shift = window.getComputedStyle(swiper_item_collection[0]).width;
 
 const swiper_animation = setInterval(function(){
-    for (element of swiper_item_collection) {
-        element.style.setProperty('left', -shift + "px");
+
+    if (counter < swiper_item_collection.length) {
+        console.log(shift);
+        for (element of swiper_item_collection) {
+            element.style.setProperty('left', "-"+shift);
+        }
+        shift = parseInt(shift) + parseInt(window.getComputedStyle(swiper_item_collection[counter]).width) + 50;
+        shift = shift + "px";
+    } else {
+        counter = 0;
+        shift = window.getComputedStyle(swiper_item_collection[counter]).width;
+        for (element of swiper_item_collection) {
+            element.style.setProperty('left', "0px");
+        }
     }
-    shift = (shift + 200)%1200;
+
+    counter = counter + 1;
+
 }, 1500);
