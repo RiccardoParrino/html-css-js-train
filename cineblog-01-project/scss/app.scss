@@ -269,16 +269,17 @@ a {
     min-height: 300px;
     column-gap: $space-6x;
     padding: $space-4x;
-    max-width: 800px;
+    width: 850px;
     overflow: hidden;
     background-color: #555;
-    flex-shrink: 0;
 
     .swiper-item {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
+        left: 0px;
         height: 400px;
         width: 400px;
         background-color: violet;

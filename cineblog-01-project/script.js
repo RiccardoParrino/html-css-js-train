@@ -74,3 +74,12 @@ button_quality_list.addEventListener("click", function() {
 });
 
 // swiper section animation
+const swiper_item_collection = document.getElementsByClassName("swiper-img");
+let shift = 300;
+
+const swiper_animation = setInterval(function(){
+    for (element of swiper_item_collection){
+        element.style.left = String( ( parseInt(element.style.left) + 300 )%1200) + "px";
+        console.log( element.style.left );
+    }
+}, 1000);

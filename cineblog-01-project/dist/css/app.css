@@ -197,16 +197,17 @@ a {
   -moz-column-gap: 24px;
        column-gap: 24px;
   padding: 16px;
-  max-width: 800px;
+  width: 850px;
   overflow: hidden;
   background-color: #555;
-  flex-shrink: 0;
 }
 .swiper-container .swiper-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
+  left: 0px;
   height: 400px;
   width: 400px;
   background-color: violet;
