@@ -88,7 +88,7 @@ body {
     background-color: $secondary-color;
     padding: $space-2x $space-5x;
     font-size: $font-size-6x;
-    font-family: $secondary-font;
+    font-family: $primary-font;
     border: none;
     height: 100%;
 }
@@ -96,9 +96,9 @@ body {
 .secondary-button {
     background-color: $secondary-bg-color;
     padding: $space-2x $space-5x;
-    font-size: $font-size-6x;
-    font-family: $secondary-font;
-    font-weight: 500;
+    font-size: $font-size-4x;
+    font-family: $primary-font;
+    font-weight: 400;
     border: none;
     height: 100%;
     color: #999;
@@ -413,6 +413,13 @@ a {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+
+    button.secondary-button:hover {
+        @extend .primary-button;
+        color: white;
+        font-size: $font-size-4x;
+        padding: $space-2x $space-5x;
+    }
 }
 
 /*--page-container--*/

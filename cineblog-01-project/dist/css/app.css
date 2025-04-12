@@ -16,11 +16,11 @@ body {
 }
 
 /*----COMPONENT----*/
-.primary-button {
+.primary-button, .button-section-container button.secondary-button:hover {
   background-color: rgb(8, 148, 214);
   padding: 8px 20px;
   font-size: 16px;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   border: none;
   height: 100%;
 }
@@ -28,9 +28,9 @@ body {
 .secondary-button {
   background-color: #252525;
   padding: 8px 20px;
-  font-size: 16px;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
   border: none;
   height: 100%;
   color: #999;
@@ -327,6 +327,11 @@ a {
   flex-direction: row;
   justify-content: start;
   align-items: center;
+}
+.button-section-container button.secondary-button:hover {
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
 }
 
 /*--page-container--*/
