@@ -186,7 +186,22 @@ a {
 /*--swiper--*/
 .swiper-border {
   border: gray 8px dashed;
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
   min-height: 300px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  padding: 16px;
+  width: 800px;
+  overflow-x: hidden;
+}
+.swiper-container .swiper-img {
+  width: 256px;
 }
 
 .swiper-legend {

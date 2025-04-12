@@ -259,7 +259,22 @@ a {
 
 .swiper-border {
     border: gray $border-size-4x dashed;
+}
+
+.swiper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
     min-height: 300px;
+    column-gap: $space-6x;
+    padding: $space-4x;
+    width: 800px;
+    overflow-x: hidden;
+
+    .swiper-img {
+        width: 256px;
+    }
 }
 
 .swiper-legend {
