@@ -220,14 +220,45 @@ $("p").remove(".test, .demo");
 ---
 
 # jQuery HTML: CSS Classes
-
+1) addClass() - Adds one or more classes to the selected elements
+2) removeClass() - Removes one or more classes from the selected elements
+3) toggleClass() - Toggles between adding/removing classes from the selected elements
+4) css() - Sets or returns the style attribute
+```
+$("button").click(function(){
+  $("h1, h2, p").addClass("blue");
+  $("div").addClass("important");
+});
+```
 ---
 
 # jQuery HTML: css()
+1) Return a CSS Property
+2) Set a CSS Property
+3) Set Multiple CSS Properties
+<br>
+```
+css("propertyname"); // returns a property
+```
+
+```
+css({"propertyname":"value","propertyname":"value",...}); // setting multi props
+```
 
 ---
 
 # jQuery HTML: Dimensions
-
-
-
+1) width()
+2) height()
+3) innerWidth()
+4) innerHeight()
+5) outerWidth()
+6) outerHeight()
+```
+$("button").click(function(){
+  var txt = "";
+  txt += "Outer width: " + $("#div1").outerWidth() + "</br>";
+  txt += "Outer height: " + $("#div1").outerHeight();
+  $("#div1").html(txt);
+});
+```
