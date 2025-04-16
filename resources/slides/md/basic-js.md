@@ -140,9 +140,18 @@ Classes are always executed in "strict mode", never in script mode.
 - To find the method to be executed on a certain object, explore the prototype chain to the null element
 - Class is sintactic sugar for prototype. Behind a class definition there is always a prototype
 ---
+
 # Class and OOP: Prototype
+- actual version of the class definition
+- 
+
 ---
-# Class and OOP: Subclass
+
+# Class and OOP: Subclass Usage
+- Inside the constructor you can call super()
+- You can use extends keyword to extend one class
+- You can use this keyword to referencing the attribute and the method of the class
+
 ---
 
 # Function
