@@ -111,27 +111,34 @@ $("#show").click(function(){
 2) fadeOut()
 3) fadeToggle()
 4) fadeTo()
-
+Fade an element in and out of visibility.
 ---
 
 # jQuery Effects: Slide
 1) slideDown()
 2) slideUp()
 3) slideToggle()
+Create a sliding effect on elements.
 ```
 $(selector).slide(speed,callback); // general syntax
 ```
 ---
 
 # jQuery Effects: Animate
+Method used to create custom animations.
 ```
 $(selector).animate({params},speed,callback);
+
+// concrete example
+$("button").click(function(){
+  $("div").animate({left: '250px'});
+}); 
 ```
 
 ---
 
 # jQuery Effects: stop()
-
+Method used to stop an animation or effect before it is finished.
 <br>
 
 ```
@@ -144,7 +151,7 @@ $("#stop").click(function(){
 ---
 
 # jQuery Effects: Chaining
-Chaining technique: chianing the effects applied to an element
+Chaining technique: chaining the effects applied to an element
 ```
 $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
 ```
