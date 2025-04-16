@@ -89,7 +89,24 @@ Common events: ready, click, dblclick, mouseenter, mouseleave, mousedown, mouseu
 
 # jQuery Effects: Hide and Show
 
+1) Example hide
 
+```
+// general syntax: $(selector).hide(speed, callback)
+
+$(#hide).click(function(){
+    $("p").hide();
+});
+```
+
+2) Example show
+```
+// general syntax: $(selector).show(speed, callback)
+
+$("#show").click(function(){
+    $("p").show();
+})
+```
 
 
 
