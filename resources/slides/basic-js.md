@@ -66,23 +66,6 @@ console.log(rest); // [20,30,40]
 1. Basic feature of an object
 2. Creating an Object
 3. Destructuring an Object
-4. Arrays in JavaScript
-
----
-
-# Basic feature of an Object
-
----
-
-# Creating an Object
-
----
-
-# Destructuring an Object
-
----
-
-# Arrays in JavaScript
 
 ---
 
@@ -93,29 +76,6 @@ console.log(rest); // [20,30,40]
 4) Types
 5) Subclasses
 6) Modules
----
-
-# 1. Class
-
----
-
-# 2. Prototype
-
----
-
-# 3. Constructors
-
----
-
-# 4. Types
-
----
-
-# 5. Subclasses
-
----
-
-# 6. Modules
 
 ---
 
@@ -134,4 +94,4 @@ console.log(rest); // [20,30,40]
 
 # Testing
 1. Basics
-2. Jasmine
+2. Jasmine (Jest, Mocha)
