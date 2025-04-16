@@ -127,6 +127,9 @@ class Car {
 
 const myCar = new Car("Ford", 2014);
 ```
+---
+
+Classes are always executed in "strict mode", never in script mode.
 
 ---
 
