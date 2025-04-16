@@ -107,6 +107,33 @@ $("#show").click(function(){
     $("p").show();
 })
 ```
+---
+
+# jQuery Effects: Fading
+1) fadeIn()
+2) fadeOut()
+3) fadeToggle()
+4) fadeTo()
+
+---
+
+# jQuery Effects: Slide
+
+---
+
+# jQuery Effects: Animate
+
+---
+
+# jQuery Effects: stop()
+
+---
+
+# jQuery Effects: Callback
+
+---
+
+# jQuery Effects: Chaining
 
 
 
