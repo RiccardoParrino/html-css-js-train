@@ -262,3 +262,66 @@ $("button").click(function(){
   $("#div1").html(txt);
 });
 ```
+
+# jQuery Traversing
+1) Traversing
+2) Ancestors
+3) Descendants
+4) Siblings
+5) Filtering
+
+---
+
+# jQuery Traversing: Ancestors
+1) parent()
+2) parents()
+3) parentsUntil()
+
+```
+$(document).ready(function(){
+  $("span").parents(); // all parents until html
+});
+
+$(document).ready(function(){
+  $("span").parents("ul"); // all parents that are ul
+});
+
+$(document).ready(function(){
+  $("span").parentsUntil("div");
+});
+```
+
+---
+
+# jQuery Traversing: Descendants
+1) children() - returns all direct children of the selected element
+```
+$(document).ready(function(){
+  $("div").children();
+});
+```
+2) find() - returns descendant elemnt of the selected element, to the last descendant
+```
+$(document).ready(function(){
+  $("div").find("span");
+});
+```
+
+---
+
+# jQuery Traversing: Siblings
+1) siblings()
+2) next(), nextAll(), nextUntil()
+3) prev(), prevAll(), prevUntil()
+
+---
+
+# jQuery Traversing: Filtering
+1) first(), last(), eq(), filter(), not()
+
+```
+$(document).ready(function(){
+  $("div").first();
+});
+```
+
