@@ -80,6 +80,7 @@ console.log(rest); // [20,30,40]
 ```
 
 ---
+
 # Object in JavaScript
 1. Basic feature of an object
 2. Creating an Object
@@ -131,6 +132,17 @@ const myCar = new Car("Ford", 2014);
 
 Classes are always executed in "strict mode", never in script mode.
 
+---
+
+# Class and OOP: Inheritance
+- Inheritance is based on prototype chain (prototype-based inheritance)
+- Every object has its own prototype
+- To find the method to be executed on a certain object, explore the prototype chain to the null element
+- Class is sintactic sugar for prototype. Behind a class definition there is always a prototype
+---
+# Class and OOP: Prototype
+---
+# Class and OOP: Subclass
 ---
 
 # Function
