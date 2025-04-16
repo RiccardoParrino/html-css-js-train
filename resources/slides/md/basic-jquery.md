@@ -325,3 +325,50 @@ $(document).ready(function(){
 });
 ```
 
+---
+
+# jQuery AJAX
+1) Load
+2) Get/Post
+
+---
+
+# jQuery AJAX: load
+1) $(selector).load(URL,data,callback);
+```
+$("button").click(function(){
+  $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+    if(statusTxt == "success")
+      alert("External content loaded successfully!");
+    if(statusTxt == "error")
+      alert("Error: " + xhr.status + ": " + xhr.statusText);
+  });
+});
+```
+
+---
+
+# jQuery AJAX; get() and post()
+1) get request example
+```
+$.get(URL,callback);
+$("button").click(function(){
+  $.get("demo_test.asp", function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+```
+2) post request example
+```
+$.post(URL,data,callback);
+$("button").click(function(){
+  $.post("demo_test_post.asp",
+  {
+    name: "Donald Duck",
+    city: "Duckburg"
+  },
+  function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+```
