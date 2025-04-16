@@ -135,5 +135,81 @@ $("#show").click(function(){
 
 # jQuery Effects: Chaining
 
+---
+
+# jQuery HTML: Topics
+1) Get
+2) Set
+3) Add
+4) Remove
+5) CSS Classes
+6) css()
+7) Dimensions
+
+---
+
+# jQuery HTML: get
+1) text()
+2) html()
+3) val()
+4) attr()
+
+<br>
+
+```
+$("#btn1").click(function(){
+  alert("Text: " + $("#test").text());
+});
+$("#btn2").click(function(){
+  alert("HTML: " + $("#test").html());
+});
+```
+
+---
+
+# jQuery HTML: set
+1) text(), text(callback_function())
+2) html(), html(callback_function())
+3) val(), val(callback_function())
+4) attr(), attr(callback_function())
+
+<br>
+
+```
+$("#btn1").click(function(){
+  $("#test1").text("Hello world!");
+});
+$("#btn1").click(function(){
+  $("#test1").text(function(i, origText){
+    return "Old text: " + origText + " New text: Hello world!
+    (index: " + i + ")";
+  });
+});
+```
+
+---
+
+# jQuery HTML: add
+1) append() - inserts content at the end of the selected elements
+2) prepend() - Inserts content at the beginning od the selected elements
+3) after() - Inserts content adter the selected elements
+4) before() - Inserts content before the selected elements
+
+--- 
+
+# jQuery HTML: remove
+
+---
+
+# jQuery HTML: CSS Classes
+
+---
+
+# jQuery HTML: css()
+
+---
+
+# jQuery HTML: Dimensions
+
 
 
