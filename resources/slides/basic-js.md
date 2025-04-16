@@ -60,3 +60,12 @@ marp: true
 ---
 
 # Function
+1. IIFE
+2. First-Class Citizens
+3. High-Order Function
+4. Currying
+5. Memoization
+
+# Testing
+1. Basics
+2. Jasmine
