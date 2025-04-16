@@ -7,13 +7,10 @@ marp: true
 ---
 
 # Topics
-0) Introduction
-1) HTML/DOM manipulation
-2) CSS manipulation
-3) HTML event methods
-4) Effects and animations
-5) AJAX
-6) Utilities
+1) Introduction
+2) jQuery HTML
+3) jQuery Traversing
+4) jQuery AJAX
 
 ---
 
@@ -335,6 +332,7 @@ $(document).ready(function(){
 
 # jQuery AJAX: load
 1) $(selector).load(URL,data,callback);
+<br>
 ```
 $("button").click(function(){
   $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
