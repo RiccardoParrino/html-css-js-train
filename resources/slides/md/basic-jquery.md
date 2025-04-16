@@ -115,23 +115,39 @@ $("#show").click(function(){
 ---
 
 # jQuery Effects: Slide
-
+1) slideDown()
+2) slideUp()
+3) slideToggle()
+```
+$(selector).slide(speed,callback); // general syntax
+```
 ---
 
 # jQuery Effects: Animate
+```
+$(selector).animate({params},speed,callback);
+```
 
 ---
 
 # jQuery Effects: stop()
 
----
+<br>
 
-# jQuery Effects: Callback
+```
+$(selector).stop(stopAll,goToEnd);
 
+$("#stop").click(function(){
+  $("#panel").stop();
+});
+```
 ---
 
 # jQuery Effects: Chaining
-
+Chaining technique: chianing the effects applied to an element
+```
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+```
 ---
 
 # jQuery HTML: Topics
