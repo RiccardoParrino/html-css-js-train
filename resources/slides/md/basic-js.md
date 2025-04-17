@@ -198,10 +198,22 @@ console.log(greet.customProp); // "Hello!"
 # Function: Function Properties, Method and Constructor (3)
 
 - Method of the function:
-    - call: 
+    - call: call a function on an object
     - apply: as call, but arguments in the array
     - bind: a function to an object
     - toString: return the body of the function
+---
+# Function: Function Properties, Method and Constructor (Call and Apply)
+```
+f.call(o, 1, 2);
+f.apply(o, [1,2]);
+
+// does the same thing to:
+o.m = f;
+o.m([1,2]); // o.m(1,2) in the case of call
+delete o.m;
+```
+
 ---
 # Function: Function Properties, Method and Constructor (Bind)
 - The bind method bind a function f to an object o
