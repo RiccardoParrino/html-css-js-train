@@ -153,7 +153,6 @@ Classes are always executed in "strict mode", never in script mode.
 - The `for in` statement can loop over all of the property names in an object
 - The `for in` loop will include all of the properties and funcitons of the object and of the prototypes
 - to filter out some property and/or function use the hasOwnProperty Method and typeof (=== 'function')
-
 ```
 const person = {
     name: "Tom",
@@ -168,6 +167,33 @@ delete another_stooge.nickname;
 ```
 This will remove the nickname only for the object on which is invoked, not on to the prototype
 
+---
+
+# Class and OOP: Global Abatement 
+Don't use global variables, instead put it into a map
+
+```
+var MYAPP = {};
+MYAPP.stooge {
+    "first-name": "Jow",
+    "last-name": "Howard"
+};
+
+MYAPP.flight = {
+    airline: "Oceanic",
+    number: 815,
+    departure: {
+        IATA: "SYD",
+        time: "2004-09-22 14:55",
+        city: "Sydney"
+    },
+    arrival {
+        IATA: "LAX",
+        time: "2004-09-23 10:42",
+        city: "Los Angeles"
+    }
+};
+```
 ---
 # Class and OOP: Subclass Usage
 - Inside the constructor you can call super()
