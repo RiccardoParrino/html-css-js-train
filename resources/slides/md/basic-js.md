@@ -190,7 +190,29 @@ Classes are always executed in "strict mode", never in script mode.
 - Polimorphism: overloading method
 - Abstract: throwing exception
 ---
-# Class and OOP: Object-Oriented Techniques (Abstract class)
+# Class and OOP: Object-Oriented Techniques (Polymorphism)
+```
+class Animal {
+    name = undefined;
+    constructor(name) {
+        this.name = name;
+    }
+    makeSound() {
+        console.log("Need to be implemented!");
+    }
+}
+
+class Tiger {
+    constructor(name) {
+        super(name);
+    }
+    makeSound() {
+        console.log("Roar!");
+    }
+}
+```
+---
+# Class and OOP: Object-Oriented Techniques (Abstract class and )
 ```
 class Animal {
     constructor() {
