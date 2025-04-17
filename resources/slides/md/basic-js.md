@@ -144,10 +144,31 @@ Classes are always executed in "strict mode", never in script mode.
 
 # Class and OOP: Prototype
 - actual version of the class definition
-- 
+- Every object is linked to a prototype object from which it can inherit properties
+- All object literals are linked to Object.prototype
+- When you make a new object, you can select the object that should be its prototype
+- Prototypes create the prototype chain, on which is applied the delegation process
+---
+# Class and OOP: Reflection and Enumeration
+- The `for in` statement can loop over all of the property names in an object
+- The `for in` loop will include all of the properties and funcitons of the object and of the prototypes
+- to filter out some property and/or function use the hasOwnProperty Method and typeof (=== 'function')
+
+```
+const person = {
+    name: "Tom",
+    age: 30
+}
+console.log(person.hasOwnProperty("name)); // true
+```
+---
+# Class and OOP: Delete
+```
+delete another_stooge.nickname;
+```
+This will remove the nickname only for the object on which is invoked, not on to the prototype
 
 ---
-
 # Class and OOP: Subclass Usage
 - Inside the constructor you can call super()
 - You can use extends keyword to extend one class
