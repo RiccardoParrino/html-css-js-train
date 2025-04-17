@@ -200,8 +200,13 @@ console.log(greet.customProp); // "Hello!"
 - Method of the function:
     - call: 
     - apply: as call, but arguments in the array
-    - bind: 
+    - bind: a function to an object
     - toString: return the body of the function
+---
+# Function: Function Properties, Method and Constructor (Bind)
+- The bind method bind a function f to an object o
+- When you invoke bind on function, it will return a new function f, method of o
+- Any arguments you pass to the new function are passed to the original function, but performing partial application
 ---
 ```
 function sayHi(name) {
@@ -226,6 +231,8 @@ bound() // "Hi, Tom"
 - new.target is an attribute that is `true` if the function has been called with the `new` keyword, false otherwise
 
 - this attribute can be used to ensure a function is called with the `new` keyword, as a constructor. This is the right way of realize a constructor by function
+
+- this works also with class constructor
 
 ```
 function MyObject() {
