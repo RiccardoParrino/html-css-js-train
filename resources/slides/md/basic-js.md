@@ -215,6 +215,16 @@ const bound = sayHi.bind(null, "Tom");
 bound() // "Hi, Tom"
 ```
 ---
+
+# Function: Function Properties, Method and Constructor (4)
+- The arrow function are lightweight function:
+    - they don't have `this`, `arguments`, `super` nor `new.target`
+    - they cannot be use as `constructor`
+    - the don't have `prototype`
+---
+# Function: Function as Constructor
+- 
+---
 # Asynchronous Programming
 
 ---
