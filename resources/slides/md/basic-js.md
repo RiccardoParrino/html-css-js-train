@@ -184,6 +184,62 @@ Classes are always executed in "strict mode", never in script mode.
 - this is the same concept of implementing an interface (e.g. implementing a functionality) instead of extending a class
 
 ---
+# Class and OOP: Object-Oriented Techniques in JavaScript
+- Encapsulation: private attribute with `#`
+- Inheritance: with the extends keyword
+- Polimorphism: overloading method
+- Abstract: throwing exception
+---
+# Class and OOP: Object-Oriented Techniques (Encapsulation)
+```
+class Person {
+    #name = undefined;
+    _surname = undefined;
+
+    constructor (name, surname) {
+        this.#name = name;
+        this._surname = surname;
+    }
+}
+```
+The _underscore notation makes the attribute private by convention, but publicly accessible. The #hashtag notation makes the attribute purely private as other OOP language. 
+---
+# Class and OOP: Object-Oriented Techniques (get/set)
+- Getter e setter in JavaScript
+```
+class Person {
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name() {
+        return this._name.toUpperCase();
+    }
+
+    set name(val) {
+        this._name = val;
+    }
+}
+console.log(p.name); // actually, it calls the method
+console.log(p.name());
+p.name = "Luke"; // actually, it calls the method
+p.name("Luke");
+
+```
+---
+# Class and OOP: Object-Oriented Techniques (static)
+- Example of static method
+```
+class MathUtils {
+    static somma (a, b) {
+        return a + b;
+    }
+}
+console.log(MathUtils.somma(2, 3)); // 5
+```
+---
+# Function
+---
 # Function
 1. Function Properties, Method and Constructor
 1. Recursion
@@ -192,9 +248,7 @@ Classes are always executed in "strict mode", never in script mode.
 4. Callbacks
 5. IIFE
 5. Functional Programming
-
 ---
-
 # Function: Function Properties, Method and Constructor
 - We say that in JavaScript Function are value, and so they have Constructor, Properties and Method
 
