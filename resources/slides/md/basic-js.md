@@ -98,6 +98,23 @@ console.log(rest); // [20,30,40]
 
 ---
 
+# Object in JavaScript: Constructor vs Function
+Function and Constructor are very similar in JavaScript, take a look at this example
+
+```
+function Person(name) {
+    this.name = name;
+    this.sayHello = function() {
+        console.log("Hi, I'm " + this.name);
+    };
+}
+const p1 = new Person("Anna");
+p1.sayHello();
+```
+Main differences from a fuction: Capitalized name, this keyword, called with new
+
+---
+
 # Class and OOP in JavaScript
 1) Class
 2) Prototype
@@ -294,6 +311,7 @@ class Tiger {
 ```
 ---
 # Class and OOP: Object-Oriented Techniques (Encapsulation)
+
 ```
 class Person {
     #name = undefined;
@@ -340,6 +358,13 @@ class MathUtils {
 }
 console.log(MathUtils.somma(2, 3)); // 5
 ```
+---
+
+# Class and OOP: Inheritance (PseudoClassical)
+
+- In JAvascript is important what an object can do, not what it is descended from
+- 
+
 ---
 # Function
 ---
