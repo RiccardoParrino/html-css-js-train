@@ -155,6 +155,7 @@ Classes are always executed in "strict mode", never in script mode.
 ---
 
 # Function
+1. Function Properties, Method and Constructor
 1. Recursion
 2. Scope
 3. Closure
@@ -167,6 +168,53 @@ Classes are always executed in "strict mode", never in script mode.
 
 ---
 
+# Function: Function Properties, Method and Constructor
+- We say that in JavaScript Function are value, and so they have Constructor, Properties and Method
+
+- Constructor: (not popular)
+
+```
+function myFunc(a, b) {
+    return a + b;
+}
+
+const myFunc = new Function('a','b','return a + b');
+```
+
+---
+# Function: Function Properties, Method and Constructor (2)
+
+- Properties: 
+    - .length: number of parameters
+    - .name: name of the function (void if anonymous)
+    - .arguments: array of the arguments of the function
+- Custom properties: you can add properties to a function
+```
+function greet() {}
+greet.customProp = "Hello!";
+console.log(greet.customProp); // "Hello!"
+```
+---
+# Function: Function Properties, Method and Constructor (3)
+
+- Method of the function:
+    - call: 
+    - apply: as call, but arguments in the array
+    - bind: 
+    - toString: return the body of the function
+---
+```
+function sayHi(name) {
+    console.log(`Hi, ${name}`);
+}
+
+sayHi.call(null,"Jack"); // "Hi, Jack"
+sayHi.apply(null,["John"]); // "Hi, John"
+
+const bound = sayHi.bind(null, "Tom");
+bound() // "Hi, Tom"
+```
+---
 # Asynchronous Programming
 
 ---
