@@ -252,6 +252,14 @@ new MyObject(); // the correct way
 MyObject(); // the wrong way
 ```
 ---
+
+# Function: Augmenting Types
+- JavaScripts allows the basic tyes of the language to be augmented
+
+- Adding a method to Object.prototype makes that method available to all objects
+
+- This also works for functions, arrays, strings, numbers, regular expressions and booleans
+---
 # Function: Exception
 General Structure of the exception
 ```
