@@ -95,6 +95,7 @@ console.log(rest); // [20,30,40]
 4) Types
 5) Subclasses
 6) Modules
+7) Augmenting Classes
 
 ---
 
@@ -151,9 +152,12 @@ Classes are always executed in "strict mode", never in script mode.
 - Inside the constructor you can call super()
 - You can use extends keyword to extend one class
 - You can use this keyword to referencing the attribute and the method of the class
-
 ---
-
+# Class and OOP: Augmenting Classes
+- An object inherits properties from its prototype, even if the prototype changes after the object is created
+- Augment JavaScript classes simply by adding new methods to their prototype objects
+- The prototype object of built-in JavaScript classes is "open", which means that we can add methods to numbers, strings, arrays, functions, and so on
+---
 # Function
 1. Function Properties, Method and Constructor
 1. Recursion
