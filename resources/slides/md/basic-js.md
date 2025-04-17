@@ -210,7 +210,6 @@ o.m = f;
 o.m([1,2]); // o.m(1,2) in the case of call
 delete o.m;
 ```
-
 ---
 # Function: Function Properties, Method and Constructor (Bind)
 - The bind method bind a function f to an object o
@@ -229,7 +228,6 @@ const bound = sayHi.bind(null, "Tom");
 bound() // "Hi, Tom"
 ```
 ---
-
 # Function: Function Properties, Method and Constructor (4)
 - The arrow function are lightweight function:
     - they don't have `this`, `arguments`, `super` nor `new.target`
@@ -253,6 +251,40 @@ function MyObject() {
 new MyObject(); // the correct way
 MyObject(); // the wrong way
 ```
+---
+# Function: Exception
+General Structure of the exception
+```
+try {
+  // codice che può causare errori
+} catch (err) {
+  // gestisci l'errore
+} finally {
+  // (opzionale) codice che viene eseguito sempre
+}
+```
+---
+# Function: Type of Exception
+- SyntaxError
+- ReferenceError
+- TypeError
+- RangeError
+- Custom Error
+---
+# Function: Custom Error
+Create a custom error:
+```
+class MyCustomError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MyCustomError";
+  }
+}
+throw new MyCustomError("My Custom Error!");
+```
+---
+# Function: Exception in Asynchronous Programming
+- On Promise use only reject
 ---
 # Functional Programming: Function on Arrays
 - forEach, Map, Filter, Reduce
