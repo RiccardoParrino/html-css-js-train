@@ -165,7 +165,24 @@ Classes are always executed in "strict mode", never in script mode.
 - classof() doesn't work for own-defined class, in these case use one of the following methods: instanceof, constructor property, constructor function name, duck-typing philosophy
 ---
 # Class and OOP: Classes and Types (instanceof op)
--  
+- the expression o instanceof c evaluates to true if o inherits from c.prototype
+- it doesn't work with primitive type
+- One shortcoming is: by instanceof we can test if an object is instance of a certain class, but we cannot derive the class of the object by itself
+---
+# Class and OOP: Classes and Types (Constructor)
+- Another way to identify the class of an object is to simply use the constructor property, that is the public face of the class
+
+- One shortcoming is: JavaScript does not require that every object have a constructor property, sometimes it is accidentally omit, sometimes intentionally
+
+- Sometimes can be useful get the name of the construct instead of the type but not all object have a constructor name defined and not all object have a constructor function with a nam
+---
+# Class and OOP: Classes and Type (Duck-Typing)
+- not ask "what is the class of this object?", instead try asking "what can this object do?" 
+
+- The general idea is: look if a certain object have a certain method or a certain property, without knowing if it is of a certain type
+
+- this is the same concept of implementing an interface (e.g. implementing a functionality) instead of extending a class
+
 ---
 # Function
 1. Function Properties, Method and Constructor
