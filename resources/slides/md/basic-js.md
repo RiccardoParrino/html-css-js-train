@@ -222,8 +222,21 @@ bound() // "Hi, Tom"
     - they cannot be use as `constructor`
     - the don't have `prototype`
 ---
-# Function: Function as Constructor
-- 
+# Function: Function Properties, Method and Constructor (5)
+- new.target is an attribute that is `true` if the function has been called with the `new` keyword, false otherwise
+
+- this attribute can be used to ensure a function is called with the `new` keyword, as a constructor. This is the right way of realize a constructor by function
+
+```
+function MyObject() {
+    if (!new.target) {
+        throw new Error ("This function cannot be called without `new`!");
+    }
+    return myObject();
+}
+new MyObject(); // the correct way
+MyObject(); // the wrong way
+```
 ---
 # Asynchronous Programming
 
