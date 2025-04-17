@@ -158,6 +158,15 @@ Classes are always executed in "strict mode", never in script mode.
 - Augment JavaScript classes simply by adding new methods to their prototype objects
 - The prototype object of built-in JavaScript classes is "open", which means that we can add methods to numbers, strings, arrays, functions, and so on
 ---
+# Class and OOP: Classes and Types
+- typeof: operator that allow to distinguish among built-in types (null, undefined, boolean, number, string, function and object)
+- classof(): access to the class attribute of Object
+- class attribute of an object is not modifiable and for your own custom class is always `'Object'`, so
+- classof() doesn't work for own-defined class, in these case use one of the following methods: instanceof, constructor property, constructor function name, duck-typing philosophy
+---
+# Class and OOP: Classes and Types (instanceof op)
+-  
+---
 # Function
 1. Function Properties, Method and Constructor
 1. Recursion
