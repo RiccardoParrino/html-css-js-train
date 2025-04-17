@@ -269,6 +269,7 @@ try {
 - ReferenceError
 - TypeError
 - RangeError
+- ...
 - Custom Error
 ---
 # Function: Custom Error
@@ -284,7 +285,27 @@ throw new MyCustomError("My Custom Error!");
 ```
 ---
 # Function: Exception in Asynchronous Programming
-- On Promise use only reject
+- use reject inside Promise
+- you can pass an Error object inside the reject
+```
+const p = new Promise ( (resolve, reject) => {
+reject(new Error('promise failed!'));
+});
+p.catch(
+    err => {
+        console.log(err);
+    }
+);
+```
+- use throw if you wanna create custom error
+- you can use throw in a Promise
+- you can use throw without Promise
+---
+# Function: Exception in Reject or Throw (2)
+- throw insisde a callback function will not be recognized by a catch block, and in this case use reject
+- if throw is encountered, the flow is immediately interrupted, meanwhile the reject end the block and then goes on error
+- you cannot create custom error with reject
+- if you create a reject error, should always be a catch block of the element
 ---
 # Functional Programming: Function on Arrays
 - forEach, Map, Filter, Reduce
