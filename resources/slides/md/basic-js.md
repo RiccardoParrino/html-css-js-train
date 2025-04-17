@@ -161,10 +161,7 @@ Classes are always executed in "strict mode", never in script mode.
 3. Closure
 4. Callbacks
 5. IIFE
-6. Functions are First-Class Citizens
-7. High-Order Function
-8. Currying
-9. Memoization
+5. Functional Programming
 
 ---
 
@@ -256,6 +253,17 @@ function MyObject() {
 new MyObject(); // the correct way
 MyObject(); // the wrong way
 ```
+---
+# Functional Programming: Function on Arrays
+- forEach, Map, Filter, Reduce
+---
+# Functional Programming: Function are First-Class Citizen
+---
+# Functional Programming: High-Order Function
+---
+# Functional Programming: Currying
+---
+# Functional Programming: Memoization
 ---
 # Asynchronous Programming
 
