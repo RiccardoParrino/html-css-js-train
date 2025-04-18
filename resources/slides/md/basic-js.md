@@ -365,10 +365,20 @@ console.log(MathUtils.somma(2, 3)); // 5
 ```
 ---
 
-# Class and OOP: Inheritance (PseudoClassical)
+# Class and OOP: Object Specifiers
 
-- In JAvascript is important what an object can do, not what it is descended from
-- 
+Better way of writing constructors: 
+```
+// One way
+var myObject = maker(f,l,m,c,s);
+// Better way
+var myObject = maker({
+    first: f,
+    last: l,
+    state: s,
+    city: c
+})
+```
 
 ---
 # Function
