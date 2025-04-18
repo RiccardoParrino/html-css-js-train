@@ -121,6 +121,31 @@ Main differences from a fuction: Capitalized name, this keyword, called with new
 ---
 
 # Object Section
+---
+
+# Object Section: Pseudoclassical Pattern
+
+---
+
+# Object Section: Functional Pattern
+
+---
+
+# Object Section: Durable Object
+- A durable object is an object that is created with functional style and  all of the methods of the object make no use of this or super class.
+
+- A durable object is simply a collectino of functions that act as capabilities
+
+---
+# Object Section: How to Create an Object
+- Create it as a Object Literal
+- Call a pseudoclassical constructor with the `new` operator
+- Call Object.create method on a prototype object
+- Call a functional constructor
+---
+
+# Object section: How to make private properties and method in Object?
+- Use the pseudoclassical pattern
 
 ---
 
