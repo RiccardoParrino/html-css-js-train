@@ -88,7 +88,12 @@ const [first, ...rest] = [10, 20, 30, 40];
 console.log(first); // 10
 console.log(rest); // [20,30,40]
 ```
+---
 
+# General Structure: Var, Let or Const?
+- var: legacy solution
+- let: 
+- const:
 ---
 
 # Object in JavaScript
