@@ -28,6 +28,11 @@ marp: true
 8) Asynchronous Programming
 7) Testing
 8) External libraries
+
+---
+
+# General Structure: Variable Declaration
+
 ---
 
 # Regular Expression in JavaScript
@@ -113,7 +118,7 @@ sumSpread([1, 2, 3]);
 
 ```
 const user = {
-    name:"john", 
+    name:"john",
     surname:"doe", 
     age:30,
 };
@@ -124,6 +129,7 @@ const copy_user = {...user};
 const user_data = {user, user_data};
 // overwrite props
 const updated_user = {...user, age:31};
+
 // Destructuring with rest op
 const {nome, ...data} = user;
 ```
@@ -506,6 +512,11 @@ var myObject = maker({
 4. Callbacks
 5. IIFE
 5. Functional Programming
+---
+
+# Function: Hoisting
+- Hoisting is the mechanism by which you can referred to the function before its declaration
+
 ---
 # Function: Function Properties, Method and Constructor
 - We say that in JavaScript Function are value, and so they have Constructor, Properties and Method
