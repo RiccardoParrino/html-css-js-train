@@ -37,6 +37,48 @@ In JavaScript there are two types of values:
 
 - primitive types are passed by value, object type are passed by reference
 ---
+# General Structure: Numbers
+- Integer Literals
+- Floating-Point Literals
+- Arithmetic in JavaScript
+- Binary Floating-Point and Rounding Errors
+---
+# General Structure: Dates and Times
+---
+# General Structure: Text
+- String Literals
+- Escape Sequences in String Literals
+- Pattern Matching
+---
+# General Structure: Boolean Values
+---
+# General Structure: null and undefined
+---
+# General Structure: The Global Object
+---
+# General Structure: Wrapper Objects
+---
+# General Structure: Immutable Primitive Values and Mutable Object Refereces
+---
+# General Structure: Type Conversions
+- Conversions and Equality
+- Explicit Conversions
+- Object to Primitive Conversions
+---
+# General Structure: Variable Declaration
+- Repeated and Omitted Declarations
+---
+# General Structure: Variable Scope
+- global variables has global scope
+- variabled declared within a function are defined only within the body of the function
+- Function parameters also are local variables
+- Local variable hides global variables with the same name
+---
+# General Structure: Var, Let and Const
+- var: Declares variables with function or global scope and allow re-declaration and updates within the same scope (to be avoided)
+- let: Declares variable with block scope, allowing updated but not re-declaration within the same block
+- const: Declares block-scoped variables that cannot be reassigned after their initial assignment
+---
 # General Structure: Literals
 - A literal is a data value that appears directly in a program
 ```
