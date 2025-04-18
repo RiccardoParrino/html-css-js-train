@@ -104,7 +104,25 @@ var ar = [1,2,3,4]
 3. Rest Operator
 
 ---
-
+# Array: Adding and Deleting Array Elements
+- to add an element use the push function:
+```
+a = [];             // Start with an empty array
+a.push("zero");     // add a value at the end. a = ["zero"]
+```
+- to delete an element use the delete keyword
+```
+a = [1,2,3];
+delete a[1];    // a now has no element at index 1
+1 in a          // => false: no array index 1 is defined
+a.length        // => 3: delete does not affect array length<>
+```
+---
+# Array: Adding and Deleting Array Elements (2)
+- You can also remove an element by reducing the length property
+- pop() (push()) method return the element deleted
+- shift() (unshift()) remove an element from the beginning of an array
+---
 # Array: Destructuring Array
 
 ```
