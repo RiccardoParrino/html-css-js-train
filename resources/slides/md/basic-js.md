@@ -149,6 +149,46 @@ Main differences from a fuction: Capitalized name, this keyword, called with new
 
 ---
 
+# Object section: Parts pattern
+- We can compose objects out of sets od parts
+
+```
+function canTalk(obj) {
+  return {
+    talk() {
+      console.log(`talk`);
+      }};}
+function canWalk(obj) {
+  return {
+    walk() {
+      console.log(`walk`);}};}
+function canFly(obj) {
+  return {
+    fly() {
+      console.log(`fly`);}};}
+```
+---
+```
+function createRobot(name) {
+  const base = { name };
+  return {
+    ...base,
+    ...canTalk(base),
+    ...canWalk(base)
+  };
+}
+
+function createDrone(name) {
+  const base = { name };
+  return {
+    ...base,
+    ...canFly(base),
+    ...canTalk(base)
+  };
+}
+```
+---
+
 # Object: Differential Inheritance
 When you define a first initial object and then create another object with the same structure by expressing the differences with the first one
 
