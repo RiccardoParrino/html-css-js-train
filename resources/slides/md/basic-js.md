@@ -79,14 +79,20 @@ console.log(x); // 5
 console.log(y); // 99
 ```
 ---
-
-# Array: Rest Operator
-
+# Array: Rest Operator and Spread Operator
+Rest operator is used to collect data into arrays: Values -> Array
 ```
-const [first, ...rest] = [10, 20, 30, 40];
-
-console.log(first); // 10
-console.log(rest); // [20,30,40]
+function sumRest (...numbers) {
+    console.log(numbers);
+}
+sumRest(1,2,3);
+```
+Spread operator is used to spred data from array: Array -> Values
+```
+function sumSpread (numbers) {
+    console.log(...numbers);
+}
+sumSpread([1, 2, 3]);
 ```
 ---
 
