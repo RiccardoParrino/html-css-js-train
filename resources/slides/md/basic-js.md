@@ -30,9 +30,19 @@ marp: true
 8) External libraries
 
 ---
-
+# General Structure: Literals
+- A literal is a data value that appears directly in a program
+```
+// These are all literals
+var a = 12;
+var s = "hello world";
+var o = {x:1, y:2};
+var ar = [1,2,3,4]
+```
+---
 # General Structure: Variable Declaration
-
+- var variable declaration
+- 
 ---
 
 # Regular Expression in JavaScript
