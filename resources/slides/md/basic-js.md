@@ -123,6 +123,40 @@ a.length        // => 3: delete does not affect array length<>
 - pop() (push()) method return the element deleted
 - shift() (unshift()) remove an element from the beginning of an array
 ---
+# Multidimensional Array
+```
+// One example
+var table = new Array(10);
+table[0] = new Array(10);
+// In this case, the table is not necessary a matrix, every row can have different length
+
+// Initialize the array
+for (var row = 0; row < table.length; row++) {
+    for (col = 0; col < table[row].length; col++) {
+        table[row][col] = row*col;
+    }
+}
+```
+---
+# Array: Useful methods
+- join()
+- reverse()
+- sort()
+- concat()
+- slice()
+- splice()
+- push() and pop()
+- unshift() and shift()
+- toString() and toLocaleString()
+---
+# ECMAScript 5 Array Methods
+- forEach()
+- map()
+- filter()
+- every() and some(): true if every element satisfy the condition, true if some of these
+- reduce(), reduceRight(), start from the beginning or start from the last element
+- indexOf() and lastIndexOf()
+---
 # Array: Destructuring Array
 
 ```
