@@ -109,6 +109,25 @@ sumSpread([1, 2, 3]);
 
 ---
 
+# Object in JavaScript: Spread Operator and Rest Operator
+
+```
+const user = {
+    name:"john", 
+    surname:"doe", 
+    age:30,
+};
+const user_acces { access_time: [], access_ops: []; }
+// copy (deep) w/ spread op
+const copy_user = {...user};
+// merge w/ spread op
+const user_data = {user, user_data};
+// overwrite props
+const updated_user = {...user, age:31};
+// Destructuring with rest op
+const {nome, ...data} = user;
+```
+---
 # Object in JavaScript: Constructor vs Function
 Function and Constructor are very similar in JavaScript, take a look at this example
 
