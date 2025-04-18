@@ -28,7 +28,14 @@ marp: true
 8) Asynchronous Programming
 7) Testing
 8) External libraries
+---
+# General Structure: Primitive Types and Object types
+In JavaScript there are two types of values:
+- Primitive Types: String, Number, BigInt, Boolean, Symbol, Undefined, Null
 
+- Object type: list of properties (key-value pair), it's mutable and it is created by literals, classes and functions: Object, Array, Function, Map, Date, RegExp, Set, Custom Class Instance
+
+- primitive types are passed by value, object type are passed by reference
 ---
 # General Structure: Literals
 - A literal is a data value that appears directly in a program
