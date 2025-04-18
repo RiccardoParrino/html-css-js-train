@@ -120,6 +120,31 @@ Main differences from a fuction: Capitalized name, this keyword, called with new
 
 ---
 
+# Object Section
+
+---
+
+# Object: Differential Inheritance
+When you define a first initial object and then create another object with the same structure by expressing the differences with the first one
+
+```
+var myMammal =  {
+    name: 'Herb the Mammal',
+    get_name: function () {
+        return this.name;
+    }
+    says: function () {
+        return this.saying || '';
+    }
+}
+var myCat = Object.create(myMammal);
+myCat.name = 'Henrietta';
+myCat.saying = 'meow';
+myCat.purr = fuction (n) {/*express the purr function*/}
+myCat.get_name = function() {/*overwrite the existing function*/}
+```
+---
+
 # Class and OOP in JavaScript
 1) Class
 2) Prototype
