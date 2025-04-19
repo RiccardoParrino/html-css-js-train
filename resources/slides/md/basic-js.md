@@ -888,6 +888,14 @@ p.catch(
 ---
 # Functional Programming: Memoization
 ---
+# Client Side Javascript
+- HTML & CSS Scripting
+- Scripting DOM
+- Asynchronous Programming
+- Client-Side Storage
+- External Libraries
+- Testing
+---
 # Asynchronous Programming
 
 ---
@@ -918,4 +926,6 @@ p.catch(
 5. Superagent
 6. Prototype
 7. Node HTTP
+---
+# Server Side JavaScript
 
