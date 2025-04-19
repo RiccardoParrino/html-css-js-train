@@ -200,6 +200,17 @@ for (var row = 0; row < table.length; row++) {
 - reduce(), reduceRight(), start from the beginning or start from the last element
 - indexOf() and lastIndexOf()
 ---
+# Array: Array Type
+- Useful function to determine if a variable is an array or not 
+```
+Array.isArray([]) // => true
+Array.isArray({}) // => false
+// The instance of operator works in simple cases:
+[] instanceof Array // => true
+({}) instanceof Array // => false
+// The best way to determine this remains the isArray() function
+```
+---
 # Array: Destructuring Array
 
 ```
@@ -254,13 +265,6 @@ function sumSpread (numbers) {
 sumSpread([1, 2, 3]);
 ```
 ---
-
-# General Structure: Var, Let or Const?
-- var: legacy solution
-- let: 
-- const:
----
-
 # Object in JavaScript
 1. Basic feature of an object
 2. Creating an Object
