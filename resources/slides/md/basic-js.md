@@ -97,7 +97,17 @@ var ar = [1,2,3,4]
 # Regular Expression in JavaScript
 
 ---
-
+# Regular Expression: Base syntax
+```
+const regex = /pattern/flags;
+const regex = new RegExp("pattern", "flags");
+```
+---
+# Regular Expression: Flag
+- "g": global flag: find all matches in text
+- "i": ignore case: find all matches ignoring the case
+- "m": Multiline: find all matches for every line and the character $ and ^ are applied to every line, not at beginning or the end of the text
+---
 # Array in JavaScript
 1. forEach, Map, Filter
 2. Destructuring Array
