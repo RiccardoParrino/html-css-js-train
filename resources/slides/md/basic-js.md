@@ -108,6 +108,39 @@ const regex = new RegExp("pattern", "flags");
 - "i": ignore case: find all matches ignoring the case
 - "m": Multiline: find all matches for every line and the character $ and ^ are applied to every line, not at beginning or the end of the text
 ---
+
+# Regular Expression: Basic Methods
+- test(): return true or false if there is a match or not
+- match(): retun the match found in the string
+- replace(): find and substitute the matching text
+- split(): return an array obtained splitting the text by matches
+---
+# Regular Expression: Common Special Characters
+- ".": any chars
+- "^": start of the string
+- "$": end of the string
+- "*": zero or more time
+- "+": one time or more
+- "?": zero or one time
+- "{n}": exactly n times characters
+---
+# Regular Expression: Common Special Characters (2)
+- \d: any digit
+---
+# Regular Expression: Generic Example
+- [abc]: one of the characters
+- [^abc]: none of the 
+- \d: any digit
+- \w: any word
+- \s: space, tab or newline
+- \: escape character
+```
+const email = "test@email.com";
+const regex = /^[\w.-]+@[\w.-]+\.\w+$/;
+console.log(regex.test(email)); // true
+```
+
+---
 # Array in JavaScript
 1. forEach, Map, Filter
 2. Destructuring Array
