@@ -401,7 +401,6 @@ function createDrone(name) {
 }
 ```
 ---
-
 # Object: Differential Inheritance
 When you define a first initial object and then create another object with the same structure by expressing the differences with the first one
 
@@ -421,6 +420,17 @@ myCat.saying = 'meow';
 myCat.purr = fuction (n) {/*express the purr function*/}
 myCat.get_name = function() {/*overwrite the existing function*/}
 ```
+---
+# Object: Enumerating Properties
+- to know about all of the properties inside an object, one can iterate over them with a for/in loop
+- there exists also other utility function that can be useful, like:
+    - extend(o,p): copy props from p to o
+    - merge(o,p): copy props from p to o
+    - restrict: filter out some properties of o 
+    - subtract: for each property of p, delete the property with the same name from o
+    - union: return a new object that holds the properties of both o and p
+    - intersection: return a new object that holds only the props of o that also appear in p
+    - keys: return an array that hold the names of the enumerabl own props of o
 ---
 
 # Class and OOP in JavaScript
@@ -683,7 +693,6 @@ var myObject = maker({
 })
 ```
 ---
-
 # Class and OOP: Standard Conversion Methods
 - overwrite the toString method always
 - overwrite also the toLocaleString(), if you do the toString() method
