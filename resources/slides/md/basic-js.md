@@ -126,14 +126,14 @@ const regex = new RegExp("pattern", "flags");
 ---
 # Regular Expression: Common Special Characters (2)
 - \d: any digit
----
-# Regular Expression: Generic Example
 - [abc]: one of the characters
 - [^abc]: none of the 
 - \d: any digit
 - \w: any word
 - \s: space, tab or newline
 - \: escape character
+---
+# Regular Expression: Generic Example
 ```
 const email = "test@email.com";
 const regex = /^[\w.-]+@[\w.-]+\.\w+$/;
