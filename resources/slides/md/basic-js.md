@@ -682,6 +682,16 @@ var myObject = maker({
     city: c
 })
 ```
+---
+
+# Class and OOP: Standard Conversion Methods
+- overwrite the toString method always
+- overwrite also the toLocaleString(), if you do the toString() method
+- valueOf() convert an object to a primitive value: do it only if a natural representation of the object is possible
+- toJSON() serializes the object in a JSON file
+---
+
+# Class and OOP: 
 
 ---
 # Function
