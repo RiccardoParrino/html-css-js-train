@@ -699,9 +699,17 @@ var myObject = maker({
 - valueOf() convert an object to a primitive value: do it only if a natural representation of the object is possible
 - toJSON() serializes the object in a JSON file
 ---
-
-# Class and OOP: 
-
+# Class and OOP: Comparison Methods
+---
+# Class and OOP: Borrowing Methods
+---
+# Class and OOP: Private State
+---
+# Class and OOP: Constructor Overloading and Factory Methods
+---
+# Class and OOP: Composition Versus Subclassing
+---
+# Class and OOP: Class Hierarchies and Abstract Classes
 ---
 # Function
 ---
