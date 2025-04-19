@@ -211,6 +211,30 @@ Array.isArray({}) // => false
 // The best way to determine this remains the isArray() function
 ```
 ---
+# Array: Array-Like Objects
+- sometimes is useful create an object to be used as an array, e.g. :
+```
+var a = {"0":"a", "1":"b", "2":"c", length:3};
+
+// Now iterate through it as if it were  a real array
+for (let j = 0; j < a.lenght; j++) 
+    console.log(a[j]);
+```
+- In client-side JavaScript, a number of DOM methods, such as document.getElementsByTagName(), return array-like objects
+---
+# Array: Strings As Arrays
+- In ECMAScript 5 strings behave like read-only arrays. Instead of accessing individual  chracters with the charAt() method tou can use square bracket:
+```
+var s = test;
+s.charAt(0) // => "t"
+s[1]        // => "e"
+```
+- the typeof operator still returns "string" for strings
+-  the Array.isArray() method returns false if you pass as string
+- the benefit of using String as Array is to use charAt with square bracket and the possibility to use generic array functions on String
+- But string are immutable and also strings as array behave in this way. So push, pop, sort, reverse and splice doesn't work and they don't returns an errors, simply fail silently
+--- 
+
 # Array: Destructuring Array
 
 ```
