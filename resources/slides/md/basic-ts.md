@@ -35,6 +35,16 @@ marp: true
 - Dynamically Typed: I made a mistake when I RUN the program
 - TypeScript is Statically Typed differently from JavaScript that is Dynamically Typed
 ---
+# Basics: Compiler and Compiling Process
+- TypeScript Compiler (TSC)
+- How compilation works: text (code) -> compiler -> abstract syntax tree (AST) -> bytecode -> feed it into runtime and get results
+- but before: TS code -> TS AST -> Typechecker -> JS Source
+- Typechecker: A special program that verifies that your code is typesafe 
+- Important fact: when TSC compiles your code from TypeScript to JavaScript, it won't look at your types
+---
+# Basics: TypeChecker
+- 
+---
 # Basic Types
 - string, boolean, number
 - any
