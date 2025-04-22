@@ -81,14 +81,51 @@ let n: number = 10;
     - avoid, if you can
     - use it when you and the typechecker are not be able to infer the type
     - you can do everything and it can be everything
+    - working with any is like working in JavaScript, without TypeChecker
 - unknown
-- boolean
-- number
-- bigint
-- string
 ---
 # Types: Fundamentals (2)
+- boolean: as always, for the moment
+- number: as always, for the moment
+    - use_separators: 1_000_000
+- bigint: as always, defined by n
+- string
+---
+# Types: Fundamentals (Object)
+```
+let a = {
+    b: 'x'
+}
+console.log(a.b);
+let b = {
+    c: {
+        d: 'f'
+    }
+}
+let a: {b: number} = {
+    b: 12
+}
+let c: {
+    firstName: string
+    lastName: string
+} = {firstName: 'john', lastName: 'barrowman' }
+```
+---
+# Type: Classes
+```
+class Person {
+    cnostructor (
+        public firstName: string, // public is shorthand for
+        public lastName: string // this.firstName = firstName
+    ) {}
+}
+c = new Person('matt', 'smith');
+```
+---
+# Types: Fundamentals (3)
 - symbol
+    - alternative to string keys in object and in map
+    - 
 - Objects
 - Arrays
 - Tuples
