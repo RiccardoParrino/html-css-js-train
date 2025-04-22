@@ -209,6 +209,50 @@ as.push(6) // Error readonly
 - void: used in function that not return a value
 - never: used in function that never returns a value, e.g throws an exception or cycle undefinitely
 ---
+# Types: Enums
+```
+enum Language {
+    English, Spanish, Russian
+}
+enum Language {
+    English = 0, Spanish = 1, Russian = 2
+}
+let myFirstLanguage = Language.Russian
+let mySecondLanguage = Language['English']
+// You can split the definition in two parts
+enum Language {
+    English = 0,
+    Spanish = 1
+}
+enum Language {
+    Russian = 2
+}
+```
+---
+# Types: Enums (2)
+```
+enum Language {
+    English = 100,
+    Spanish = 200 + 300,
+    Russion // inferred 501
+}
+enum Color {
+    Red = '#c10000',
+    Blue = #007ac1',
+    Pink = 0xc10050,
+    White = 255
+}
+let d = Color[6] // doesn't give you an error
+const enum Language {
+    English,
+    Spanish,
+    Russian
+}
+let a = Language.English
+let b = Language.Tagalog // error!!!
+let d = Language[6] // error!!!
+```
+---
 # Functions
 - Return type
 - Optional parameters
