@@ -203,6 +203,12 @@ as[4] = 5 // Error readonly
 as.push(6) // Error readonly
 ```
 ---
+# Types: null, undefined, void and never
+- undefined: used in case of something hasn't been defined yer
+- null means an absecnce of value
+- void: used in function that not return a value
+- never: used in function that never returns a value, e.g throws an exception or cycle undefinitely
+---
 # Functions
 - Return type
 - Optional parameters
