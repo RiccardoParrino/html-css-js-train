@@ -515,6 +515,22 @@ try {
     }
 }
 ```
+---
+# Handling Errors: Custom error classes
+```
+class InvalidValueerro extends Error {
+    constructor(value: string) {
+        super(`Invalid value: ${value}`);
+        this.name = "InvalidValueError";
+    }
+}
+
+function check(value: string) {
+    if (value !== "ok") {
+        throw new InvalidValueError(value);
+    }
+}
+```
 
 
 
