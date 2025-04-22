@@ -302,7 +302,17 @@ function sumVariadicSafe(...numbers: number[]): number {
 }
 ```
 ---
-
+# Function: call, apply and bind
+```
+function add(a: number, b: number): number {
+    return a + b
+}
+add(10,20)                  // evaluates to 30
+add.apply(null, [10,20])    // by spreading, evaluates to 30
+add.call(null, 10, 20)      // by not spreading, evaluates to 30
+add.bind(null, 10, 20)()    // by not spreading and not directly invoking, evaluates to 30
+```
+---
 
 
 
