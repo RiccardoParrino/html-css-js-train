@@ -327,5 +327,3 @@ add.bind(null, 10, 20)()    // by not spreading and not directly invoking, evalu
 
 
 
-
-
