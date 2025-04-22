@@ -71,7 +71,9 @@ let n: number = 10;
 - Example: boolean, string, number
 ---
 # Types: TypeScript's type hierarchy
-
+- Every type extends `unknown`
+- `any` extends `unknown`
+- number, bigint, boolean, string, symbol, Object types extend `any`
 ---
 # Type Operators
 - Union Type Operator
