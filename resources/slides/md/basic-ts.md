@@ -392,7 +392,18 @@ class Product {
     }
 }
 ```
+# Classes and Interfaces: Static Properties and Methods
+```
+class Math {
+    static PI = 3.14;
 
+    static squared (x: number): number {
+        return x * x;
+    }
+}
+console.log(Math.PI);
+console.log(Math.squared(5));
+```
 
 
 
