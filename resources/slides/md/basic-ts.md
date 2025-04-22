@@ -315,20 +315,6 @@ add.bind(null, 10, 20)()    // by not spreading and not directly invoking, evalu
 ---
 # Classes and Interfaces
 ---
-# Classes and Interfaces: Classes and Inheritance
-```
-class Game {}
-class Piece {}
-class Position {}
-
-class King extends Piece {}
-class Queen extends Piece {}
-class Bishop extends Piece {}
-class Knight extends Piece {}
-class Rook extends Piece {}
-class Pawn extends Piece {}
-```
----
 # Classes and Interfaces: General Structure
 ```
 class Person {
@@ -347,6 +333,30 @@ class Person {
 
 const henry = new Person("Henry", 30);
 henry.greet(); // Hi, my name is Henry and I'm 30 years old
+```
+---
+# Classes and Interfaces: Access Modifier
+- `public` (default): accessible from anywhere
+- `protected`: accessible from class and subclasses
+- `private`: accessible only from the class
+---
+# Classes and Interfaces: Inheritance
+```
+class Vehicle {
+    switchOn(): void {
+        console.log("Vehicle switched on!");
+    }
+}
+
+class Car extends Vehicle {
+    drive(): void {
+        console.log("Driving the car!");
+    }
+}
+
+const tesla = new Car();
+tesla.switchOn();
+tesla.drive();
 ```
 
 
