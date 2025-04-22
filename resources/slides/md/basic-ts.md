@@ -195,6 +195,14 @@ let moreTrainFares: ([number] | [number, number])[] = [
 ]
 ```
 ---
+# Types: readonly Tuples and Arrays
+```
+let as: readonly number[] = [1,2,3]
+let bs: readonly number[] = as.concat(4)
+as[4] = 5 // Error readonly
+as.push(6) // Error readonly
+```
+---
 # Functions
 - Return type
 - Optional parameters
