@@ -76,6 +76,20 @@ let n: number = 10;
 - number, bigint, boolean, string, symbol, Object types extend `any`
 - bounds of types: a variable upper bound (in type) is number. It cannot be a string or more than a number it's not assignable
 ---
+# Types: Fundamentals
+- any
+- unknown
+- boolean
+- number
+- bigint
+- string
+- symbol
+- Objects
+- Arrays
+- Tuples
+- null, undefined, void and never
+- Enums
+---
 # Type Operators
 - Union Type Operator
 ```
