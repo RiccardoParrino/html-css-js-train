@@ -481,6 +481,13 @@ interface Cake extends Food {
     sweet: boolean
 }
 ```
+--- 
+# Classes and Interfaces: Type Aliases and Interfaces (3)
+- Differences between Type Aliases and Interfaces
+    - Inheritance
+    - Interface merging
+    - Union and Intersection
+    - Type is better to use with primitive types and tuples
 
 
 
