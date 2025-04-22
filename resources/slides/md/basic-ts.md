@@ -259,7 +259,17 @@ let d = Language[6] // error!!!
 - Narrowing
 - Optional call
 - Optional operator
-
+---
+# Functions: Declaring and Invoking Functions
+```
+function add(a: number, b: number) {
+    return a + b
+}
+function add(a: number, b: number): number {
+    return a + b
+}
+```
+---
 ```
 function function_name (a, b = 2025) : number {
     return a * b;
