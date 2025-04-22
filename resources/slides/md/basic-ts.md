@@ -358,6 +358,20 @@ const tesla = new Car();
 tesla.switchOn();
 tesla.drive();
 ```
+---
+# Classes and Interfaces: readonly property
+```
+class Book {
+    readonly title: string;
+
+    constructor(title: string) {
+        this.title = title;
+    }
+}
+
+const book = new Book("1984");
+book.title = "Animal Farm";
+```
 
 
 
