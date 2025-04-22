@@ -425,8 +425,20 @@ class Dog implements Animal {
 }
 ```
 ---
-
-
+# Classes and Interfaces: super call
+- super call: if the child class overrides a method defined on its parent class, the child instance can make a super call to call its parent's version of the method
+---
+# Classes and Interfaces: this as return type
+```
+class Set {
+    has(value: number): boolean {
+        // ...
+    }
+    add(value: number): this {
+        // ...
+    }
+}
+```
 
 
 
