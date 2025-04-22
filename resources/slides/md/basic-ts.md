@@ -66,6 +66,13 @@ marp: true
 let n: number = 10;
 ```
 ---
+#  Types: Basic Types
+- A set of values and the things you can do with them
+- Example: boolean, string, number
+---
+# Types: TypeScript's type hierarchy
+
+---
 # Type Operators
 - Union Type Operator
 ```
