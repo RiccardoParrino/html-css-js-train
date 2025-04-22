@@ -439,8 +439,48 @@ class Set {
     }
 }
 ```
-
-
+---
+# Classes and Interfaces: Type Aliases and Interfaces (1)
+- Comparison between type aliases and interfaces
+```
+type Sushi = {
+    calories: number
+    salty: boolean
+    tasty: boolean
+}
+interface Sushi = {
+    calories: number
+    salty: boolean
+    tasty: boolean
+}
+```
+---
+# Classes and Interfaces: Type Aliases and Interfaces (2)
+- Comparison between type aliases and interfaces
+```
+type Food = {
+    calories: number
+    tasty: boolean
+}
+type Sushi = Food & {
+    salty: boolean
+}
+type Cake = Food & {
+    sweet: boolean
+}
+```
+```
+interface Food {
+    calories: number
+    tasty: boolean
+}
+interface Sushi extends Food {
+    salty: boolean
+}
+interface Cake extends Food {
+    sweet: boolean
+}
+```
 
 
 
