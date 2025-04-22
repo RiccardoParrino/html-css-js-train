@@ -313,6 +313,21 @@ add.call(null, 10, 20)      // by not spreading, evaluates to 30
 add.bind(null, 10, 20)()    // by not spreading and not directly invoking, evaluates to 30
 ```
 ---
+# Classes and Interfaces
+---
+# Classes and Interfaces: Classes and Inheritance
+```
+class Game {}
+class Piece {}
+class Position {}
+
+class King extends Piece {}
+class Queen extends Piece {}
+class Bishop extends Piece {}
+class Knight extends Piece {}
+class Rook extends Piece {}
+class Pawn extends Piece {}
+```
 
 
 
