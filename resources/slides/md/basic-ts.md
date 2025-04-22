@@ -77,12 +77,17 @@ let n: number = 10;
 - bounds of types: a variable upper bound (in type) is number. It cannot be a string or more than a number it's not assignable
 ---
 # Types: Fundamentals
-- any
+- any: 
+    - avoid, if you can
+    - use it when you and the typechecker are not be able to infer the type
+    - you can do everything and it can be everything
 - unknown
 - boolean
 - number
 - bigint
 - string
+---
+# Types: Fundamentals (2)
 - symbol
 - Objects
 - Arrays
