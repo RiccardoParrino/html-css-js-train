@@ -392,6 +392,7 @@ class Product {
     }
 }
 ```
+---
 # Classes and Interfaces: Static Properties and Methods
 ```
 class Math {
@@ -404,7 +405,26 @@ class Math {
 console.log(Math.PI);
 console.log(Math.squared(5));
 ```
+---
+# Classes and Interfaces: Interfaces and Implementations
+```
+interface Animal {
+    name: string;
+    makeSound(): void;
+}
+class Dog implements Animal {
+    name: string;
 
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    makeSound(): void {
+        console.log("Bau!");
+    }
+}
+```
+---
 
 
 
