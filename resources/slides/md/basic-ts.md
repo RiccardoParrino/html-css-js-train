@@ -43,7 +43,10 @@ marp: true
 - Important fact: when TSC compiles your code from TypeScript to JavaScript, it won't look at your types
 ---
 # Basics: TypeChecker
-- 
+- Type System: A set of rules that a typechecker uses to assign types to your program
+- General Rule: Type Explicitly Declared and Type Automatically Inferred
+- Typescript does both: It can infer from example and you can declare it
+- Good Programming style: Write where necessary, infer if it's possible
 ---
 # Basic Types
 - string, boolean, number
