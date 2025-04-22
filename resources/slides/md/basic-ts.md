@@ -270,25 +270,27 @@ function add(a: number, b: number): number {
 }
 ```
 ---
+# Functions: Optional and Default Parameters
 ```
-function function_name (a, b = 2025) : number {
-    return a * b;
-} 
+function log(message: string, userId?: string) {
+    let time = new Date().toLocaleTimeString()
+    console.log(time,message,userId  || 'Not signed in')
+}
+function log(message: string, userId = 'Not signed in') {
+    let time = new Date().toISOString()
+    console.log(time, message, userId)
+}
 ```
 ---
-# Enums
-```
-const enum Size {
-    Small = 1,
-    Medium,
-    Large
-}
 
-const enum Color {
-    Red = "RED",
-    Green = "GREEN",
-    Blue = "BLUE"
-}
-```
----
+
+
+
+
+
+
+
+
+
+
 
