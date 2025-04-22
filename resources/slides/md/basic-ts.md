@@ -372,6 +372,26 @@ class Book {
 const book = new Book("1984");
 book.title = "Animal Farm";
 ```
+---
+# Classes and Interfaces: Getter and Setter
+```
+class Product {
+    private _price: number;
+
+    constructor(price: number) {
+        this._price = price;
+    }
+
+    get price(): number {
+        return this._price;
+    }
+
+    set price(val: number) {
+        if (val > 0)
+            this._price = val;
+    }
+}
+```
 
 
 
