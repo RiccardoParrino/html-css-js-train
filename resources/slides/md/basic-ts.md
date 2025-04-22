@@ -114,7 +114,7 @@ let c: {
 # Type: Classes
 ```
 class Person {
-    cnostructor (
+    constructor (
         public firstName: string, // public is shorthand for
         public lastName: string // this.firstName = firstName
     ) {}
@@ -166,7 +166,7 @@ let d = [1,'a'] // (string | number)[]
 const e = [2,'b'] // (string | number)[]
 let f = ['red']
 f.push('blue')
-f.push(true) // Erro TS2345: Argument of type 'true' is not assignable to parameter of type 'string'
+f.push(true) // Error TS2345: Argument of type 'true' is not assignable to parameter of type 'string'
 let g = [] // any[]
 g.push(1) // number[]
 g.push('red') // (string | number)[]
@@ -204,7 +204,7 @@ as.push(6) // Error readonly
 ```
 ---
 # Types: null, undefined, void and never
-- undefined: used in case of something hasn't been defined yer
+- undefined: used in case of something hasn't been defined yet
 - null means an absecnce of value
 - void: used in function that not return a value
 - never: used in function that never returns a value, e.g throws an exception or cycle undefinitely
@@ -328,7 +328,26 @@ class Knight extends Piece {}
 class Rook extends Piece {}
 class Pawn extends Piece {}
 ```
+---
+# Classes and Interfaces: General Structure
+```
+class Person {
+    name: string;
+    age: number;
 
+    constructor (name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet(): void {
+        console.log(`Hi, my name is ${this.name} and I'm ${this.age} years old`);
+    }
+}
+
+const henry = new Person("Henry", 30);
+henry.greet(); // Hi, my name is Henry and I'm 30 years old
+```
 
 
 
