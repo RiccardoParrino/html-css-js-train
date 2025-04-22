@@ -48,6 +48,12 @@ marp: true
 - Typescript does both: It can infer from example and you can declare it
 - Good Programming style: Write where necessary, infer if it's possible
 ---
+# Basics: tsconfig.json
+- Every TypeScript project should include a file called tsconfig.json in its root directory
+- It's a configuration file where you can set different properties of the compiling process
+- You can set: which file should be compiled, which directory compile them to, which version of JavaScript to emit
+- you can configure the tsconfig file also by command line
+---
 # Basic Types
 - string, boolean, number
 - any
