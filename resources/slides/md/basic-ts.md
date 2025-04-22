@@ -175,6 +175,26 @@ h.push(1) // number[]
 h.push('red') // Error TS2345: Argument of type '"red"' is not assignable to parameter of type  'number'
 ```
 ---
+# Types: Tuples
+```
+let a: [number] = [1]
+// A tuple of [first name, last name, birth year]
+let b: [string, string, number] = ['malcom', 'gladwell', 1963]
+
+b = ['queen', 'elizabeth', 'ii', 1926] // Error TS2322: Type 'string' is not assignable to type 'number'
+
+// With optional element
+let trainFares: [number, number?][] = [
+    [3.75],
+    [9.25, 7.70],
+    [10.50]
+]
+// Equivalently
+let moreTrainFares: ([number] | [number, number])[] = [
+    //...
+]
+```
+---
 # Functions
 - Return type
 - Optional parameters
