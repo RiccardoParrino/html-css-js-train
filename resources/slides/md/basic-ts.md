@@ -54,7 +54,10 @@ marp: true
 - You can set: which file should be compiled, which directory compile them to, which version of JavaScript to emit
 - you can configure the tsconfig file also by command line
 ---
-# Basic Types
+# Basics: tslint.json
+- tslint.json for configuration and management of the code formatting style
+---
+# Types
 - string, boolean, number
 - any
 - undefined
