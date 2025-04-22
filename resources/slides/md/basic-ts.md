@@ -132,6 +132,21 @@ type Person = {
 }
 ```
 ---
+# Types: Union and Intersection Types
+```
+type Cat = {name: string, purrs: boolean}
+type Dog = {name: string, barks: boolean, wags: boolean}
+type CatOrDogOrBoth = Cat | Dog
+type CatAndDog = Cat & Dog
+
+let b: CatAndDog {
+    name: 'Domino',
+    barks: true,
+    purrs: true,
+    wags: true
+}
+```
+---
 # Types: Fundamentals (3)
 - symbol
     - alternative to string keys in object and in map
