@@ -122,6 +122,16 @@ class Person {
 c = new Person('matt', 'smith');
 ```
 ---
+# Types: Type Aliases
+- Use it for DRYing up repeated complex types
+```
+type Age = number
+type Person = {
+    name: string
+    age: Age
+}
+```
+---
 # Types: Fundamentals (3)
 - symbol
     - alternative to string keys in object and in map
