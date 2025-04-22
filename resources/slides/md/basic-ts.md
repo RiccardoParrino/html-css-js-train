@@ -483,7 +483,7 @@ interface Cake extends Food {
 ```
 --- 
 # Classes and Interfaces: Type Aliases and Interfaces (3)
-- Differences between Type Aliases and Interfaces
+- Differences between Type Aliases and Interfaces:
     - Inheritance: Interfaces can be extended
     - Interface merging: type can be extended only with `&` (intersection), and it cannot be redefined
     - Union and Intersection: only type aliases can create advanced type with union and intersection
