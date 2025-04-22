@@ -488,9 +488,33 @@ interface Cake extends Food {
     - Interface merging: type can be extended only with `&` (intersection), and it cannot be redefined
     - Union and Intersection: only type aliases can create advanced type with union and intersection
     - Type is better to use with primitive types and tuples
-
-
-
+---
+# Handling Errors
+---
+# Handling Errors: Base syntax
+```
+try {
+    let result = riskyFunction();
+    console.log(result);
+} catch(error) {
+    console.error("An error occurred!", error);
+} finally {
+    console.log("This runs no matter what.");
+}
+```
+---
+# Handling Errors: Typed error handling
+```
+try {
+    throw new Error("Something went wrong");
+} catch (err: unknown) {
+    if (err instanceof Error) {
+        console.error("Error:", err.message);
+    } else {
+        console.error("Unknown error");
+    }
+}
+```
 
 
 
