@@ -90,12 +90,11 @@ let n: number = 10;
 - null, undefined, void and never
 - Enums
 ---
-# Type Operators
-- Union Type Operator
-```
-
-```
-- And Type Operator
+# Types: Type Aliases
+---
+# Types: Union Types
+---
+# Types: Intersection Types
 ---
 # Functions
 - Return type
