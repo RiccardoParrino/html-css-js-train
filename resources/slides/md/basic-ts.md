@@ -29,6 +29,12 @@ marp: true
 - static typing
 - code completion
 ---
+# Basics: Type safety
+- Type safety: Using types to prevent programs from doing invalid things
+- Statically Typed: I made a mistake when I compile the program
+- Dynamically Typed: I made a mistake when I RUN the program
+- TypeScript is Statically Typed differently from JavaScript that is Dynamically Typed
+---
 # Basic Types
 - string, boolean, number
 - any
