@@ -282,6 +282,31 @@ function log(message: string, userId = 'Not signed in') {
 }
 ```
 ---
+# Functions: Variable number params
+```
+function sum(numbers: number[]): number {
+    return numbers.reduce( (total, n) => total + n, 0 )
+}
+```
+---
+# Function: Variable number params (2)
+- Arity in functions is defined by the number of parameters that are expected to be passed
+- A function is called Variadic, if the number of parameter is not fixed
+-  A function is called fixed-arity function, if the number of parameter is given and fixed
+---
+# Function: Variable number params (3)
+- A safe way to realize a variadic function in TypeScript is that in which you use the rest operator, declaring the type of the array
+```
+function sumVariadicSafe(...numbers: number[]): number {
+    return numbers.reduce((total, n) => total + n, 0)
+}
+```
+---
+
+
+
+
+
 
 
 
