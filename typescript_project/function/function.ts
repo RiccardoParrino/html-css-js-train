@@ -37,3 +37,25 @@ function add5( ...values:number[] ) : number {
     return values.reduce( (x1,x2) => (x1 + x2) );
 }
 console.log(add5(1,2,3,4,5));
+
+
+
+// Call, apply, bind on function
+class Pair {
+    firstNumber: number;
+    secondNumber: number;
+
+    constructor (firstNumber, secondNumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+    }
+}
+
+function addToFirstNumber(i1:number, i2:number) : number {
+    return this.firstNumber + i1 + i2;
+}
+
+let p = new Pair(10,20);
+console.log(addToFirstNumber.apply(p,[10,20]));
+console.log(addToFirstNumber.call(p,10,20));
+console.log(addToFirstNumber.bind(p,10,20)());
