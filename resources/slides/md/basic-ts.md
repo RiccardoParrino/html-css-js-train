@@ -130,6 +130,11 @@ type Person = {
     name: string
     age: Age
 }
+// you can also add function to a type aliases
+type Persona = {
+    name: string;
+    greet: (messaggio: string) => void;
+}
 ```
 ---
 # Types: Union and Intersection Types
