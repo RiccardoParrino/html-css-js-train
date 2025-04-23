@@ -11,3 +11,12 @@ class Person {
         this.surname = surname;
     }
 }
+
+class Student extends Person {
+    public code:string;
+
+    constructor (name: string, surname:string, code:string) {
+        super(name, surname);
+        this.code = code;
+    }
+}
