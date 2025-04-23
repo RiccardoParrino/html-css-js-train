@@ -69,3 +69,4 @@ function add7(i1:number, i2:string|number):number {
         return i1 + i2;
 }
 console.log(add7(10,20));
+
