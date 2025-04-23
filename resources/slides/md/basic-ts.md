@@ -155,7 +155,6 @@ let b: CatAndDog {
 # Types: Fundamentals (3)
 - symbol
     - alternative to string keys in object and in map
-    - 
 - Objects
 - Arrays
 - Tuples
@@ -316,6 +315,34 @@ add(10,20)                  // evaluates to 30
 add.apply(null, [10,20])    // by spreading, evaluates to 30
 add.call(null, 10, 20)      // by not spreading, evaluates to 30
 add.bind(null, 10, 20)()    // by not spreading and not directly invoking, evaluates to 30
+```
+---
+# Function: Type Narrowing
+```
+function print(val: string | number) {
+    if (typeof val === "string") {
+        console.log(val.toUpperCase());
+    } else {
+        console.log(val.toFixed(2));
+    }
+}
+// another way of doing Type Narrowing
+if (error instanceof Error) {
+}
+```
+---
+# Function: in operator narrowing
+```
+type Bird = { fly: () => void };
+type Fish = { swim: () => void };
+
+function move(animal: Bird | Fish) {
+    if ("fly" in animal) {
+        animal.fly();
+    } else {
+        animal.swim();
+    }
+}
 ```
 ---
 # Classes and Interfaces
@@ -533,6 +560,7 @@ function logDistance<T extends HasDistance>(arg: T): void {
 }
 ```
 In this way, `logDistance` will accept only types that have a distance property.
+
 ---
 # Generics: Generics in Type Aliases
 ```
