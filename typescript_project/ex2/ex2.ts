@@ -29,6 +29,19 @@ const w2: WorkerMan = {
 company.push(w1);
 company.push(w2);
 
-company.forEach((n) => {
-    console.log(n.name);
-});
+type WorkerOrMan = Person | Job;
+
+let society: WorkerOrMan[] = new Array();
+
+const m1: WorkerOrMan = {
+    name: "Giovanni",
+    surname: "Verdi",
+    jobName:"Telematico"
+}
+
+society.push(m1);
+
+society.forEach( (element) => {console.log(element);} )
+
+
+
