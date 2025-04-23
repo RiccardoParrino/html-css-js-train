@@ -26,8 +26,14 @@ function add3(i1:number, i2 = 3): number {
 
 
 
-// Variable Number of parameters
-function add4( array_sum:number[] ) {
+// Variable Number of Parameters (1)
+function add4( array_sum:number[] ) : number {
     return array_sum.reduce( (x1,x2) => (x1 + x2) );
 }
-console.log(add4([1,2,3,4,5]));
+// console.log(add4([1,2,3,4,5]));
+
+// Variable Number of Parameters (2)
+function add5( ...values:number[] ) : number {
+    return values.reduce( (x1,x2) => (x1 + x2) );
+}
+console.log(add5(1,2,3,4,5));
