@@ -41,7 +41,7 @@ const m1: WorkerOrMan = {
 
 society.push(m1);
 
-society.forEach( (element) => {console.log(element);} )
+
 
 
 
