@@ -345,6 +345,15 @@ function move(animal: Bird | Fish) {
 }
 ```
 ---
+# Function: typeof and instanceof
+---
+# Function: type predicate
+```
+function isFish(pet: Fish | Bird): pet is Fish {
+    return (pet as Fish).swim !== undefined;
+}
+```
+---
 # Classes and Interfaces
 ---
 # Classes and Interfaces: General Structure
