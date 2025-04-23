@@ -489,6 +489,35 @@ interface Cake extends Food {
     - Union and Intersection: only type aliases can create advanced type with union and intersection
     - Type is better to use with primitive types and tuples
 ---
+# Generics
+---
+# Generics: Base Syntax
+```
+function id<T>(arg: T): T {
+    return arg;
+}
+
+let result = id<string>("ciao");
+let result = id("ciao");
+```
+---
+# Generics: Class and Interfaces
+```
+class Container<T> {
+    private value: T;
+    constructor(value: T) {
+        this.value = value;
+    }
+    getValue(): T {
+        return this.value;
+    }
+}
+interface Pair<T, U> {
+    key: T;
+    value: U;
+}
+```
+---
 # Handling Errors
 ---
 # Handling Errors: Base syntax
