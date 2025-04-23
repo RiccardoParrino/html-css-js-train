@@ -350,7 +350,6 @@ function move(animal: Bird | Fish) {
     - typeof returns the type of the argument, as 'string'
 - instanceof is created for class
     - instanceof can only verify if a given arg is of that type or not, returning a boolean
-
 ---
 # Function: type predicate
 ```
@@ -358,6 +357,9 @@ function isFish(pet: Fish | Bird): pet is Fish {
     return (pet as Fish).swim !== undefined;
 }
 ```
+---
+# Function: Discriminated Union
+
 ---
 # Classes and Interfaces
 ---
