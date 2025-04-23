@@ -518,6 +518,17 @@ interface Pair<T, U> {
 }
 ```
 ---
+# Generics: Constrain on Generics
+```
+interface HasDistance {
+    distance: number;
+}
+function logDistance<T extends HasDistance>(arg: T): void {
+    console.log(arg.distance);
+}
+```
+In this way, `logDistance` will accept only types that have a distance property
+---
 # Handling Errors
 ---
 # Handling Errors: Base syntax
