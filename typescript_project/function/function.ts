@@ -70,3 +70,41 @@ function add7(i1:number, i2:string|number):number {
 }
 console.log(add7(10,20));
 
+
+
+// In operator narrowing
+abstract class LiveBeing {
+}
+
+class Person extends LiveBeing{
+    name:string;
+    surname:string;
+    constructor (name:string, surname:string) {
+        super();
+        this.name = name;
+        this.surname = surname;
+    }
+}
+
+class Animal extends LiveBeing {
+    name:string;
+    feet:number;
+    constructor (name:string, feet:number) {
+        super();
+        this.name = name;
+        this.feet = feet;
+    }
+}
+
+function printPersonOrAnimal (element:any) {
+    if ( "feet" in element ) {
+        console.log(element.name + " " + element.feet);
+    } else {
+        console.log(element.name + " " + element.surname);
+    }
+}
+
+const person = new Person("ric", "par");
+const animal = new Animal("doggo", 4);
+printPersonOrAnimal(person);
+printPersonOrAnimal(animal);
