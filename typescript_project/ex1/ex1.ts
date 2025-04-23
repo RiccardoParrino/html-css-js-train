@@ -3,60 +3,61 @@ function add(i1:number, i2:number):number {
 }
 
 class Person {
-    name: string;
-    surname: string;
+    protected _name: string;
+    protected _surname: string;
 
     constructor ( name:string, surname:string ){
-        this.name = name;
-        this.surname = surname;
+        this._name = name;
+        this._surname = surname;
     }
 
-    get getName() {
-        return this.name;
+    get name():string {
+        return this._name;
     }
 
-    get getSurname() {
-        return this.surname;
+    get surname():string {
+        return this._surname;
     }
 
     set setName(name:string) {
-        this.name = name;
+        this._name = name;
     }
 
     set setSurname(surname:string) {
-        this.surname = surname;
+        this._surname = surname;
     }
 }
 
 class Student extends Person {
-    public code:string;
+    public _code:string;
 
     constructor (name: string, surname:string, code:string) {
         super(name, surname);
-        this.code = code;
+        this._code = code;
     }
 
-    get getName() {
-        return super.getName;
+    get name():string {
+        return super.name;
     }
 
-    get getSurname() {
-        return super.getSurname;
+    get surname():string {
+        // return super.getSurname;
+        return "";
     }
 
     get getCode () : string {
-        return this.code;
+        return this._code;
     }
 
-    set setName(name:string) {
-        super.setName;
+    set name(name:string) {
+        // super.setName;
     }
 
     set setSurname(surname:string) {
-        super.setSurname
+        // super.setSurname
     }
 
     set setCode(code:string) {
-        this.code = code;
+        this._code = code;
     }
 }
