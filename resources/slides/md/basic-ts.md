@@ -346,6 +346,11 @@ function move(animal: Bird | Fish) {
 ```
 ---
 # Function: typeof and instanceof
+- typeof is more used about primitive types
+    - typeof returns the type of the argument, as 'string'
+- instanceof is created for class
+    - instanceof can only verify if a given arg is of that type or not, returning a boolean
+
 ---
 # Function: type predicate
 ```
