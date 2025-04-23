@@ -36,7 +36,7 @@ let society: WorkerOrMan[] = new Array();
 const m1: WorkerOrMan = {
     name: "Giovanni",
     surname: "Verdi",
-    jobName:"Telematico"
+    jobName: "Telematico"
 }
 
 society.push(m1);
