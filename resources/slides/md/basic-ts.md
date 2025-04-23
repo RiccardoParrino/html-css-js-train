@@ -527,7 +527,12 @@ function logDistance<T extends HasDistance>(arg: T): void {
     console.log(arg.distance);
 }
 ```
-In this way, `logDistance` will accept only types that have a distance property
+In this way, `logDistance` will accept only types that have a distance property.
+---
+# Generics: Generics in Type Aliases
+```
+type Box<T> = {value: T};
+```
 ---
 # Handling Errors
 ---
