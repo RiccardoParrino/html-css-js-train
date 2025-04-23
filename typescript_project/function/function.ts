@@ -14,7 +14,7 @@ function add2(i1:number, i2?:number): number {
     else
         return i1;
 }
-console.log(add2(1,2));
+// console.log(add2(1,2));
 
 
 
@@ -22,4 +22,12 @@ console.log(add2(1,2));
 function add3(i1:number, i2 = 3): number {
     return i1 + i2;
 }
-console.log(add3(1));
+// console.log(add3(1));
+
+
+
+// Variable Number of parameters
+function add4( array_sum:number[] ) {
+    return array_sum.reduce( (x1,x2) => (x1 + x2) );
+}
+console.log(add4([1,2,3,4,5]));
