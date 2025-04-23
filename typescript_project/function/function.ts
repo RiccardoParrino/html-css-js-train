@@ -117,3 +117,36 @@ function verifyStringType(element:any): element is string {
 }
 console.log(verifyStringType("ciao"));
 console.log(verifyStringType(10));
+
+
+
+// discriminated union example
+type Cat = {
+    kind: "cat";
+    meow: () => `meow`;
+};
+
+type Dog = {
+    kind: "dog";
+    bau: () => void;
+}
+
+type Rabbit = {
+    kind: "rabbit";
+    makeNoise: () => void;
+}
+
+type AnimalNew = Cat | Dog | Rabbit;
+
+function faiVerso (animale: AnimalNew) {
+    switch(animale.kind) {
+        case "cat":
+            console.log("cat");
+        case "dog":
+            console.log("dog");
+        case "rabbit":
+            console.log("rabbit");
+        default:
+            const _: never = animale;
+    }
+}
