@@ -54,8 +54,18 @@ class Pair {
 function addToFirstNumber(i1:number, i2:number) : number {
     return this.firstNumber + i1 + i2;
 }
-
 let p = new Pair(10,20);
-console.log(addToFirstNumber.apply(p,[10,20]));
-console.log(addToFirstNumber.call(p,10,20));
-console.log(addToFirstNumber.bind(p,10,20)());
+// console.log(addToFirstNumber.apply(p,[10,20]));
+// console.log(addToFirstNumber.call(p,10,20));
+// console.log(addToFirstNumber.bind(p,10,20)());
+
+
+
+// Type Narrowing example
+function add7(i1:number, i2:string|number):number {
+    if (typeof i2 === "string") 
+        return i1 + parseInt(i2);
+    else
+        return i1 + i2;
+}
+console.log(add7(10,20));
