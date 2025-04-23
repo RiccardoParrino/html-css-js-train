@@ -108,3 +108,12 @@ const person = new Person("ric", "par");
 const animal = new Animal("doggo", 4);
 printPersonOrAnimal(person);
 printPersonOrAnimal(animal);
+
+
+
+// type predicate example
+function verifyStringType(element:any): element is string {
+    return (element as string).charAt !== undefined;
+}
+console.log(verifyStringType("ciao"));
+console.log(verifyStringType(10));
