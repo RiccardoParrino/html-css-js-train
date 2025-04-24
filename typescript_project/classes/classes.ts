@@ -202,3 +202,30 @@ class Car extends Vehicle implements MakeNoise {
         return "bruum";
     }
 }
+
+// interface extension
+interface IA {
+    a():string;
+}
+
+interface IB {
+    b():string;
+}
+
+interface IC extends IA,IB{
+    c():string;
+}
+
+class Implementor implements IC {
+    a():string {
+        return "a";
+    }
+
+    b():string {
+        return "b";
+    }
+
+    c():string {
+        return "c";
+    }
+}
