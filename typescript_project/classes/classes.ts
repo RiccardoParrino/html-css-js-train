@@ -16,8 +16,16 @@ class MyPerson {
         return this._name;
     }
 
+    set name(name:string) {
+        this._name = name;
+    }
+
     get age(): number {
         return this._age;
+    }
+
+    set age(age:number) {
+        this._age = age;
     }
 
     get_phone_number (pass:string) : string {
@@ -43,15 +51,26 @@ class MyStudent extends MyPerson {
     get code_student ():string {
         return this._code_student;
     }
+
+    set code_student(code_student:string) {
+        this._code_student = code_student;
+    }
 }
 const myStudent = new MyStudent("ric",27,"333333","1234","0704021");
 // console.log(myStudent);
 
+// using get accessor example
+console.log(myStudent.age);
+
+// using set accessor example
+myStudent.code_student = "10000";
+console.log(myStudent.code_student)
 
 
-// call to super method
+// instanceof return true for the super class and for subclass
 console.log(myStudent instanceof MyPerson) // true
 console.log(myStudent instanceof MyStudent); // true
+
 
 
 
