@@ -27,14 +27,29 @@ o instanceof C;
 
 D.prototype = new C(); // add C to [[Prototype]] linkage of D
 D.name = "temp";
-console.log(D.name);
-console.log(D.prototype)
+// console.log(D.name);
+// console.log(D.prototype)
 const o3 = new D();
-console.log(o3 instanceof D); // true
-console.log(o3 instanceof C); // true since C.prototype is now in o3's prototype chain
+// console.log(o3 instanceof D); // true
+// console.log(o3 instanceof C); // true since C.prototype is now in o3's prototype chain
 
 // typeof example
 // const i1:number = 10;
 // console.log( typeof i1 );
 // console.log( typeof typeof i1 );
 
+
+
+enum Language {
+    English = 0, Spanish = 1, Russian = 2
+}
+
+enum Color {
+    Red = 9,
+    Blue = 8,
+    Pink = 10,
+    Purple = 11
+}
+console.log(Color.Red);
+console.log(Color["Red"]);
+console.log(Color["11"]);
