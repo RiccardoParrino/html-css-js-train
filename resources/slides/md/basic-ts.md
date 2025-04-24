@@ -579,6 +579,7 @@ class User {
     }
 }
 ```
+- You cannot specify the behavior for every example, instead based on type, you specify the logic for every case inside the only one body of the costructor
 ---
 # Generics
 ---
