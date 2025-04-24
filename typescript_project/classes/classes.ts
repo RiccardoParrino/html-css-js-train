@@ -60,17 +60,17 @@ const myStudent = new MyStudent("ric",27,"333333","1234","0704021");
 // console.log(myStudent);
 
 // using get accessor example
-console.log(myStudent.age);
+// console.log(myStudent.age);
 
 // using set accessor example
 myStudent.code_student = "10000";
 // using set accessor example of a super class attribute
 myStudent.age = 35;
-console.log(myStudent.code_student)
+// console.log(myStudent.code_student);
 
 // instanceof return true for the super class and for subclass
-console.log(myStudent instanceof MyPerson) // true
-console.log(myStudent instanceof MyStudent); // true
+// console.log(myStudent instanceof MyPerson); // true
+// console.log(myStudent instanceof MyStudent); // true
 
 // constructor overloading example
 class User {
@@ -86,3 +86,43 @@ class User {
 }
 const myUser = new User("ric",27);
 // console.log(myUser);
+
+
+
+// Using this as Return Type example
+class MySet {
+    _elements:number[];
+
+    constructor() {
+        this._elements = new Array();
+    }
+
+    public add (num:number):this {
+        this._elements.push(num);
+        return this;
+    }
+
+    public del (num:number):void {
+        let new_array:number[] = new Array();
+        for (let i = 0; i < this._elements.length; i++){
+            if (this._elements[i] === num)
+                continue;
+            else
+                new_array.push(this._elements[i]);
+        }
+        this._elements = new_array;
+        return;
+    }
+
+    public mem(num:number):boolean {
+        for (let i = 0; i <  this._elements.length; i++){
+            if (this._elements[i] === num)
+                return true;
+        }
+        return false;
+    }
+}
+
+const mySet = new MySet();
+mySet.add(1).add(2).add(3);
+console.log(mySet);
