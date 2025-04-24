@@ -156,4 +156,13 @@ const b = new B();
 console.log(b.method());
 
 
+
 // static method in class example
+class MyMath {
+    static PI = 3.14;
+
+    static squared (x:number):number {
+        return x**2;
+    }
+}
+console.log(MyMath.squared(10));
