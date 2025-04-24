@@ -581,6 +581,14 @@ class User {
 ```
 - You cannot specify the behavior for every example, instead based on type, you specify the logic for every case inside the only one body of the costructor
 ---
+# Classes and Interfaces: super or this?
+- The inheritance mechanism is managed by javascript using the prototype chaining
+- The property are setted in the actual object
+- The methods and the accessors are referred by the prototype chaining, so they live in the super class and not in the actual class
+- In summary:
+    - use `this` to access to the props of the subclasses and all of the superclasses
+    - use `super` to access to methods and accessors of the superclasses
+---
 # Classes and Interfaces: Boundary Condition
 ```
 class A {
