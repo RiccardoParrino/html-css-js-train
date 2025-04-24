@@ -421,7 +421,7 @@ const book = new Book("1984");
 book.title = "Animal Farm";
 ```
 ---
-# Classes and Interfaces: Getter and Setter
+# Classes and Interfaces: Getters and Setters
 ```
 class Product {
     private _price: number;
@@ -440,6 +440,10 @@ class Product {
     }
 }
 ```
+---
+# Classes and Interfaces: Getters and Setters (2)
+- if `get` exists but no `set`, the property is automatically `readonly`
+- if the type of the setter parameter is not specified, it is inferrend from the returned type of the getter
 ---
 # Classes and Interfaces: Static Properties and Methods
 ```
