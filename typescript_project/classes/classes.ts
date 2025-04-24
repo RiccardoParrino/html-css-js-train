@@ -125,4 +125,29 @@ class MySet {
 
 const mySet = new MySet();
 mySet.add(1).add(2).add(3);
-console.log(mySet);
+// console.log(mySet);
+
+
+
+// overwriting method
+class A {
+    constructor () {}
+
+    public method ():string {
+        return "A";
+    }
+}
+class B extends A {
+
+    constructor() {
+        super();
+    }
+
+    public method():string {
+        return "B";
+    }
+}
+const a = new A();
+console.log(a.method());
+const b = new B();
+console.log(b.method());
