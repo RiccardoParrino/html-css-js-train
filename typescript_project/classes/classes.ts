@@ -229,3 +229,28 @@ class Implementor implements IC {
         return "c";
     }
 }
+
+
+// access modifier example
+class AccessModifierExample {
+    _publicVariable:string; // accessible from inside, outside and subclasses
+    protected _protectedVariable:string; // access from inside class and subclasses
+    private _privateVariable:string; // accessible from inside the class
+
+    constructor () {
+        this._publicVariable = "publicVariable";
+        this._protectedVariable = "protectedVariable";
+        this._privateVariable = "privateVariable";
+    }
+}
+
+class AccessModifierExampleSub extends AccessModifierExample {
+    do():string {
+        return this._protectedVariable;
+    }
+}
+
+const myAccessModifierExample = new AccessModifierExample();
+console.log(myAccessModifierExample._publicVariable);
+// console.log(myAccessModifierExample._protectedVariable);
+// console.log(myAccessModifierExample._privateVariable);
