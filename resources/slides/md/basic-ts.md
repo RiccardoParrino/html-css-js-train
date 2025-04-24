@@ -444,6 +444,29 @@ class Product {
 # Classes and Interfaces: Getters and Setters (2)
 - if `get` exists but no `set`, the property is automatically `readonly`
 - if the type of the setter parameter is not specified, it is inferrend from the returned type of the getter
+- getters and setters are accessors, it means they should use in this way:
+---
+```
+class Person {
+    _name: string;
+    _age: string;
+
+    constructor(name:string, age:string) {
+        this._name = name;
+        this._age = age;
+    }
+
+    get name():string {
+        return this._name;
+    }
+    
+    set name(name:string) {
+        this._name = name;
+    }
+}
+const myPerson = new Person("ric",30);
+myPerson.name = "par";
+```
 ---
 # Classes and Interfaces: Static Properties and Methods
 ```
