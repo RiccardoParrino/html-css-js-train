@@ -14,11 +14,11 @@ class MyGenericSet<T> {
 
 const myNumberSet = new MyGenericSet<Number>();
 myNumberSet.add(3);
-console.log(myNumberSet);
+// console.log(myNumberSet);
 
 const myStringSet = new MyGenericSet<String>();
 myStringSet.add("temp1").add("temp2");
-console.log(myStringSet);
+// console.log(myStringSet);
 
 
 // parametric interface
@@ -35,4 +35,24 @@ class Logarithm implements Pair<Number,Number>{
         return Math.log(parseInt(k.toString()));
     }
 }
+
+// parametric function example
+function id<T>(arg: T):T {
+    return arg;
+}
+let result = id<string>("ciao");
+console.log(result);
+let result2 = id("ciao");
+console.log(result2);
+
+
+
+
+// Function with Constrained Generics example
+function parametricDoubled<K extends number>(arg:K): K {
+    return arg;
+}
+
+const x:number = 20;
+console.log(parametricDoubled(x));
 
