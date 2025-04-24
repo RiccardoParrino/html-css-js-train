@@ -167,3 +167,25 @@ class MyMath {
 }
 // console.log(MyMath.squared(10));
 // console.log(MyMath.PI);
+
+
+
+// readonly example
+class Vehicle {
+    _name:string;
+
+    constructor (name:string) {
+        this._name = name;
+    }
+
+    public get_name() {
+        return this._name;
+    }
+
+    // set name(name:string) {
+    //     this._name = name;
+    // } 
+}
+const v = new Vehicle("tesla");
+console.log(v.get_name());
+// v._name = "toyota";
