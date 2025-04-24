@@ -634,7 +634,7 @@ class User {
     - use `this` to access to the props of the subclasses and all of the superclasses
     - use `super` to access to methods and accessors of the superclasses
 ---
-# Classes and Interfaces: Boundary Condition
+# Classes and Interfaces: Declaration Merging
 ```
 class A {
     do(): string {
@@ -649,6 +649,19 @@ class A {
 }
 ```
 - this code is correct in TypeScript and the resulting class A have two different method: "do" and "anotherDo"
+---
+# Classes and Interfaces: Declaration Merging (2)
+- This holds also for interfaces
+```
+interface A {
+    do(): string;
+}
+interface A {
+    anotherDo(): string;
+}
+// the resulting interface have two differents methods: do and anotherDo
+```
+- This doesn't hold for type aliases
 ---
 # Generics
 ---
