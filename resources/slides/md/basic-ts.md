@@ -581,6 +581,22 @@ class User {
 ```
 - You cannot specify the behavior for every example, instead based on type, you specify the logic for every case inside the only one body of the costructor
 ---
+# Classes and Interfaces: Boundary Condition
+```
+class A {
+    do(): string {
+        return `do`;
+    }
+}
+
+class A {
+    anotherDo(): string {
+        return `another do`;
+    }
+}
+```
+- this code is correct in TypeScript and the resulting class A have two different method: "do" and "anotherDo"
+---
 # Generics
 ---
 # Generics: Base Syntax
