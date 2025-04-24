@@ -138,10 +138,13 @@ class A {
     }
 }
 class B extends A {
-
     constructor() {
         super();
     }
+
+    // public method():string {
+    //     return super.method();
+    // }
 
     public method():string {
         return "B";
@@ -151,3 +154,6 @@ const a = new A();
 console.log(a.method());
 const b = new B();
 console.log(b.method());
+
+
+// static method in class example
