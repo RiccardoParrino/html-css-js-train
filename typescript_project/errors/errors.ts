@@ -26,4 +26,28 @@ function handle_errors2() : void {
 function accessDbWithError() {
     throw new Error("Something went wrong!");
 }
-handle_errors2();
+// handle_errors2();
+
+// create custom error classes
+class InvalidValueError extends Error {
+    constructor(message?: string){
+        super(message);
+        this.name = "InvalidValueError";
+
+        (<any>Object).setPrototypeOf(this, InvalidValueError.prototype);
+    }
+}
+
+function check(value: string) {
+    try {
+        if (value !== "ok")
+            throw new InvalidValueError("Invalid value error!");
+    } catch(error) {
+        if(error instanceof InvalidValueError){
+            console.log("InvalidValueError");
+        } else {
+            console.log("General error");
+        }
+    }
+}
+check("not ok");
