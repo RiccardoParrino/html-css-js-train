@@ -189,3 +189,16 @@ class Vehicle {
 const v = new Vehicle("tesla");
 console.log(v.get_name());
 // v._name = "toyota";
+
+
+
+// interface implementation
+interface MakeNoise {
+    do():string;
+}
+
+class Car extends Vehicle implements MakeNoise {
+    public do ():string {
+        return "bruum";
+    }
+}
