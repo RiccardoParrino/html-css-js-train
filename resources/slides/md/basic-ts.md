@@ -317,6 +317,14 @@ add.call(null, 10, 20)      // by not spreading, evaluates to 30
 add.bind(null, 10, 20)()    // by not spreading and not directly invoking, evaluates to 30
 ```
 ---
+# Function: Typing this
+- The  value of the `this` keyword depends on the context where it is used and
+- It is managed by JavaScript
+- In general, we can have the following usages:
+    - in classes: it referes to the class where it is contained
+    - in object: it referes to the object where it is contained
+    - with call, apply and bind: it referes to the object that is bounded
+---
 # Function: Type Narrowing
 ```
 function print(val: string | number) {
@@ -359,7 +367,7 @@ function isFish(pet: Fish | Bird): pet is Fish {
 ```
 ---
 # Function: Discriminated Union
-
+---
 ---
 # Classes and Interfaces
 ---
