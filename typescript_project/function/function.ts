@@ -150,3 +150,36 @@ function faiVerso (animale: AnimalNew) {
             // const _: never = animale;
     }
 }
+
+
+// generator function example
+function* createFibonacciGenerator(): Generator<number, number, number> {
+    let a = 0;
+    let b = 1;
+    while (true) {
+        yield a;
+        [a,b] = [b, a+b];
+    }
+}
+let fibonacciGenerator = createFibonacciGenerator();
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+console.log(fibonacciGenerator.next().value);
+
+function* createNumbers(): IterableIterator<number> {
+    let n = 0;
+    while(true) {
+        yield n++;
+    }
+}
+
+let numbers = createNumbers()
+numbers.next()
+numbers.next()
+numbers.next()
+numbers.next()
