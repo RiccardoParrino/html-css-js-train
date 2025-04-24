@@ -27,8 +27,8 @@ class MyPerson {
     }
 }
 const myPerson = new MyPerson("ric", 27, "333333", "1234");
-console.log(myPerson.get_phone_number("1234"));
-console.log(myPerson.get_phone_number("2345"));
+// console.log(myPerson.get_phone_number("1234"));
+// console.log(myPerson.get_phone_number("2345"));
 
 
 // Inheritance class example
@@ -45,7 +45,14 @@ class MyStudent extends MyPerson {
     }
 }
 const myStudent = new MyStudent("ric",27,"333333","1234","0704021");
-console.log(myStudent);
+// console.log(myStudent);
+
+
+
+// call to super method
+console.log(myStudent instanceof MyPerson) // true
+console.log(myStudent instanceof MyStudent); // true
+
 
 
 // constructor overloading example
@@ -61,4 +68,4 @@ class User {
     }
 }
 const myUser = new User("ric",27);
-console.log(myUser);
+// console.log(myUser);
