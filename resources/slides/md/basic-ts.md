@@ -440,6 +440,7 @@ class Product {
     }
 }
 ```
+- a class can extend only one other class and implements multiple interface
 ---
 # Classes and Interfaces: Getters and Setters (2)
 - if `get` exists but no `set`, the property is automatically `readonly`
