@@ -23,11 +23,16 @@ console.log(myStringSet);
 
 // parametric interface
 interface Pair<K,V> {
+    key: K;
+    value: V;
     myFunction(k:K) : V;
 }
 
 class Logarithm implements Pair<Number,Number>{
+    key: Number;
+    value: Number;
     myFunction(k: Number): Number {
         return Math.log(parseInt(k.toString()));
     }
 }
+
