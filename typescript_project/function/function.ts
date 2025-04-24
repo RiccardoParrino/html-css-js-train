@@ -183,3 +183,18 @@ numbers.next()
 numbers.next()
 numbers.next()
 numbers.next()
+
+
+
+// iterator function example
+let numbersIterator = {
+    *[Symbol.iterator]() {
+        for (let n = 1; n <= 10; n++){
+            yield n;
+        }
+    }
+}
+
+for (let a of numbersIterator) {
+    console.log(a);
+}
