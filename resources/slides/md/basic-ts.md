@@ -537,6 +537,21 @@ interface Cake extends Food {
     - Union and Intersection: only type aliases can create advanced type with union and intersection
     - Type is better to use with primitive types and tuples
 ---
+# Classes and Interfaces: Constructor Overloading
+```
+class User {
+    name: string;
+    age?: number;
+
+    constructor(name: string);
+    constructor(name: string, age: number);
+    constructor(name: string, age?: number) {
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+---
 # Generics
 ---
 # Generics: Base Syntax
