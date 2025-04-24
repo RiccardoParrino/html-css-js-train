@@ -150,10 +150,10 @@ class B extends A {
         return "B";
     }
 }
-const a = new A();
-console.log(a.method());
-const b = new B();
-console.log(b.method());
+// const a = new A();
+// console.log(a.method());
+// const b = new B();
+// console.log(b.method());
 
 
 
@@ -165,4 +165,5 @@ class MyMath {
         return x**2;
     }
 }
-console.log(MyMath.squared(10));
+// console.log(MyMath.squared(10));
+// console.log(MyMath.PI);
