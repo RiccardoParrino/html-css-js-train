@@ -1,3 +1,4 @@
+// first class example
 class MyPerson {
     _name: string // public prop
     _age: number // public prop
@@ -29,3 +30,19 @@ const myPerson = new MyPerson("ric", 27, "333333", "1234");
 console.log(myPerson.get_phone_number("1234"));
 console.log(myPerson.get_phone_number("2345"));
 
+
+// Inheritance class example
+class MyStudent extends MyPerson {
+    _code_student:string;
+
+    constructor (name:string, age:number, phone_number:string, _pass:string, _code_student:string) {
+        super(name,age,phone_number,"1234");
+        this._code_student = _code_student;
+    }
+
+    get code_student ():string {
+        return this._code_student;
+    }
+}
+const myStudent = new MyStudent("ric",27,"333333","1234","0704021");
+console.log(myStudent);
