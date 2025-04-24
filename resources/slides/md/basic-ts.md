@@ -403,6 +403,8 @@ for (let a of numbersIterator) {
     console.log(a);
 }
 ```
+- spreading an iterator: `let allNumber = [...numbers]`
+- resting an iterator: `let [one, two, ...rest] = numbers`
 ---
 # Classes and Interfaces
 ---
