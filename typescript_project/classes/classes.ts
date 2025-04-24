@@ -64,15 +64,13 @@ console.log(myStudent.age);
 
 // using set accessor example
 myStudent.code_student = "10000";
+// using set accessor example of a super class attribute
+myStudent.age = 35;
 console.log(myStudent.code_student)
-
 
 // instanceof return true for the super class and for subclass
 console.log(myStudent instanceof MyPerson) // true
 console.log(myStudent instanceof MyStudent); // true
-
-
-
 
 // constructor overloading example
 class User {
