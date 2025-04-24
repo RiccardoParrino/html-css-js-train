@@ -147,6 +147,6 @@ function faiVerso (animale: AnimalNew) {
         case "rabbit":
             console.log("rabbit");
         default:
-            const _: never = animale;
+            // const _: never = animale;
     }
 }
