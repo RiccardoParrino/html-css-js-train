@@ -46,3 +46,19 @@ class MyStudent extends MyPerson {
 }
 const myStudent = new MyStudent("ric",27,"333333","1234","0704021");
 console.log(myStudent);
+
+
+// constructor overloading example
+class User {
+    name: string;
+    age?: number;
+
+    constructor(name: string);
+    constructor(name: string, age: number);
+    constructor(name: string, age?: number) {
+        this.name = name;
+        this.age = age;
+    }
+}
+const myUser = new User("ric",27);
+console.log(myUser);
