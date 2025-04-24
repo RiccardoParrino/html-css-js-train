@@ -583,7 +583,7 @@ class User {
 ---
 # Classes and Interfaces: super or this?
 - The inheritance mechanism is managed by javascript using the prototype chaining
-- The property are setted in the actual object
+- The property are setted in the actual object, meanwhile
 - The methods and the accessors are referred by the prototype chaining, so they live in the super class and not in the actual class
 - In summary:
     - use `this` to access to the props of the subclasses and all of the superclasses
@@ -645,6 +645,9 @@ function logDistance<T extends HasDistance>(arg: T): void {
 ```
 In this way, `logDistance` will accept only types that have a distance property.
 
+---
+# Generics: Primitive Type in Parametric Type
+- You can use primitive type in parametric type also
 ---
 # Generics: Generics in Type Aliases
 ```
