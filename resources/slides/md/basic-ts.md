@@ -368,6 +368,25 @@ function isFish(pet: Fish | Bird): pet is Fish {
 ---
 # Function: Discriminated Union
 ---
+# Function: Generator Functions
+```
+function* createFibonacciGenerator() { // the asterisk before function's name makes that function a generator. 
+    let a = 0
+    let b = 1
+    while(true) {
+        yield a;
+        [a,b] = [b, a+b]
+    }
+}
+
+let fibonacciGenerator = createFibonacciGenerator()
+fibonacciGenerator.next()
+fibonacciGenerator.next()
+fibonacciGenerator.next()
+fibonacciGenerator.next()
+fibonacciGenerator.next()
+fibonacciGenerator.next()
+```
 ---
 # Classes and Interfaces
 ---
