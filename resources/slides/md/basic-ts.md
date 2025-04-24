@@ -369,6 +369,7 @@ function isFish(pet: Fish | Bird): pet is Fish {
 # Function: Discriminated Union
 ---
 # Function: Generator Functions
+- Generators are a way to produce a stream of values
 ```
 function* createFibonacciGenerator() { // the asterisk before function's name makes that function a generator. 
     let a = 0
@@ -386,6 +387,21 @@ fibonacciGenerator.next()
 fibonacciGenerator.next()
 fibonacciGenerator.next()
 fibonacciGenerator.next()
+```
+---
+# Function: Iterators
+- Iterator are a way to consume values
+```
+let numbersIterator = {
+    *[Symbol.iterator]() {
+        for (let n = 1; n <= 10; n++){
+            yield n;
+        }
+    }
+}
+for (let a of numbersIterator) {
+    console.log(a);
+}
 ```
 ---
 # Classes and Interfaces
