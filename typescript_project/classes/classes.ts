@@ -1,8 +1,8 @@
 class MyPerson {
-    _name: string
-    _age: number
-    private _phone_number: string
-    private _pass: string
+    _name: string // public prop
+    _age: number // public prop
+    private _phone_number: string // private prop
+    private _pass: string // private prop
 
     constructor (name:string, age:number, phone_number:string, _pass:string) {
         this._name = name;
@@ -25,7 +25,7 @@ class MyPerson {
         return "Failed password!";
     }
 }
-
 const myPerson = new MyPerson("ric", 27, "333333", "1234");
 console.log(myPerson.get_phone_number("1234"));
 console.log(myPerson.get_phone_number("2345"));
+
