@@ -663,6 +663,29 @@ interface A {
 ```
 - This holds for Classes, Interfaces and Enums but not for Type Aliases
 ---
+# Classes and Interfaces: Declaration Merging (3)
+- There is some exception:
+```
+interface Person {
+    phone_number: string
+}
+interface Person {
+    phone_number: number // Error the type should be the same
+}
+```
+---
+# Classes and Interfaces: Declaration merging (4)
+- Same happen for generic interfaces
+```
+interface Person<Phone extends number> {
+    phone: Phone
+}
+interface Person<Phone extends string> {
+    phone: Phone
+}
+```
+- this will rise an error where all declaration must have the same type parameters
+---
 # Generics
 ---
 # Generics: Base Syntax
