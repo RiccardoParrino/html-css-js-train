@@ -672,7 +672,6 @@ class A {
         return `do`;
     }
 }
-
 class A {
     anotherDo(): string {
         return `another do`;
@@ -716,6 +715,10 @@ interface Person<Phone extends string> {
 }
 ```
 - this will rise an error where all declaration must have the same type parameters
+---
+# Classes and Interfaces: Mixin
+- Mixin are a way to share functionalities betwen class or interfaces without directly extends or inherits that
+- Natively not supported by TypeScript, but easily implemented
 ---
 # Generics
 ---
