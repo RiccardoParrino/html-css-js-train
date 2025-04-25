@@ -562,6 +562,7 @@ abstract class Animal {
     abstract makeNoise(): void;
 }
 ```
+- Abstract classes cannot be instantiated, the implemented methods are inherited as they are and abstract methods must be realized before instantiation
 ---
 # Classes and Interfaces: super call
 - super call: if the child class overrides a method defined on its parent class, the child instance can make a super call to call its parent's version of the method
