@@ -834,6 +834,10 @@ class MessageQueue {
     - Contravariance: a complex object B is a subtype of another complex object A iff it is of the exact same parametric type or a supertype of the type
     - Bivariance: a complex object B is a subtype of another complex object A, no matter the relationship of the parametric type
 ---
+# Advanced Types: Shape and Array Variance
+- In TypeScript: every complex type is covariant in its members
+- Another example is Java, in which: every complex type is invariant in its members
+---
 # Generics
 ---
 # Generics: Base Syntax
