@@ -809,6 +809,24 @@ class MessageQueue {
 }
 ``` 
 ---
+# Advanced Types: Topic
+- Relationships between Types
+- Subtypes and Supertypes
+- Variance
+- Assignability
+- Type Widening
+- Refinement
+---
+# Advanced Types: Subtypes and Supertypes
+- Supertypes: If you have tow type A and B, and B is a supertype of A, then you can safely use A anywhere a B is required
+- Subtypes: If you have two types A and B, and B is a subtype of A, then you can safely use a B anywhere an A is required
+---
+# Advanced Types: Variance
+- Starting with some general answer:
+    - When is `Array<A>` a subtype of `Array<B>`?
+    - When is a shape `A` a subtype of another shape `B`?
+    - When is a function `(a: A) => B` a subtype of another function `(c: C) => D`?
+---
 # Generics
 ---
 # Generics: Base Syntax
