@@ -861,6 +861,28 @@ For enum types, an enum A is assignable to enum B if either of these is true:
     1. A is a member of enum B
     2. B has at least one member that's a `number`, and A is a `number`
 ---
+# Advanced Types: Type Widening
+- In TypeScript you can have a literal type, that represents a precise value, like this:
+```
+let a: "hi";
+```
+- And you have also the generic types, that represents a widening value, like this:
+```
+let name: string;
+let n: number;
+let b: boolean;
+```
+- The Type Widening widen your literal value to a generic types, this happen when you assign a value:
+```
+let state = "ok"
+```
+---
+# Advanced Types: Type Widening (2)
+- If you want that the type remain literal, you can use the keyword const
+```
+const state = "ok"
+```
+---
 # Generics
 ---
 # Generics: Base Syntax
