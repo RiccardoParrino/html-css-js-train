@@ -549,6 +549,20 @@ class Dog implements Animal {
     makeSound(): void {console.log("Bau!");}}
 ```
 ---
+# Classes and Interfaces: Abstract Class
+- Another way of model a concept is by using Abstract Classes. These can have constructors, default implementations and set access modifiers for properties and methods.
+```
+abstract class Animal {
+    constructor(public name: string) {}
+
+    greet(): void {
+        console.log("Hi, my name is ${this.name}");
+    }
+
+    abstract makeNoise(): void;
+}
+```
+---
 # Classes and Interfaces: super call
 - super call: if the child class overrides a method defined on its parent class, the child instance can make a super call to call its parent's version of the method
 ---
