@@ -733,6 +733,23 @@ const o = createSpecialObject();
 o.greet();
 ```
 ---
+# Classes and Interfaces: Anonymous Inner Classes (2)
+- You can also use the Anonymous Inner Class to implement an Interface
+```
+interface Greetings {
+    greet(): void;
+}
+function createImplementation(msg: string): Greetings {
+    return new class implements Greetings {
+        greet(): void {
+            console.log(msg);
+        }
+    }
+}
+const myGreet = createImplementation("Hi from Richard!");
+myGreet.greet();
+```
+---
 # Classes and Interfaces: Mixin
 - Mixin are a way to share functionalities betwen class or interfaces without directly extends or inherits that
 - Natively not supported by TypeScript, but they can be implemented building a function that get as input a class and returns a new anonymoud class that extends the one given as input and introducing new functionalities (as method or fields) in the first one
