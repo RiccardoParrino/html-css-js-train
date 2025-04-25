@@ -793,6 +793,22 @@ class APIPayload {
 - Every time you want to use a Decorator, you should implement the function to make it works
 - Decorator is a new feature of TypeScript and it is better to use mixin meanwhile it became more mature
 ---
+# Classes and Interfaces: Simulating final Classes
+- We can simulate the final class (e.g., non extensible class) in TypeScript by marking as private the constructor of the class
+```
+class MessageQueue {
+    private constructor(private messages: string[]) {}
+}
+``` 
+- By doing so, you avoid the access to the constructor for the subclass, but in this way you cannot instatiate that. To solve this problem add a static method like this:
+```
+class MessageQueue {
+    private constructor(private messages: string[]) {}
+    static create(messages: string[]) {
+        return new MessageQueue(messages);}
+}
+``` 
+---
 # Generics
 ---
 # Generics: Base Syntax
