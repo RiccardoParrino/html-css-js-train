@@ -745,6 +745,7 @@ interface Pair<T, U> {
     value: U;
 }
 ```
+- Note that a static method do not have access to the generics type of the class
 ---
 # Generics: Constrain on Generics
 ```
