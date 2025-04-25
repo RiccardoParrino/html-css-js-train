@@ -569,6 +569,14 @@ abstract class Animal {
 - An abstract class give you a structure that all of the class implementing that should satisfied
 - In general: use an interface to give functionalities, meanwhile use an abstract class to structure a class which behavior cannot be realized at the beginning
 ---
+# Classes and Interfaces: TypeScript is Structurally Typed
+- Differently from Java, C#, Scala and other languages that are Nominally Typed, TypeScript doesn't make difference between based on the name of the class but based on the functionalities it expose
+- This feature is related to the Duck Typing Philosophy
+- A small exception is related to private and protected fields of the class: if a class have same private or protected field and the shape is not an instance of that class or a subclass, the shape is not assignable to the class
+---
+# Classes and Interfaces: Details On Inheritance
+- If the super class have some private field, the subclass inherits the private field, but it cannot access to it
+---
 # Classes and Interfaces: super call
 - super call: if the child class overrides a method defined on its parent class, the child instance can make a super call to call its parent's version of the method
 ---
