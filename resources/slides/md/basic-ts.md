@@ -718,7 +718,7 @@ interface Person<Phone extends string> {
 ---
 # Classes and Interfaces: Mixin
 - Mixin are a way to share functionalities betwen class or interfaces without directly extends or inherits that
-- Natively not supported by TypeScript, but easily implemented
+- Natively not supported by TypeScript, but they can be implemented building a function that get as input a class and returns a new anonymoud class that extends the one given as input and introducing new functionalities (as method or fields) in the first one
 ---
 # Generics
 ---
@@ -769,6 +769,10 @@ In this way, `logDistance` will accept only types that have a distance property.
 ```
 type Box<T> = {value: T};
 ```
+---
+# Generics: Bounding Generics By Type Aliases
+---
+# Generics: Bounding Generics By Structurally Shape
 ---
 # Handling Errors
 ---
