@@ -527,7 +527,14 @@ console.log(Math.PI);
 console.log(Math.squared(5));
 ```
 ---
+# Classes and Interfaces: General Information on Interfaces
+- Using the keyword `implements` you can say that a particular class satisfies a particular interface
+- The class implementing the interface must implement all of the methods declared in it
+- Interfaces can state readonly properties, but it cannot declare access modifiers (they are public by default) 
+-  A class can implements a number of interface
+---
 # Classes and Interfaces: Interfaces and Implementations
+- An implementation as example
 ```
 interface Animal {
     name: string;
@@ -539,11 +546,7 @@ class Dog implements Animal {
     constructor(name: string) {
         this.name = name;
     }
-
-    makeSound(): void {
-        console.log("Bau!");
-    }
-}
+    makeSound(): void {console.log("Bau!");}}
 ```
 ---
 # Classes and Interfaces: super call
