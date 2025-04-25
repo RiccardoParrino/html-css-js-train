@@ -770,6 +770,29 @@ function withEXDebug<C extends ClassConstructor>(Class: C) {
 - Mixin are a way to share functionalities betwen class or interfaces without directly extends or inherits that
 - Natively not supported by TypeScript, but they can be implemented building a function that get as input a class and returns a new anonymoud class that extends the one given as input and introducing new functionalities (as method or fields) in the first one
 ---
+# Classes and Interfaces: Decorator
+- Decorator is a new feature of TypeScript and it permits to add functionalities to a class with the use of annotations
+```
+type ClassConstructor<T> = new (...args: any[]) => T
+function serializable<T extends ClassConstructor<{getValue(): Payload}>> {
+    return class extends Constructor {
+        serialize () {
+            return this.getValue().toString();
+        }
+    }
+}
+@serializable
+class APIPayload {
+    getValue(): Payload {
+        // ...
+    }
+}
+```
+---
+# Classes and Interfaces: Decorator (2)
+- Every time you want to use a Decorator, you should implement the function to make it works
+- Decorator is a new feature of TypeScript and it is better to use mixin meanwhile it became more mature
+---
 # Generics
 ---
 # Generics: Base Syntax
