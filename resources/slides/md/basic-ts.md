@@ -827,6 +827,13 @@ class MessageQueue {
     - When is a shape `A` a subtype of another shape `B`?
     - When is a function `(a: A) => B` a subtype of another function `(c: C) => D`?
 ---
+# Advanced Types: Variance Design Landscape
+- When a complex object (shape, function, array...) is a subtype of another?
+    - Invariance: a complex object B is a subtype of another complex object A iff it is of the exact same parametric type
+    - Covariance: a complex object B is a subtype of another complex object A iff it is of the exact same parametric type or a subtype of the type
+    - Contravariance: a complex object B is a subtype of another complex object A iff it is of the exact same parametric type or a supertype of the type
+    - Bivariance: a complex object B is a subtype of another complex object A, no matter the relationship of the parametric type
+---
 # Generics
 ---
 # Generics: Base Syntax
