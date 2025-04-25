@@ -883,6 +883,12 @@ let state = "ok"
 const state = "ok"
 ```
 ---
+# Advanced Types: Excess property checking
+- When you try to assign a fresh object literal type T to another type U, and T has properties that aren't present in U, TypeScript reports an error
+---
+# Advanced Types: Fresh Object Literal Type
+- A fresh object literal type is the type TypeScript infers from an object literal, then the fresh object literal type is widened to a regular object type and its freshness disappears
+---
 # Generics
 ---
 # Generics: Base Syntax
