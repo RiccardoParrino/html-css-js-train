@@ -719,6 +719,20 @@ interface Person<Phone extends string> {
 ```
 - this will rise an error where all declaration must have the same type parameters
 ---
+# Classes and Interfaces: Anonymous Inner Classes
+- In TypeScript is possible to define an Anonymous Inner Class
+```
+function createSpecialObject() {
+    return new class {
+        greet() {
+            console.log("Hi from anonymous inner class!");
+        }
+    }
+}
+const o = createSpecialObject();
+o.greet();
+```
+---
 # Classes and Interfaces: Mixin
 - Mixin are a way to share functionalities betwen class or interfaces without directly extends or inherits that
 - Natively not supported by TypeScript, but they can be implemented building a function that get as input a class and returns a new anonymoud class that extends the one given as input and introducing new functionalities (as method or fields) in the first one
