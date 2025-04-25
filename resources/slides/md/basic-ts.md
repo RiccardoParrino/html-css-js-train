@@ -838,6 +838,20 @@ class MessageQueue {
 - In TypeScript: every complex type is covariant in its members
 - Another example is Java, in which: every complex type is invariant in its members
 ---
+# Advanced Types: Function variance
+- A function A is a subtype of function B if A has the same or lowe arity than B and:
+    1. A's this type either isn't specified, or is >: B's this type
+    2. Each of A's parameters is >: its corresppnding parameter in B
+    3. A's return type is <: B's return type
+- An example:
+```
+function clone (f: (b: Bird) => Bird): void {
+    let parent = new Bird();
+    let babyBird = f(parent); // if this function f doesn't return a type or a subtype of B,
+    babyBird.chirp() // you cannot call .chirp() on babyBird()
+}
+```
+---
 # Generics
 ---
 # Generics: Base Syntax
