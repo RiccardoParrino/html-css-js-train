@@ -750,6 +750,22 @@ const myGreet = createImplementation("Hi from Richard!");
 myGreet.greet();
 ```
 ---
+# Classes and Interfaces: Mixin (Implementation)
+```
+type ClassConstructor = new(...args: any[]) => {}
+
+function withEXDebug<C extends ClassConstructor>(Class: C) {
+    return class extends Class {
+        debug() {
+            let Name = Class.constructor.name
+            let value = this.getDebugValue()
+            return Name + '(' + JSON.stringify(value) + ')'
+        }
+    }
+}
+```
+- With Type Aliases and Anonymous Inner Classes in mind, we have realized a mixin in TypeScript
+---
 # Classes and Interfaces: Mixin
 - Mixin are a way to share functionalities betwen class or interfaces without directly extends or inherits that
 - Natively not supported by TypeScript, but they can be implemented building a function that get as input a class and returns a new anonymoud class that extends the one given as input and introducing new functionalities (as method or fields) in the first one
