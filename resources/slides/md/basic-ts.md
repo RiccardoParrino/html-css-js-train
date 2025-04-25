@@ -564,6 +564,11 @@ abstract class Animal {
 ```
 - Abstract classes cannot be instantiated, the implemented methods are inherited as they are and abstract methods must be realized before instantiation
 ---
+# Classes and Interfaces: Use Interfaces or Abstract Class?
+- An interface give you a shape to be satisfied
+- An abstract class give you a structure that all of the class implementing that should satisfied
+- In general: use an interface to give functionalities, meanwhile use an abstract class to structure a class which behavior cannot be realized at the beginning
+---
 # Classes and Interfaces: super call
 - super call: if the child class overrides a method defined on its parent class, the child instance can make a super call to call its parent's version of the method
 ---
