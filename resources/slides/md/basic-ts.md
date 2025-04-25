@@ -661,7 +661,7 @@ interface A {
 }
 // the resulting interface have two differents methods: do and anotherDo
 ```
-- This doesn't hold for type aliases
+- This holds for Classes, Interfaces and Enums but not for Type Aliases
 ---
 # Generics
 ---
