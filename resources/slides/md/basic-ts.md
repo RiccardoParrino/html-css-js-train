@@ -130,7 +130,10 @@ type Person = {
     name: string
     age: Age
 }
-// you can also add function to a type aliases
+// you can also add function to a type aliases. In this case you are stating 
+// the name of the function, 
+// the input expected by the function and 
+// the type of the value returned by the function.
 type Persona = {
     name: string;
     greet: (messaggio: string) => void;
