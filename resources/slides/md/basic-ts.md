@@ -852,6 +852,15 @@ function clone (f: (b: Bird) => Bird): void {
 }
 ```
 ---
+# Advanced Types: Assignability
+- When TypeScript wants to answer the question "Is type A assignable to type B?"
+For non-enum types, A is assignable to B if either of the following is true:
+    1. if A <: B
+    2. A is any
+For enum types, an enum A is assignable to enum B if either of these is true:
+    1. A is a member of enum B
+    2. B has at least one member that's a `number`, and A is a `number`
+---
 # Generics
 ---
 # Generics: Base Syntax
