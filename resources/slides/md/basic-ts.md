@@ -1075,6 +1075,9 @@ async function startApp() {
     let user = await get('user')
 }
 ```
+---
+# Frontend and Backend Framework: Take away
+- Typesafe UI code, typed API Layer and a typesafe backend can be created with TypeScript and the framework based on it
 
 
 
