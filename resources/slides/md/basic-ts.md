@@ -943,6 +943,18 @@ type Box<T> = {value: T};
 ---
 # Generics: Bounding Generics By Structurally Shape
 ---
+# Asynchronous Programming in TypeScript
+---
+# Asynchronous Programming in TS: JavaScript's Event Loop
+- JavaScript manage concurrency using the event-loop model
+- Javascript is single threaded
+- This is the cycle:
+    1. every time you call a function youpput it into the call stack, used as a queue
+    2. libuv api if somehting asynchronous are loading
+    3. as finish it goes to the event queue
+    4. the event loop look inside the event queue and search for event to put into the callstack, and then remove it 
+
+---
 # Handling Errors
 ---
 # Handling Errors: Base syntax
