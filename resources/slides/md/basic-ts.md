@@ -1016,7 +1016,65 @@ function check(value: string) {
     }
 }
 ```
+---
+# Frontend and Backend Framework: Angular Set Up
+```
+npm install @angular/cli --global
+```
+```
+ng new my-angular-app
+```
+---
+# Frontend and Backend Framework: Angular Component
+```
+import {Component, OnInit} from '@angular/core'
+@Component({
+    selector: 'simple-message',
+    styleUrls: ['./simple-message.component.css']
+    templateUrl: './simple-message.component.html'
+})
+export class SimpleMessageComponent implements OnInit {
+    message: string
+    ngOnInit() {
+        this.message = 'No messages, yet'
+    }
+}
+```
+---
+# Frontend and Backend Framework: Angular Services
+```
+import {Injectable} from '@angular/core'
+import {HttpClient} from '@angular/common/http'
+@Injectable({
+    provideIn: 'root'
+})
+export class MessageService {
+    constructor(private http: HttpClient) {}
+    getMessage() {
+        return this.http.get('/api/message')
+    }
+}
+```
+---
+# Frontend and Backend Framework: Typesafe APIs
+- an example of API
+```
+type Request = 
+    | {entity: 'user', data: User}
+    | {entity: 'location', data: Location}
+async function get<R extends Request> (entity: R['entity']): Promise<R['data']> {
+    let res = await fetch(/api/${entity})
+    let json = await res.json()
+    if (!json) {
+        throw ReferenceError('Empty response');
+    }
+    return json
+}
 
+async function startApp() {
+    let user = await get('user')
+}
+```
 
 
 
