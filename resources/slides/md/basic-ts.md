@@ -957,12 +957,20 @@ type Box<T> = {value: T};
 # Asynchronous Programming in TS: JavaScript's Event Loop (2)
 - Summary: if it's not an asynchronous process, it will be put into the callstack, otherwise it will be put in the event queue or in the libuv stack, until they get complete and then passed into the callstack
 ---
-# Asynchronous Programming in TS: Promise in TS
+# Asynchronous Programming in TS: Promise and Async-Await
+- Promise are used like in JavaScript
+- The same holds for async-await
 ```
-function appendAndReadPromise(path: string, data:string): Promise<string> {
-    return appendPromise(path, data)
-        .then(()=>readPromise(path))
-        .catch(error => console.error(error))
+async function getUser() {
+    try {
+        let user = await getUserID(18);
+        let location = await getLocation(user);
+        console.info('got location', user);
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.info('done getting location');
+    }
 }
 ```
 ---
