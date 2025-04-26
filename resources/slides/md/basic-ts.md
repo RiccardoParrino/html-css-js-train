@@ -953,6 +953,10 @@ type Box<T> = {value: T};
     2. libuv api if somehting asynchronous are loading
     3. as finish it goes to the event queue
     4. the event loop look inside the event queue and search for event to put into the callstack, and then remove it 
+---
+# Asynchronous Programming in TS: JavaScript's Event Loop (2)
+- Summary: if it's not an asynchronous process, it will be put into the callstack, otherwise it will be put in the event queue or in the libuv stack, until they get complete and then passed into the callstack
+---
 
 ---
 # Handling Errors
