@@ -942,6 +942,14 @@ type Box<T> = {value: T};
 # Generics: Bounding Generics By Type Aliases
 ---
 # Generics: Bounding Generics By Structurally Shape
+```
+class OrderRequest <T extends {order_number:number, content:string}> {
+    request:T;
+    ...
+}
+```
+---
+# TypeScript Modules: 
 ---
 # Asynchronous Programming in TypeScript
 ---
