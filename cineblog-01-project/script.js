@@ -1,5 +1,92 @@
 /*----------------------database  section----------------------*/
 
+/**
+ * Per ogni film
+ * Titolo
+ * Descrizione
+ * Genere
+ * Anno
+ * Qualità
+ * Paese
+ * Regista
+ * Attori
+ * Tags
+ * Commenti
+ * Film simili
+ * Locandina
+ */
+
+class Film {
+    constructor(
+        title, 
+        description, 
+        genre, 
+        year, 
+        quality, 
+        country,
+        director,
+        tags,
+        comments,
+        similar,
+        img) {
+        this.title = title;
+        this.description = description;
+        this.genre = genre;
+        this.year = year;
+        this.quality = quality;
+        this.country = country;
+        this.director = director;
+        this.tags = tags;
+        this.comments = comments;
+        this.similar = similar;
+        this.img = img;
+    }
+
+    get title() {
+        return this.title;
+    }
+
+    get description() {
+        return this.description;
+    }
+
+    get genre() {
+        return this.genre;
+    }
+
+    get year() {
+        return this.year;
+    }
+
+    get quality() {
+        return this.quality;
+    }
+
+    get country() {
+        return this.country;
+    }
+
+    get director() {
+        return this.director;
+    }
+
+    get tags() {
+        return this.tags;
+    }
+
+    get comments() {
+        return this.comments;
+    }
+
+    get similar() {
+        return this.similar;
+    }
+
+    get img() {
+        return this.img;
+    }
+}
+
 /*----------------------backend   section----------------------*/
 
 /*----------------------frontend  section----------------------*/
