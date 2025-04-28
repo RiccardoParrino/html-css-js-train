@@ -132,7 +132,9 @@ class Film {
 
 }
 
-
+const film1 = new Film("Jack The ripper");
+const film2 = new Film("Avatar");
+const film3 = new Film("Pursuit of happiness");
 
 /*----------------------backend   section----------------------*/
 
