@@ -949,6 +949,11 @@ class OrderRequest <T extends {order_number:number, content:string}> {
 }
 ```
 ---
+# Generics: Where binding happen
+- For function, typescript bind a concrete type to a generic type when the invocation happen
+- For classes, typescript bind a concrete type to a generic type when instatiation happen
+- For type aliases and interfaces, it's when you use or implement them
+---
 # TypeScript Modules: 
 ---
 # Asynchronous Programming in TypeScript
