@@ -46,46 +46,93 @@ class Film {
         return this.title;
     }
 
+    set title(title) {
+        this.title = title;
+    }
+
     get description() {
         return this.description;
+    }
+
+    set description(description) {
+        this.description = description;
     }
 
     get genre() {
         return this.genre;
     }
 
+    set genre(genre) {
+        this.genre = genre;
+    }
+
     get year() {
         return this.year;
+    }
+
+    set year(year) {
+        this.year = year;
     }
 
     get quality() {
         return this.quality;
     }
 
+    set quality(quality) {
+        this.quality = quality;
+    }
+
     get country() {
         return this.country;
+    }
+
+    set country(country) {
+        this.country = country;
     }
 
     get director() {
         return this.director;
     }
 
+    set director(director) {
+        this.director = director;
+    }
+
     get tags() {
         return this.tags;
+    }
+
+    set tags(tags) {
+        this.tags = tags;
     }
 
     get comments() {
         return this.comments;
     }
 
+    set comments(comments) {
+        this.comments = comments;
+    }
+
     get similar() {
         return this.similar;
+    }
+
+    set similar(similar) {
+        this.similar = similar;
     }
 
     get img() {
         return this.img;
     }
+
+    set img(img) {
+        this.img = img;
+    }
+
 }
+
+
 
 /*----------------------backend   section----------------------*/
 
