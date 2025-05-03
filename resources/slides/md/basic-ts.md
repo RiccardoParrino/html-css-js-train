@@ -549,7 +549,8 @@ class Dog implements Animal {
     constructor(name: string) {
         this.name = name;
     }
-    makeSound(): void {console.log("Bau!");}}
+    makeSound(): void {console.log("Bau!");
+}}
 ```
 ---
 # Classes and Interfaces: Abstract Class
@@ -818,8 +819,8 @@ class MessageQueue {
 - Refinement
 ---
 # Advanced Types: Subtypes and Supertypes
-- Supertypes: If you have tow type A and B, and B is a supertype of A, then you can safely use A anywhere a B is required
-- Subtypes: If you have two types A and B, and B is a subtype of A, then you can safely use a B anywhere an A is required
+- Supertypes: If you have to type A and B, and B is a supertype of A, then you can safely use A anywhere and B is required
+- Subtypes: If you have two types A and B, and B is a subtype of A, then you can safely use a B anywhere and A is required
 ---
 # Advanced Types: Variance
 - Starting with some general answer:
@@ -841,7 +842,7 @@ class MessageQueue {
 # Advanced Types: Function variance
 - A function A is a subtype of function B if A has the same or lowe arity than B and:
     1. A's this type either isn't specified, or is >: B's this type
-    2. Each of A's parameters is >: its corresppnding parameter in B
+    2. Each of A's parameters is >: its corresponding parameter in B
     3. A's return type is <: B's return type
 - An example:
 ```
@@ -954,6 +955,9 @@ class OrderRequest <T extends {order_number:number, content:string}> {
 - For classes, typescript bind a concrete type to a generic type when instatiation happen
 - For type aliases and interfaces, it's when you use or implement them
 ---
+# Generics: Type Driven Development
+
+---
 # TypeScript Modules: 
 ---
 # Asynchronous Programming in TypeScript
@@ -1016,7 +1020,7 @@ try {
 ---
 # Handling Errors: Custom error classes
 ```
-class InvalidValueerro extends Error {
+class InvalidValueError extends Error {
     constructor(value: string) {
         super(`Invalid value: ${value}`);
         this.name = "InvalidValueError";
