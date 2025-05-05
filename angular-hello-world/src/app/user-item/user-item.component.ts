@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user-item',
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './user-item.component.html',
   styleUrl: './user-item.component.css'
 })
-export class UserItemComponent {
+export class UserItemComponent implements OnInit {
+  name: string;
 
+  constructor() {
+    this.name = 'Felipe';
+  }
+
+  ngOnInit() {}
 }
