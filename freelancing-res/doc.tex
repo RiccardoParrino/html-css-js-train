@@ -29,6 +29,19 @@ Per i soggetti obbligati (la maggior parte delle partite IVA), la fattura deve e
 
 Se si dovesse emettere una fattura in ritardo, si rischiano sanzioni amministrative che possono andare dal 90\% al 180\% dell'IVA non documentata correttamente. 
 
+\subsubsection{Sistema di Interscambio}
+Per Sistema di Interscambio si intende il canale telematico dell'Agenzia delle Entrate per la gestione della fatturazione eletteonica.
+
+Il Sistema di Interscambio riceve le fatture elettroniche, effettua i controlli su questa e le invia ai destinatari. 
+
+Il Sistema di Interscambio verifica che siano presenti le informazioni minime obbligatorie previste per legge 
+(estremi identificativi del fornitore e del cliente, il numero, la data della fattura, la descrizione della natura, la quantit\'a, la qualit\'a del bene ceduto o del servizio perstato, l'imponibile, l'aliquota e l'IVA),
+che i valori della partita IVA del fornitore siano esistenti, e quindi presenti in Anagrafe Tributaria, che sia compilato il campo "Codice Destinatario" e che ci sia coerenza tra i valori dell'imponibile, dell'aliquota e dell'IVA.
+
+Se fosse presente un qualche tipo di errore, il SdI invia una notifica di scarto e la fattura viene considerata non emessa. 
+
+Se la fattura \'e considerata corretta allora viene trasmessa all'indirizzo riportato nel campo "Codice Destinatario" e "PEC Destinatario" del file.
+
 \subsection{Come scrivere un contratto}
 \subsection{Partita IVA}
 \subsubsection{Apertura partita iva}
